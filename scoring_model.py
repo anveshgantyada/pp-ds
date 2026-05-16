@@ -1,85 +1,86 @@
-
-
 import os
 import numpy as np
 import pandas as pd
-from datetime import datetime
 from scipy.stats import rankdata
 
 # ─────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────
-DATA_DIR   = "./data"
-OUTPUT_DIR = "./data"
+DATA_DIR   = "/Users/anvesh/Python Projects/data"
+OUTPUT_DIR = "/Users/anvesh/Python Projects/data"
 NOW        = pd.Timestamp("2025-05-01")
 
-# Component weights (must sum to 1.0)
-# Applied AFTER percentile ranking — so these weight the relative rank,
-# not the raw score. This is more statistically meaningful.
+# Final component weights (must sum to 1.0)
 WEIGHTS = {
-    "engagement_recency":  0.35,
-    "engagement_quality":  0.25,
-    "profile_fit":         0.20,
-    "account_fit":         0.20,
+    "engagement": 0.50,
+    "account":    0.20,
+    "persona":    0.15,
+    "intent":     0.15,
 }
 
-# Engagement quality scores per campaign_type + member_status
-ENGAGEMENT_QUALITY_MAP = {
-    ("Webinar",             "Attended"):  1.00,
-    ("Event",               "Attended"):  1.00,
-    ("Content Syndication", "Responded"): 0.90,
-    ("Webinar",             "Registered"):0.60,
-    ("Event",               "Registered"):0.60,
-    ("Telemarketing",       "Responded"): 0.80,
-    ("Social",              "Clicked"):   0.50,
-    ("Advertisement",       "Clicked"):   0.40,
-    ("Email",               "Clicked"):   0.35,
-    ("Email",               "Opened"):    0.20,
-    ("Email",               "Sent"):      0.00,   # automated, no action
-    ("Content Syndication", "Sent"):      0.00,
-    ("Telemarketing",       "Sent"):      0.00,
-}
-
-# Profile fit scores
+# Persona fit ordinal map
 PERSONA_SCORE = {
     "CISO":             1.00,
-    "Economic Buyer":   0.90,
-    "Technical Buyer":  0.80,
-    "Champion":         0.70,
+    "Technical Buyer":  0.85,
+    "Economic Buyer":   0.80,
+    "Champion":         0.65,
     "End User":         0.40,
+    None:               0.35,
     "Non-Prospect":     0.00,
 }
 
 LEVEL_SCORE = {
-    "C-Level":              1.00,
-    "VP":                   0.90,
-    "Director":             0.75,
-    "Manager":              0.55,
-    "Individual Contributor":0.30,
-    "Non-Prospect":         0.00,
+    "C-Level":               1.00,
+    "VP":                    0.90,
+    "Director":              0.75,
+    "Manager":               0.55,
+    "Individual Contributor":0.35,
+    None:                    0.35,
+    "Non-Prospect":          0.00,
 }
 
-# Free email domains (known list — DQ-11 means this is incomplete)
+TARGET_INDUSTRIES = {
+    "Financial Services", "Healthcare", "Technology",
+    "Government", "Telecommunications", "Insurance"
+}
+
 FREE_EMAIL_DOMAINS = {
     "gmail.com", "yahoo.com", "hotmail.com", "outlook.com",
     "rediffmail.com", "yandex.com", "mail.ru", "gmx.de", "libero.it"
 }
-
 SHARED_PREFIXES = {"info", "sales", "contact", "admin", "support", "hello", "team"}
+
+HARD_BLOCK_FLAGS = {"NON_PROSPECT", "COMPETITOR", "DO_NOT_CONTACT"}
+
+# ─────────────────────────────────────────────
+# HELPER: percentile rank → 0-1
+# ─────────────────────────────────────────────
+def pct_rank(series, ascending=True):
+    """
+    Convert a Series to percentile ranks in [0, 1].
+    ascending=True  → higher value = higher rank (e.g. more engagements = better)
+    ascending=False → lower value = higher rank (e.g. fewer days since = better)
+    """
+    filled = series.fillna(0)
+    ranks  = rankdata(filled, method="average")
+    normed = (ranks - 1) / max(len(ranks) - 1, 1)
+    if not ascending:
+        normed = 1 - normed
+    return pd.Series(normed, index=series.index)
+
 
 # ─────────────────────────────────────────────
 # LAYER 0 — LOAD DATA
 # ─────────────────────────────────────────────
-print("=" * 55)
-print("CRM PRIORITIZATION SCORING MODEL")
-print("=" * 55)
+print("=" * 60)
+print("CRM PRIORITIZATION — PERCENTILE-NORMALIZED HYBRID MODEL")
+print("=" * 60)
 
 print("\n[Layer 0] Loading data...")
-leads_df   = pd.read_csv(f"{DATA_DIR}/leads.csv",            low_memory=False)
-contacts_df= pd.read_csv(f"{DATA_DIR}/contacts.csv",         low_memory=False)
-accounts_df= pd.read_csv(f"{DATA_DIR}/accounts.csv",         low_memory=False)
-cm_df      = pd.read_csv(f"{DATA_DIR}/campaign_members.csv", low_memory=False)
-
+leads_df    = pd.read_csv(f"{DATA_DIR}/leads.csv",            low_memory=False)
+contacts_df = pd.read_csv(f"{DATA_DIR}/contacts.csv",         low_memory=False)
+accounts_df = pd.read_csv(f"{DATA_DIR}/accounts.csv",         low_memory=False)
+cm_df       = pd.read_csv(f"{DATA_DIR}/campaign_members.csv", low_memory=False)
 cm_df["response_date"] = pd.to_datetime(cm_df["response_date"], errors="coerce")
 
 print(f"  Leads:           {len(leads_df):,}")
@@ -92,55 +93,44 @@ print(f"  CampaignMembers: {len(cm_df):,}")
 # ─────────────────────────────────────────────
 print("\n[Layer 1] Cleaning & normalizing...")
 
-# --- 1a. Unify leads + contacts into one master table ---
-leads_unified = leads_df.rename(columns={
-    "lead_id":         "entity_id",
-    "mkto_lead_score": "mkto_score",
+leads_u = leads_df.rename(columns={
+    "lead_id":           "entity_id",
+    "mkto_lead_score":   "mkto_score",
     "linked_account_id": "account_id",
 }).copy()
-leads_unified["entity_type"] = "lead"
-leads_unified["is_mql"]      = leads_unified["lead_status"] == "MQL"
-leads_unified["has_lead_origin"] = False  # leads are leads
+leads_u["entity_type"]    = "lead"
+leads_u["is_mql"]         = leads_u["lead_status"] == "MQL"
+leads_u["has_lead_origin"]= False
 
-contacts_unified = contacts_df.rename(columns={
-    "contact_id":          "entity_id",
-    "mkto_contact_score":  "mkto_score",
+contacts_u = contacts_df.rename(columns={
+    "contact_id":         "entity_id",
+    "mkto_contact_score": "mkto_score",
 }).copy()
-contacts_unified["entity_type"]    = "contact"
-contacts_unified["is_converted"]   = contacts_unified["has_lead_origin"]
-contacts_unified["converted_contact_id"] = None
-contacts_unified["lead_status"]    = contacts_unified["contact_status"]
-contacts_unified["lead_source"]    = None
-contacts_unified["company"]        = None
-contacts_unified["is_disqualified"]= False
-contacts_unified["dq_reason"]      = None
-contacts_unified["dq_date"]        = None
+contacts_u["entity_type"]          = "contact"
+contacts_u["is_converted"]         = contacts_u["has_lead_origin"]
+contacts_u["converted_contact_id"] = None
+contacts_u["lead_status"]          = contacts_u["contact_status"]
+contacts_u["lead_source"]          = None
+contacts_u["company"]              = None
+contacts_u["is_disqualified"]      = False
+contacts_u["dq_reason"]            = None
+contacts_u["dq_date"]              = None
 
-# Common columns to keep
-KEEP_COLS = [
+KEEP = [
     "entity_id", "entity_type", "email", "first_name", "last_name",
     "title", "job_persona", "job_level", "lead_status", "lead_source",
     "created_date", "mql_date", "mkto_score", "is_mql",
     "is_converted", "converted_contact_id",
     "is_disqualified", "dq_reason", "dq_date",
     "has_opted_out", "email_bounced", "no_longer_with_company",
-    "account_id", "has_lead_origin",
-    "_archetype",
+    "account_id", "has_lead_origin", "_archetype",
 ]
+for col in KEEP:
+    if col not in leads_u.columns:    leads_u[col]    = None
+    if col not in contacts_u.columns: contacts_u[col] = None
 
-# Add missing cols as None
-for col in KEEP_COLS:
-    if col not in leads_unified.columns:
-        leads_unified[col] = None
-    if col not in contacts_unified.columns:
-        contacts_unified[col] = None
+records = pd.concat([leads_u[KEEP], contacts_u[KEEP]], ignore_index=True)
 
-records = pd.concat(
-    [leads_unified[KEEP_COLS], contacts_unified[KEEP_COLS]],
-    ignore_index=True
-)
-
-# --- 1b. Merge account data ---
 records = records.merge(
     accounts_df[[
         "account_id", "industry", "employee_count", "annual_revenue",
@@ -149,509 +139,325 @@ records = records.merge(
     on="account_id", how="left"
 )
 
-# --- 1c. Email classification ---
 def classify_email(email):
-    if pd.isna(email) or email == "":
-        return "missing"
+    if pd.isna(email) or not str(email).strip(): return "missing"
     local, _, domain = str(email).lower().partition("@")
-    if not domain:
-        return "malformed"
-    if local in SHARED_PREFIXES:
-        return "shared_mailbox"
-    if domain in FREE_EMAIL_DOMAINS:
-        return "free_email"
+    if not domain: return "malformed"
+    if local in SHARED_PREFIXES: return "shared_mailbox"
+    if domain in FREE_EMAIL_DOMAINS: return "free_email"
     return "corporate"
 
 records["email_type"] = records["email"].apply(classify_email)
 
-# --- 1d. Normalize mkto_score to 0-100 ---
-# Leads use 0-300 scale, contacts 0-200 scale (DQ-5)
-def normalize_score(row):
+def normalize_mkto(row):
     s = row["mkto_score"]
-    if pd.isna(s):
-        return 0
-    if row["entity_type"] == "lead":
-        return min(float(s) / 300 * 100, 100)
-    else:
-        return min(float(s) / 200 * 100, 100)
+    if pd.isna(s): return 0.0
+    scale = 300.0 if row["entity_type"] == "lead" else 200.0
+    return min(float(s) / scale * 100, 100.0)
 
-records["mkto_score_normalized"] = records.apply(normalize_score, axis=1)
-
+records["mkto_score_normalized"] = records.apply(normalize_mkto, axis=1)
 print(f"  Unified records: {len(records):,}")
-print(f"  With account:    {records['account_id'].notna().sum():,}")
-print(f"  Corporate email: {(records['email_type'] == 'corporate').sum():,}")
 
 # ─────────────────────────────────────────────
 # LAYER 2 — FEATURE ENGINEERING
 # ─────────────────────────────────────────────
-print("\n[Layer 2] Engineering features from campaign history...")
+print("\n[Layer 2] Engineering raw engagement features...")
 
-# --- 2a. Filter out automated-only signals ---
-# Real engagement = is_responded = True (not just "Sent")
-cm_real    = cm_df[cm_df["is_responded"] == True].copy()
-cm_all     = cm_df.copy()
+cm_real = cm_df[cm_df["is_responded"] == True].copy()
 
-# --- 2b. Per-entity engagement features ---
-def compute_engagement_features(entity_id):
-    rows_all  = cm_all[cm_all["entity_id"] == entity_id]
-    rows_real = cm_real[cm_real["entity_id"] == entity_id]
+def engagement_features(entity_id):
+    all_rows  = cm_df[cm_df["entity_id"] == entity_id]
+    real_rows = cm_real[cm_real["entity_id"] == entity_id]
 
-    total_all    = len(rows_all)
-    total_real   = len(rows_real)
-    auto_count   = total_all - total_real
-    auto_share   = auto_count / total_all if total_all > 0 else 0
+    total_all  = len(all_rows)
+    total_real = len(real_rows)
+    auto_share = (total_all - total_real) / total_all if total_all > 0 else 0.0
 
     if total_real == 0:
         return {
-            "total_engagements":     total_all,
-            "real_engagements":      0,
-            "auto_share":            auto_share,
-            "days_since_last":       999,
-            "days_since_first":      999,
-            "recent_30d":            0,
-            "recent_90d":            0,
-            "webinar_attended":      0,
-            "event_attended":        0,
-            "content_responded":     0,
-            "engagement_quality_avg":0.0,
-            "burst_score":           0.0,
+            "real_responses_30d":         0,
+            "real_responses_90d":         0,
+            "webinar_event_attended_90d": 0,
+            "days_since_last_response":   999,
+            "auto_share":                 auto_share,
+            "total_engagements":          total_all,
+            "real_engagements":           0,
         }
 
-    last_date  = rows_real["response_date"].max()
-    first_date = rows_real["response_date"].min()
-    days_since_last  = (NOW - last_date).days  if pd.notna(last_date)  else 999
-    days_since_first = (NOW - first_date).days if pd.notna(first_date) else 999
+    last_date  = real_rows["response_date"].max()
+    days_since = (NOW - last_date).days if pd.notna(last_date) else 999
 
-    recent_30d = rows_real[rows_real["response_date"] >= NOW - pd.Timedelta(days=30)]
-    recent_90d = rows_real[rows_real["response_date"] >= NOW - pd.Timedelta(days=90)]
+    r30 = real_rows[real_rows["response_date"] >= NOW - pd.Timedelta(days=30)]
+    r90 = real_rows[real_rows["response_date"] >= NOW - pd.Timedelta(days=90)]
 
-    webinar_attended  = ((rows_real["campaign_type"] == "Webinar") &
-                         (rows_real["member_status"] == "Attended")).sum()
-    event_attended    = ((rows_real["campaign_type"] == "Event") &
-                         (rows_real["member_status"] == "Attended")).sum()
-    content_responded = ((rows_real["campaign_type"] == "Content Syndication") &
-                         (rows_real["member_status"] == "Responded")).sum()
-
-    # Engagement quality score per row
-    def eq_score(r):
-        return ENGAGEMENT_QUALITY_MAP.get(
-            (r["campaign_type"], r["member_status"]), 0.10
-        )
-    quality_scores = rows_real.apply(eq_score, axis=1)
-    eq_avg = quality_scores.mean() if len(quality_scores) > 0 else 0.0
-
-    # Burst score: ratio of last-30d to total real engagements
-    burst = len(recent_30d) / total_real if total_real > 0 else 0.0
+    webinar_event_90d = int((
+        (r90["campaign_type"].isin(["Webinar", "Event"])) &
+        (r90["member_status"] == "Attended")
+    ).sum())
 
     return {
-        "total_engagements":     total_all,
-        "real_engagements":      total_real,
-        "auto_share":            round(auto_share, 3),
-        "days_since_last":       int(days_since_last),
-        "days_since_first":      int(days_since_first),
-        "recent_30d":            len(recent_30d),
-        "recent_90d":            len(recent_90d),
-        "webinar_attended":      int(webinar_attended),
-        "event_attended":        int(event_attended),
-        "content_responded":     int(content_responded),
-        "engagement_quality_avg":round(eq_avg, 3),
-        "burst_score":           round(burst, 3),
+        "real_responses_30d":         len(r30),
+        "real_responses_90d":         len(r90),
+        "webinar_event_attended_90d": webinar_event_90d,
+        "days_since_last_response":   int(days_since),
+        "auto_share":                 round(auto_share, 3),
+        "total_engagements":          total_all,
+        "real_engagements":           total_real,
     }
 
-print("  Computing per-entity engagement features (this takes ~30s)...")
-eng_features = records["entity_id"].apply(compute_engagement_features)
-eng_df = pd.DataFrame(eng_features.tolist(), index=records.index)
+print("  Computing per-entity features (~30s)...")
+eng_df = pd.DataFrame(
+    records["entity_id"].apply(engagement_features).tolist(),
+    index=records.index
+)
 records = pd.concat([records, eng_df], axis=1)
 
-print(f"  Avg real engagements: {records['real_engagements'].mean():.1f}")
-print(f"  Records with 0 real engagement: {(records['real_engagements'] == 0).sum():,}")
-print(f"  Automation-inflated (>70% auto): {(records['auto_share'] > 0.70).sum():,}")
+print(f"  Avg real engagements:       {records['real_engagements'].mean():.1f}")
+print(f"  Zero engagement records:    {(records['real_engagements']==0).sum():,}")
+print(f"  Automation-inflated (>70%): {(records['auto_share']>0.70).sum():,}")
 
 # ─────────────────────────────────────────────
-# LAYER 3 — COMPONENT SCORING (each 0-100)
+# LAYER 3 — COMPONENT SCORING
 # ─────────────────────────────────────────────
-print("\n[Layer 3] Computing component scores...")
+print("\n[Layer 3] Computing percentile-normalized component scores...")
 
-# --- 3a. ENGAGEMENT RECENCY SCORE ---
-# Time-decay: score drops as days since last engagement increases
-# 0-7 days → ~100, 8-30 days → ~80, 31-90 days → ~55,
-# 91-180 days → ~30, 181-365 → ~15, 365+ → ~5, no engagement → 0
+# ── 3a. ENGAGEMENT COMPONENT ──────────────────
+# Percentile rank each sub-feature WITHIN entity type
+# Avoids disadvantaging leads which have thinner engagement history
+print("  [3a] Engagement — within-entity-type percentiles...")
 
-def recency_score(days):
-    if days >= 999:
-        return 0.0
-    if days <= 7:
-        return 100.0
-    if days <= 30:
-        return 100 - ((days - 7) / 23) * 20     # 100 → 80
-    if days <= 90:
-        return 80  - ((days - 30) / 60) * 25    # 80  → 55
-    if days <= 180:
-        return 55  - ((days - 90) / 90) * 25    # 55  → 30
-    if days <= 365:
-        return 30  - ((days - 180) / 185) * 15  # 30  → 15
-    return max(0, 15 - ((days - 365) / 365) * 10)
+for etype in ["lead", "contact"]:
+    mask = records["entity_type"] == etype
+    records.loc[mask, "pct_responses_30d"] = pct_rank(
+        records.loc[mask, "real_responses_30d"], ascending=True).values
+    records.loc[mask, "pct_responses_90d"] = pct_rank(
+        records.loc[mask, "real_responses_90d"], ascending=True).values
+    records.loc[mask, "pct_webinar_90d"]   = pct_rank(
+        records.loc[mask, "webinar_event_attended_90d"], ascending=True).values
+    # Recency: lower days = better → descending
+    records.loc[mask, "pct_recency"]       = pct_rank(
+        records.loc[mask, "days_since_last_response"], ascending=False).values
 
-records["score_recency"] = records["days_since_last"].apply(recency_score).round(1)
+# Combine sub-features, penalize by automation share
+records["engagement_component"] = (
+    records[["pct_responses_30d", "pct_responses_90d",
+             "pct_webinar_90d",   "pct_recency"]].mean(axis=1)
+    * (1 - 0.5 * records["auto_share"])
+).round(4)
 
-# Boost for burst activity (concentrated recent engagement)
-records["score_recency"] = (
-    records["score_recency"] + records["burst_score"] * 10
-).clip(upper=100).round(1)
+# ── 3b. ACCOUNT COMPONENT ─────────────────────
+# Numeric fields percentile-ranked cross-population
+# Missing account → neutral 0.25 (not zero — avoids penalizing orphan leads)
+print("  [3b] Account — cross-population percentiles...")
 
-# --- 3b. ENGAGEMENT QUALITY SCORE ---
-# Based on quality of interactions, volume of high-intent touches,
-# and discount for automation inflation
+records["pct_employee_count"] = pct_rank(records["employee_count"].fillna(0)).values
+records["pct_annual_revenue"] = pct_rank(records["annual_revenue"].fillna(0)).values
+records["pct_intent"]         = pct_rank(records["intent_score"].fillna(0)).values
 
-def quality_score(row):
-    if row["real_engagements"] == 0:
-        return 0.0
-
-    # Base: avg quality of engagements (0-1 scale → 0-100)
-    base = row["engagement_quality_avg"] * 100
-
-    # Volume bonus: more real engagements = higher score, diminishing returns
-    volume_bonus = min(row["real_engagements"] / 20, 1.0) * 20
-
-    # High-intent channel bonuses
-    channel_bonus = (
-        min(row["webinar_attended"],  3) * 5 +
-        min(row["event_attended"],    3) * 5 +
-        min(row["content_responded"], 3) * 3
-    )
-
-    raw = base + volume_bonus + channel_bonus
-
-    # Automation inflation penalty (DQ-8)
-    if row["auto_share"] > 0.70:
-        raw *= 0.50   # 50% penalty for heavily automated records
-
-    return min(raw, 100.0)
-
-records["score_quality"] = records.apply(quality_score, axis=1).round(1)
-
-# --- 3c. PROFILE FIT SCORE ---
-def profile_score(row):
-    persona_s = PERSONA_SCORE.get(row["job_persona"], 0.50) * 50  # 0-50
-    level_s   = LEVEL_SCORE.get(row["job_level"],   0.40) * 30   # 0-30
-
-    # Title present bonus
-    title_bonus = 10 if pd.notna(row["title"]) and row["title"] != "" else 0
-
-    # Lead source quality bonus
-    source_bonus = {
-        "Webinar": 10, "Event": 10, "Referral": 8,
-        "Content Syndication": 6, "Web": 4,
-        "Partner": 5, "Purchased List": 0,
-    }.get(str(row.get("lead_source", "")), 3)
-
-    raw = persona_s + level_s + title_bonus + source_bonus
-    return min(raw, 100.0)
-
-records["score_profile"] = records.apply(profile_score, axis=1).round(1)
-
-# --- 3d. ACCOUNT FIT SCORE ---
-def account_score(row):
+def account_component(row):
     if pd.isna(row.get("account_id")):
-        return 10.0   # No account = low but not zero
+        return 0.25   # neutral — not zero
+    flags = [
+        1.0 if row.get("is_icp_qualified") else 0.0,
+        1.0 if row.get("is_named_account") else 0.0,
+        1.0 if str(row.get("industry","")) in TARGET_INDUSTRIES else 0.0,
+        float(row.get("pct_employee_count", 0.5)),
+        float(row.get("pct_annual_revenue",  0.5)),
+    ]
+    return round(np.mean(flags), 4)
 
-    score = 0.0
+records["account_component"] = records.apply(account_component, axis=1)
 
-    # ICP match
-    if row.get("is_icp_qualified"):
-        score += 35
+# ── 3c. PERSONA COMPONENT ─────────────────────
+# Categorical → calibrated ordinal map
+# No honest statistical alternative without conversion labels
+print("  [3c] Persona — calibrated ordinal map...")
 
-    # Named account (manually curated target list)
-    if row.get("is_named_account"):
-        score += 25
+def persona_component(row):
+    p = PERSONA_SCORE.get(row.get("job_persona"), 0.35)
+    l = LEVEL_SCORE.get(row.get("job_level"),    0.35)
+    return round((p + l) / 2, 4)
 
-    # Intent score from third-party vendor (0-100 → 0-25 pts)
-    intent = row.get("intent_score", 0)
-    if pd.notna(intent):
-        score += float(intent) / 100 * 25
+records["persona_component"] = records.apply(persona_component, axis=1)
 
-    # Company size tier
-    emp = row.get("employee_count", 0)
-    if pd.notna(emp):
-        emp = float(emp)
-        if emp > 5000:
-            score += 15
-        elif emp > 1000:
-            score += 10
-        elif emp > 200:
-            score += 5
+# ── 3d. INTENT COMPONENT ──────────────────────
+# Account intent score as population percentile
+# Answers: is this account high-intent vs the rest of our database?
+print("  [3d] Intent — account intent percentile...")
+records["intent_component"] = records["pct_intent"].round(4)
 
-    return min(score, 100.0)
-
-records["score_account"] = records.apply(account_score, axis=1).round(1)
-
-print(f"  Avg recency score:  {records['score_recency'].mean():.1f}")
-print(f"  Avg quality score:  {records['score_quality'].mean():.1f}")
-print(f"  Avg profile score:  {records['score_profile'].mean():.1f}")
-print(f"  Avg account score:  {records['score_account'].mean():.1f}")
+print(f"\n  Avg engagement component: {records['engagement_component'].mean():.3f}")
+print(f"  Avg account component:    {records['account_component'].mean():.3f}")
+print(f"  Avg persona component:    {records['persona_component'].mean():.3f}")
+print(f"  Avg intent component:     {records['intent_component'].mean():.3f}")
 
 # ─────────────────────────────────────────────
-# LAYER 4 — PERCENTILE RANKING + FINAL SCORE + TIER + FLAGS
+# LAYER 4 — FINAL SCORE + QUANTILE TIERS + FLAGS
 # ─────────────────────────────────────────────
-print("\n[Layer 4] Computing percentile ranks, final scores, tiers, and DQ flags...")
+print("\n[Layer 4] Final score, quantile tiers, DQ flags...")
 
-# --- 4a. Convert each component to percentile rank (0-100) ---
-# rankdata assigns ranks 1..N, then we normalize to 0-100
-# method='average' handles ties by averaging their ranks
-# This means a score of 75 = "this record is better than 75% of all records"
+# ── 4a. Weighted readiness score ──────────────
+records["readiness_raw"] = (
+    records["engagement_component"] * WEIGHTS["engagement"] +
+    records["account_component"]    * WEIGHTS["account"]    +
+    records["persona_component"]    * WEIGHTS["persona"]    +
+    records["intent_component"]     * WEIGHTS["intent"]
+)
+records["readiness_score"] = (records["readiness_raw"] * 100).round(1)
 
-def to_percentile(series):
-    ranks = rankdata(series.fillna(0), method="average")
-    return pd.Series(
-        (ranks - 1) / (len(ranks) - 1) * 100,
-        index=series.index
-    ).round(1)
-
-records["pct_recency"] = to_percentile(records["score_recency"])
-records["pct_quality"] = to_percentile(records["score_quality"])
-records["pct_profile"] = to_percentile(records["score_profile"])
-records["pct_account"] = to_percentile(records["score_account"])
-
-print(f"  Percentile recency — median: {records['pct_recency'].median():.1f}")
-print(f"  Percentile quality — median: {records['pct_quality'].median():.1f}")
-print(f"  Percentile profile — median: {records['pct_profile'].median():.1f}")
-print(f"  Percentile account — median: {records['pct_account'].median():.1f}")
-
-# --- 4b. Weighted combination of percentile ranks → final readiness score ---
-# Now the weights are applied to relative population ranks, not raw scores.
-# A weight of 0.35 on recency means: "where you rank on recency matters
-# 35% of your final position in the overall ranking."
-records["readiness_score"] = (
-    records["pct_recency"] * WEIGHTS["engagement_recency"] +
-    records["pct_quality"] * WEIGHTS["engagement_quality"] +
-    records["pct_profile"] * WEIGHTS["profile_fit"] +
-    records["pct_account"] * WEIGHTS["account_fit"]
-).round(1)
-
-# --- 4b. DQ FLAGS (overlay — orthogonal to score) ---
-# These don't lower the score; they flag records for BDR awareness
-
+# ── 4b. DQ FLAGS ──────────────────────────────
 def compute_flags(row):
     flags = []
-
-    # Structural outreach blocks
-    if row.get("has_opted_out"):
-        flags.append("OPT_OUT")
-    if row.get("email_bounced"):
-        flags.append("EMAIL_BOUNCED")
-    if row.get("no_longer_with_company"):
-        flags.append("NO_LONGER_WITH_COMPANY")
-    if row.get("do_not_contact"):
-        flags.append("DO_NOT_CONTACT")
-
-    # Non-prospect contamination (DQ-6)
-    if row.get("job_persona") == "Non-Prospect":
-        flags.append("NON_PROSPECT")
+    if row.get("has_opted_out"):                    flags.append("OPT_OUT")
+    if row.get("email_bounced"):                    flags.append("EMAIL_BOUNCED")
+    if row.get("no_longer_with_company"):           flags.append("NO_LONGER_WITH_COMPANY")
+    if row.get("do_not_contact"):                   flags.append("DO_NOT_CONTACT")
+    if row.get("job_persona") == "Non-Prospect":    flags.append("NON_PROSPECT")
     if row.get("is_disqualified") and row.get("dq_reason") == "Competitor":
         flags.append("COMPETITOR")
-
-    # Email quality issues (DQ-11, DQ-2)
-    if row.get("email_type") == "free_email":
-        flags.append("FREE_EMAIL")
-    if row.get("email_type") == "shared_mailbox":
-        flags.append("SHARED_MAILBOX")
-
-    # Automation inflation (DQ-8)
-    if row.get("auto_share", 0) > 0.70:
-        flags.append("AUTOMATION_INFLATED")
-
-    # Broken conversion link (DQ-1)
+    if row.get("email_type") == "free_email":       flags.append("FREE_EMAIL")
+    if row.get("email_type") == "shared_mailbox":   flags.append("SHARED_MAILBOX")
+    if row.get("auto_share", 0) > 0.70:             flags.append("AUTOMATION_INFLATED")
     if (row.get("is_converted") and
         (pd.isna(row.get("converted_contact_id")) or
-         row.get("converted_contact_id") == "")):
-        flags.append("BROKEN_CONV_LINK")
-
-    # Stale engagement despite high legacy score
-    if row.get("days_since_last", 999) > 180 and row.get("mkto_score_normalized", 0) > 50:
-        flags.append("STALE_LEGACY_SCORE")
-
-    # No engagement at all
-    if row.get("real_engagements", 0) == 0:
-        flags.append("NO_ENGAGEMENT")
-
-    # Data completeness issues (DQ-7)
-    missing_fields = []
-    if pd.isna(row.get("title"))       or row.get("title")       == "": missing_fields.append("title")
-    if pd.isna(row.get("job_persona")) or row.get("job_persona") == "": missing_fields.append("persona")
-    if pd.isna(row.get("job_level"))   or row.get("job_level")   == "": missing_fields.append("level")
-    if pd.isna(row.get("account_id"))                                  : missing_fields.append("account")
-    if len(missing_fields) >= 2:
-        flags.append(f"INCOMPLETE_PROFILE")
-
+         row.get("converted_contact_id") == "")):   flags.append("BROKEN_CONV_LINK")
+    if (row.get("days_since_last_response", 999) > 180 and
+        row.get("mkto_score_normalized", 0) > 50):  flags.append("STALE_LEGACY_SCORE")
+    if row.get("real_engagements", 0) == 0:         flags.append("NO_ENGAGEMENT")
+    missing = sum([
+        pd.isna(row.get("title"))       or str(row.get("title",""))       == "",
+        pd.isna(row.get("job_persona")) or str(row.get("job_persona","")) == "",
+        pd.isna(row.get("job_level"))   or str(row.get("job_level",""))   == "",
+        pd.isna(row.get("account_id")),
+    ])
+    if missing >= 2: flags.append("INCOMPLETE_PROFILE")
     return "|".join(flags) if flags else ""
 
-records["dq_flags"]    = records.apply(compute_flags, axis=1)
-records["flag_count"]  = records["dq_flags"].apply(
+records["dq_flags"]   = records.apply(compute_flags, axis=1)
+records["flag_count"] = records["dq_flags"].apply(
     lambda x: len(x.split("|")) if x else 0
 )
 
-# --- 4c. Is this record actionable? ---
-# Hard blocks: competitor, opted out + no recent non-email engagement, DNC
-HARD_BLOCK_FLAGS = {"NON_PROSPECT", "COMPETITOR", "DO_NOT_CONTACT"}
-
+# ── 4c. Actionability ─────────────────────────
 def is_actionable(row):
     flags = set(row["dq_flags"].split("|")) if row["dq_flags"] else set()
-    if flags & HARD_BLOCK_FLAGS:
-        return False
-    # Opted out AND no recent in-person engagement → not actionable
-    if "OPT_OUT" in flags and row.get("event_attended", 0) == 0:
+    if flags & HARD_BLOCK_FLAGS: return False
+    if "OPT_OUT" in flags and row.get("webinar_event_attended_90d", 0) == 0:
         return False
     return True
 
 records["is_actionable"] = records.apply(is_actionable, axis=1)
 
-# --- 4d. Tiers ---
-# Only actionable records get tiers; blocked ones get "Excluded"
+# ── 4d. QUANTILE-BASED TIER ASSIGNMENT ────────
+# Tiers based on score distribution of ACTIONABLE records only
+# Top 10%  → Call Now
+# Next 20% → Work This Week
+# Next 40% → Nurture
+# Bottom 30% → Low Priority
+actionable_scores = records[records["is_actionable"]]["readiness_score"]
+q90 = actionable_scores.quantile(0.90)
+q70 = actionable_scores.quantile(0.70)
+q30 = actionable_scores.quantile(0.30)
+
+print(f"\n  Quantile thresholds (actionable records):")
+print(f"    Top 10%  → Call Now         ≥ {q90:.1f}")
+print(f"    Top 30%  → Work This Week   ≥ {q70:.1f}")
+print(f"    Top 70%  → Nurture          ≥ {q30:.1f}")
+print(f"    Bottom 30% → Low Priority   <  {q30:.1f}")
+
 def assign_tier(row):
-    if not row["is_actionable"]:
-        return "Excluded"
+    if not row["is_actionable"]: return "Blocked"
     s = row["readiness_score"]
-    if s >= 65:
-        return "High"
-    elif s >= 40:
-        return "Medium"
-    else:
-        return "Low"
+    if s >= q90: return "Call Now"
+    if s >= q70: return "Work This Week"
+    if s >= q30: return "Nurture"
+    return "Low Priority"
 
 records["priority_tier"] = records.apply(assign_tier, axis=1)
 
-# --- 4e. Score explanation (human-readable) ---
+# ── 4e. Score explanation ──────────────────────
 def score_explanation(row):
     parts = []
-
-    # Recency
-    d = row.get("days_since_last", 999)
-    if d <= 7:
-        parts.append("engaged in last 7 days")
-    elif d <= 30:
-        parts.append("engaged in last 30 days")
-    elif d <= 90:
-        parts.append("engaged in last 90 days")
-    elif d < 999:
-        parts.append(f"last engagement {d} days ago (stale)")
-    else:
-        parts.append("no recorded engagement")
-
-    # Quality highlights
-    if row.get("webinar_attended", 0) > 0:
-        parts.append(f"attended {int(row['webinar_attended'])} webinar(s)")
-    if row.get("event_attended", 0) > 0:
-        parts.append(f"attended {int(row['event_attended'])} event(s)")
+    d = row.get("days_since_last_response", 999)
+    if d <= 7:    parts.append("engaged in last 7 days")
+    elif d <= 30: parts.append("engaged in last 30 days")
+    elif d <= 90: parts.append("engaged in last 90 days")
+    elif d < 999: parts.append(f"last engagement {d} days ago (stale)")
+    else:         parts.append("no recorded engagement")
+    if row.get("webinar_event_attended_90d", 0) > 0:
+        parts.append(f"attended {int(row['webinar_event_attended_90d'])} webinar/event(s) in 90d")
+    if row.get("real_responses_30d", 0) > 0:
+        parts.append(f"{int(row['real_responses_30d'])} real responses in 30d")
     if row.get("auto_share", 0) > 0.70:
         parts.append("⚠ engagement mostly automated emails")
-
-    # Profile
-    persona = row.get("job_persona", "")
-    level   = row.get("job_level", "")
-    if persona and persona not in ("Non-Prospect", "nan", None):
+    persona = str(row.get("job_persona", "") or "")
+    level   = str(row.get("job_level",   "") or "")
+    if persona and persona not in ("Non-Prospect", "nan", ""):
         parts.append(f"{level} {persona}".strip())
-
-    # Account
-    if row.get("is_named_account"):
-        parts.append("named target account")
-    if row.get("is_icp_qualified"):
-        parts.append("ICP-qualified account")
+    if row.get("is_named_account"):  parts.append("named target account")
+    if row.get("is_icp_qualified"):  parts.append("ICP-qualified account")
     intent = row.get("intent_score", 0)
     if pd.notna(intent) and float(intent) >= 70:
-        parts.append(f"high intent score ({int(intent)})")
-
-    # Flags summary
+        parts.append(f"high account intent ({int(intent)})")
     flags = row.get("dq_flags", "")
-    if flags:
-        parts.append(f"flags: {flags}")
-
+    if flags: parts.append(f"flags: {flags}")
     return " | ".join(parts)
 
 records["score_explanation"] = records.apply(score_explanation, axis=1)
 
 # ─────────────────────────────────────────────
-# FINAL OUTPUT TABLE
+# OUTPUT
 # ─────────────────────────────────────────────
 OUTPUT_COLS = [
-    # Identity
     "entity_id", "entity_type", "first_name", "last_name",
     "email", "email_type", "title", "job_persona", "job_level",
     "company", "lead_status",
-
-    # Score
     "readiness_score", "priority_tier", "is_actionable",
-
-    # Component scores (raw)
-    "score_recency", "score_quality", "score_profile", "score_account",
-
-    # Percentile ranks (0-100, relative to full population)
-    "pct_recency", "pct_quality", "pct_profile", "pct_account",
-
-    # Engagement features
-    "real_engagements", "total_engagements", "auto_share",
-    "days_since_last", "recent_30d", "recent_90d",
-    "webinar_attended", "event_attended", "content_responded",
-    "engagement_quality_avg", "burst_score",
-
-    # Account features
+    "engagement_component", "account_component",
+    "persona_component",    "intent_component",
+    "real_responses_30d",   "real_responses_90d",
+    "webinar_event_attended_90d", "days_since_last_response",
+    "auto_share", "real_engagements", "total_engagements",
+    "pct_responses_30d", "pct_responses_90d",
+    "pct_webinar_90d",   "pct_recency",
     "account_id", "is_icp_qualified", "is_named_account",
-    "intent_score", "employee_count", "industry",
-
-    # Marketo
+    "intent_score", "employee_count", "annual_revenue", "industry",
+    "pct_employee_count", "pct_annual_revenue", "pct_intent",
     "mkto_score", "mkto_score_normalized", "mql_date", "is_mql",
-
-    # DQ
     "dq_flags", "flag_count",
     "has_opted_out", "email_bounced", "no_longer_with_company",
     "is_disqualified", "dq_reason",
-
-    # Explanation
-    "score_explanation",
-
-    # Debug
-    "_archetype",
+    "score_explanation", "_archetype",
 ]
 
 for col in OUTPUT_COLS:
     if col not in records.columns:
         records[col] = None
 
-scored = records[OUTPUT_COLS].sort_values(
-    ["priority_tier", "readiness_score"],
-    ascending=[True, False],
-    key=lambda col: col.map({"High": 0, "Medium": 1, "Low": 2, "Excluded": 3})
-    if col.name == "priority_tier" else col
-).reset_index(drop=True)
+scored = records[OUTPUT_COLS].copy()
+scored["rank"] = scored["readiness_score"].rank(
+    ascending=False, method="min").astype(int)
+scored = scored.sort_values("rank").reset_index(drop=True)
 
-scored["rank"] = scored.index + 1
-
-# ─────────────────────────────────────────────
-# SAVE
-# ─────────────────────────────────────────────
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-out_path = f"{OUTPUT_DIR}/scored_records.csv"
-scored.to_csv(out_path, index=False)
+scored.to_csv(f"{OUTPUT_DIR}/scored_records.csv", index=False)
 
 # ─────────────────────────────────────────────
-# SUMMARY REPORT
+# SUMMARY
 # ─────────────────────────────────────────────
-print("\n" + "=" * 55)
+print("\n" + "=" * 60)
 print("SCORING SUMMARY")
-print("=" * 55)
+print("=" * 60)
+total      = len(scored)
+actionable_n = scored["is_actionable"].sum()
+print(f"\nTotal records:  {total:,}")
+print(f"Actionable:     {actionable_n:,} ({actionable_n/total:.0%})")
+print(f"Blocked:        {total-actionable_n:,} ({(total-actionable_n)/total:.0%})")
 
-total     = len(scored)
-actionable= scored["is_actionable"].sum()
-excluded  = total - actionable
-
-print(f"\nTotal records scored:  {total:,}")
-print(f"Actionable:            {actionable:,} ({actionable/total:.0%})")
-print(f"Excluded (flagged):    {excluded:,}  ({excluded/total:.0%})")
-
-print("\nTier Breakdown:")
-tier_counts = scored["priority_tier"].value_counts()
-for tier in ["High", "Medium", "Low", "Excluded"]:
-    n = tier_counts.get(tier, 0)
-    print(f"  {tier:<10} {n:>4}  ({n/total:.0%})")
+print("\nTier Breakdown (quantile-based):")
+for tier in ["Call Now", "Work This Week", "Nurture", "Low Priority", "Blocked"]:
+    n = (scored["priority_tier"] == tier).sum()
+    print(f"  {tier:<18} {n:>4}  ({n/total:.0%})")
 
 print("\nScore Distribution (actionable only):")
 act = scored[scored["is_actionable"]]
@@ -661,17 +467,16 @@ print(f"  P90:    {act['readiness_score'].quantile(0.90):.1f}")
 print(f"  P10:    {act['readiness_score'].quantile(0.10):.1f}")
 
 print("\nTop 10 Records:")
-top10_cols = ["rank", "first_name", "last_name", "entity_type",
-              "job_level", "job_persona", "readiness_score", "priority_tier",
-              "days_since_last", "real_engagements"]
-print(scored[top10_cols].head(10).to_string(index=False))
+top_cols = ["rank", "first_name", "last_name", "entity_type",
+            "job_level", "job_persona", "readiness_score", "priority_tier",
+            "days_since_last_response", "real_engagements"]
+print(scored[top_cols].head(10).to_string(index=False))
 
 print("\nArchetype Validation:")
-arch = scored[scored["_archetype"].notna()][
-    ["_archetype", "readiness_score", "priority_tier", "dq_flags"]
-].sort_values("readiness_score", ascending=False)
+arch = scored[scored["_archetype"].notna()][[
+    "_archetype", "readiness_score", "priority_tier", "dq_flags"
+]].sort_values("readiness_score", ascending=False)
 print(arch.to_string(index=False))
 
-print(f"\n✅ Scored records saved to: {out_path}")
-print(f"   Columns: {len(scored.columns)}")
-print(f"   Rows:    {len(scored):,}")
+print(f"\n✅ Saved → {OUTPUT_DIR}/scored_records.csv")
+print(f"   Rows: {len(scored):,}  |  Columns: {len(scored.columns)}")

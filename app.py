@@ -38,17 +38,19 @@ df = load_data()
 # TIER COLORS
 # ─────────────────────────────────────────────
 TIER_COLOR = {
-    "High":     "#16a34a",
-    "Medium":   "#d97706",
-    "Low":      "#6b7280",
-    "Excluded": "#dc2626",
+    "Call Now":       "#16a34a",
+    "Work This Week": "#d97706",
+    "Nurture":        "#6b7280",
+    "Low Priority":   "#94a3b8",
+    "Blocked":        "#dc2626",
 }
 
 TIER_EMOJI = {
-    "High":     "🟢",
-    "Medium":   "🟡",
-    "Low":      "⚪",
-    "Excluded": "🔴",
+    "Call Now":       "🟢",
+    "Work This Week": "🟡",
+    "Nurture":        "🔵",
+    "Low Priority":   "⚪",
+    "Blocked":        "🔴",
 }
 
 FLAG_DESCRIPTIONS = {
@@ -97,18 +99,20 @@ if page == "🏠 Overview":
     )
 
     # KPI row
-    col1, col2, col3, col4, col5 = st.columns(5)
-    total      = len(df)
-    high       = (df["priority_tier"] == "High").sum()
-    medium     = (df["priority_tier"] == "Medium").sum()
-    low        = (df["priority_tier"] == "Low").sum()
-    excluded   = (df["priority_tier"] == "Excluded").sum()
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    total         = len(df)
+    call_now      = (df["priority_tier"] == "Call Now").sum()
+    work_week     = (df["priority_tier"] == "Work This Week").sum()
+    nurture       = (df["priority_tier"] == "Nurture").sum()
+    low           = (df["priority_tier"] == "Low Priority").sum()
+    blocked       = (df["priority_tier"] == "Blocked").sum()
 
-    col1.metric("Total Records",  f"{total:,}")
-    col2.metric("🟢 High Priority", f"{high:,}",    f"{high/total:.0%}")
-    col3.metric("🟡 Medium",        f"{medium:,}",  f"{medium/total:.0%}")
-    col4.metric("⚪ Low",           f"{low:,}",     f"{low/total:.0%}")
-    col5.metric("🔴 Excluded",      f"{excluded:,}",f"{excluded/total:.0%}")
+    col1.metric("Total Records",       f"{total:,}")
+    col2.metric("🟢 Call Now",          f"{call_now:,}",  f"{call_now/total:.0%}")
+    col3.metric("🟡 Work This Week",    f"{work_week:,}", f"{work_week/total:.0%}")
+    col4.metric("🔵 Nurture",           f"{nurture:,}",   f"{nurture/total:.0%}")
+    col5.metric("⚪ Low Priority",      f"{low:,}",       f"{low/total:.0%}")
+    col6.metric("🔴 Blocked",           f"{blocked:,}",   f"{blocked/total:.0%}")
 
     st.divider()
 
@@ -135,7 +139,7 @@ if page == "🏠 Overview":
             barmode="group",
             color_discrete_map={"lead": "#3b82f6", "contact": "#8b5cf6"},
             labels={"priority_tier": "Tier", "count": "Records", "entity_type": "Type"},
-            category_orders={"priority_tier": ["High", "Medium", "Low", "Excluded"]}
+            category_orders={"priority_tier": ["Call Now", "Work This Week", "Nurture", "Low Priority", "Blocked"]}
         )
         fig2.update_layout(height=320, margin=dict(t=10, b=10))
         st.plotly_chart(fig2, use_container_width=True)
@@ -181,7 +185,7 @@ if page == "🏠 Overview":
     st.subheader("🏆 Top 10 Records to Call This Week")
     top10 = df[df["is_actionable"]].head(10)[[
         "rank", "full_name", "entity_type", "job_level", "job_persona",
-        "readiness_score", "priority_tier", "days_since_last",
+        "readiness_score", "priority_tier", "days_since_last_response",
         "real_engagements", "dq_flags"
     ]].copy()
     top10["priority_tier"] = top10["priority_tier"].apply(
@@ -201,8 +205,8 @@ elif page == "📋 Ranked List":
     with f1:
         tier_filter = st.multiselect(
             "Priority Tier",
-            ["High", "Medium", "Low", "Excluded"],
-            default=["High", "Medium"]
+            ["Call Now", "Work This Week", "Nurture", "Low Priority", "Blocked"],
+            default=["Call Now", "Work This Week"]
         )
     with f2:
         type_filter = st.multiselect(
@@ -255,7 +259,7 @@ elif page == "📋 Ranked List":
         return "background-color: #f3f4f6; color: #374151"
 
     st.dataframe(
-        show.style.map(color_score, subset=["readiness_score"]),
+        show.style.applymap(color_score, subset=["readiness_score"]),
         use_container_width=True,
         hide_index=True,
         height=520,
@@ -360,10 +364,10 @@ elif page == "🔍 Record Inspector":
     with col2:
         # Component bars
         components = {
-            "Engagement Recency (35%)":  row["score_recency"],
-            "Engagement Quality (25%)":  row["score_quality"],
-            "Profile Fit (20%)":         row["score_profile"],
-            "Account Fit (20%)":         row["score_account"],
+            "Engagement (50%)": row.get("engagement_component", 0) * 100,
+            "Account Fit (20%)": row.get("account_component", 0) * 100,
+            "Persona Fit (15%)": row.get("persona_component", 0) * 100,
+            "Intent (15%)":      row.get("intent_component", 0) * 100,
         }
         comp_df = pd.DataFrame({
             "Component": list(components.keys()),
@@ -411,9 +415,9 @@ elif page == "🔍 Record Inspector":
     e1, e2, e3, e4, e5 = st.columns(5)
     e1.metric("Real Engagements",   int(row.get("real_engagements", 0)))
     e2.metric("Total (incl. auto)", int(row.get("total_engagements", 0)))
-    e3.metric("Days Since Last",    int(row.get("days_since_last", 999))
-              if row.get("days_since_last", 999) < 999 else "Never")
-    e4.metric("Last 30 Days",       int(row.get("recent_30d", 0)))
+    e3.metric("Days Since Last",    int(row.get("days_since_last_response", 999))
+              if row.get("days_since_last_response", 999) < 999 else "Never")
+    e4.metric("Last 30 Days",       int(row.get("real_responses_30d", 0)))
     e5.metric("Automation Share",   f"{row.get('auto_share', 0):.0%}")
 
     # ── Account Info ──
@@ -447,14 +451,57 @@ elif page == "⚙️ Methodology":
         "**The core idea:** A record's readiness to receive a BDR call is determined "
         "by four independent dimensions — how recently they engaged, how meaningful "
         "that engagement was, how strong their profile fit is, and how attractive "
-        "their account is. These are combined into a single 0–100 score."
+        "their account is. Each dimension is converted to a **percentile rank** "
+        "within the full population, then combined into a single 0–100 score."
     )
 
+    st.subheader("📊 Scoring Approach: Percentile Ranking")
+    st.markdown("""
+    Instead of combining raw scores directly, each component is first converted to a
+    **percentile rank** — where does this record sit relative to all 1,004 records?
+
+    - A score of **80** means this record ranks better than **80% of all records** on that dimension
+    - A score of **50** means exactly average — half the population scores higher, half lower
+    - This makes the score population-relative, not threshold-dependent
+
+    **Why percentile ranking is better than raw weighted averages:**
+    """)
+
+    compare_df = pd.DataFrame({
+        "Aspect": [
+            "Outlier sensitivity",
+            "Score meaning",
+            "Lead vs Contact fairness",
+            "Distribution shape",
+            "Explainability",
+        ],
+        "Raw Weighted Average (old)": [
+            "One extreme record skews everyone else",
+            "Arbitrary — '72' has no clear meaning",
+            "Contacts score higher due to richer data",
+            "Clustered, hard to differentiate middle tier",
+            "Hard to explain why cutoffs were chosen",
+        ],
+        "Percentile Ranking (current)": [
+            "Outliers don't affect others' relative position",
+            "Clear — '72' means better than 72% of records",
+            "Both compared against same population fairly",
+            "Naturally spread across 0-100 range",
+            "Intuitive — rank in population is easy to grasp",
+        ]
+    })
+    st.dataframe(compare_df, use_container_width=True, hide_index=True)
+
     st.subheader("📐 Component Weights")
+    st.markdown(
+        "Weights are applied **after** percentile ranking — so they weight "
+        "each dimension's relative importance, not raw values."
+    )
     weights_df = pd.DataFrame({
-        "Component":   ["Engagement Recency", "Engagement Quality", "Profile Fit", "Account Fit"],
-        "Weight":      ["35%", "25%", "20%", "20%"],
-        "Why":         [
+        "Component":        ["Engagement Recency", "Engagement Quality", "Profile Fit", "Account Fit"],
+        "Weight":           ["35%", "25%", "20%", "20%"],
+        "Percentile Field": ["pct_recency", "pct_quality", "pct_profile", "pct_account"],
+        "Why": [
             "Recency is the strongest predictor — someone who engaged last week is far more ready than someone who engaged last year",
             "Not all engagement is equal — attending a webinar signals far more intent than receiving an automated email",
             "Seniority and persona determine if this person can actually buy or influence a purchase",
@@ -462,6 +509,15 @@ elif page == "⚙️ Methodology":
         ]
     })
     st.dataframe(weights_df, use_container_width=True, hide_index=True)
+
+    st.markdown("""
+    **Formula:**
+    ```
+    readiness_score = (pct_recency × 0.35) + (pct_quality × 0.25)
+                    + (pct_profile × 0.20) + (pct_account × 0.20)
+    ```
+    Where each `pct_*` is the record's percentile rank (0–100) within the full population.
+    """)
 
     st.subheader("⏱ Engagement Recency — Time Decay Curve")
     days  = list(range(0, 400, 5))
@@ -511,21 +567,28 @@ elif page == "⚙️ Methodology":
     })
     st.dataframe(quality_df, use_container_width=True, hide_index=True)
 
-    st.subheader("🏷️ Priority Tiers")
+    st.subheader("🏷️ Priority Tiers — Quantile Based")
+    st.markdown(
+        "Tiers are assigned using **population quantiles** of actionable records — "
+        "not fixed score thresholds. This guarantees BDRs always get a focused "
+        "top segment regardless of how scores are distributed."
+    )
     tier_df = pd.DataFrame({
-        "Tier":        ["🟢 High", "🟡 Medium", "⚪ Low", "🔴 Excluded"],
-        "Score Range": ["65–100", "40–64", "0–39", "N/A"],
-        "Action":      [
-            "Call immediately — strong recency + fit signal",
-            "Call this week — some signal, worth a touch",
-            "Nurture — weak signal, not ready yet",
-            "Do not contact — competitor, opted out, non-prospect",
+        "Tier":           ["🟢 Call Now", "🟡 Work This Week", "🔵 Nurture", "⚪ Low Priority", "🔴 Blocked"],
+        "Population":     ["Top 10%", "Next 20%", "Next 40%", "Bottom 30%", "Hard blocked"],
+        "Action":         [
+            "Call immediately — top of population on engagement + fit",
+            "Call this week — above average signal",
+            "Keep warm — some signal, not ready yet",
+            "Deprioritize — weak signal across all dimensions",
+            "Do not contact — competitor, non-prospect, or DNC",
         ],
         "Count": [
-            (df["priority_tier"] == "High").sum(),
-            (df["priority_tier"] == "Medium").sum(),
-            (df["priority_tier"] == "Low").sum(),
-            (df["priority_tier"] == "Excluded").sum(),
+            (df["priority_tier"] == "Call Now").sum(),
+            (df["priority_tier"] == "Work This Week").sum(),
+            (df["priority_tier"] == "Nurture").sum(),
+            (df["priority_tier"] == "Low Priority").sum(),
+            (df["priority_tier"] == "Blocked").sum(),
         ]
     })
     st.dataframe(tier_df, use_container_width=True, hide_index=True)
@@ -562,15 +625,17 @@ elif page == "⚙️ Methodology":
         • Separate real engagements from automated sends
         • Calculate recency, burst score, automation share
 
-    Layer 3 — Component Scoring
-        • Score each of the 4 dimensions independently (0-100)
+    Layer 3 — Component Scoring (raw 0-100 per dimension)
+        • Score each of the 4 dimensions independently
         • Apply automation inflation penalty to quality score
         • Apply time-decay curve to recency score
 
-    Layer 4 — Final Score + Flags
-        • Weighted combination → readiness_score (0-100)
-        • Compute DQ overlay flags
-        • Assign priority tier
+    Layer 4 — Percentile Ranking + Final Score + Flags
+        • Convert each component to percentile rank within full population
+        • Weighted combination of percentile ranks → readiness_score (0-100)
+        • A score of N means "better than N% of all records"
+        • Compute DQ overlay flags (orthogonal to score)
+        • Assign priority tier based on final percentile-weighted score
         • Generate human-readable explanation
     ```
     """)
@@ -651,7 +716,25 @@ never overwritten — it's the most trustworthy timestamp in the system.
 
 ---
 
-### Decision 2: Separate real engagements from automated sends
+### Decision 2: Percentile ranking instead of raw weighted average
+**Alternatives considered:** Raw weighted average, PCA, logistic regression, entropy weighting
+
+**Why chosen:** Percentile ranking converts each component to a population-relative rank
+before combining. This means:
+- A score of 75 = "better than 75% of all 1,004 records" — unambiguous meaning
+- Outliers (e.g. a record with 80 campaign memberships) don't compress everyone else's scores
+- Leads and contacts are compared on equal footing against the same population
+- No labeled training data required (unlike logistic regression)
+
+**Why not PCA:** PCA finds patterns in variance, not business importance. It might
+weight `employee_count` heavily just because it varies a lot — not because it's meaningful.
+
+**Why not logistic regression:** No ground truth labels (no historical data on who
+converted after a BDR call). Simulated labels would undermine validity.
+
+---
+
+### Decision 3: Separate real engagements from automated sends
 **Alternatives considered:** Use raw campaign count, use total `is_active` count
 
 **Why rejected:** Raw counts reward drip sequences, not human intent.
@@ -660,7 +743,7 @@ Filtering to `is_responded = True` captures only records where a human took acti
 
 ---
 
-### Decision 3: Flags as overlay, not score penalties
+### Decision 4: Flags as overlay, not score penalties
 **Alternatives considered:** Deduct points for opt-outs, bounces, DQ flags
 
 **Why rejected:** Score penalties mix two different concerns — readiness and
@@ -670,7 +753,7 @@ and make their own judgment call (e.g., find an alternate contact method).
 
 ---
 
-### Decision 4: Different Marketo score normalization by entity type
+### Decision 5: Different Marketo score normalization by entity type
 **Alternatives considered:** Ignore Marketo score entirely, use a single scale
 
 **Why rejected:** Marketo score carries signal about legacy engagement history.
@@ -679,20 +762,22 @@ Ignoring it loses real information. Normalizing to a common 0-100 scale
 
 ---
 
-### Decision 5: Recency weighted at 35% (highest single component)
+### Decision 6: Recency weighted at 35% (highest single component)
 **Alternatives considered:** Equal weights (25% each), profile-heavy weighting
 
 **Why:** The VP of Demand Gen's ask was explicit — *"I care whether they're worth
 a phone call right now."* Recency is the clearest signal of "right now."
 A CISO who engaged last week beats a CISO who engaged last year, every time.
+With percentile ranking, this weight means: "where you rank on recency contributes
+35% of your final population rank."
 
 ---
 
-### Decision 6: No ML model — explicit weighted formula
+### Decision 7: No ML model — explicit weighted formula on percentile ranks
 **Alternatives considered:** XGBoost, logistic regression, LightGBM
 
-**Why:** No labeled training data (no ground truth on who converted after a call).
-An explicit formula is fully explainable, auditable, and doesn't require
+**Why:** No labeled training data. An explicit formula on percentile ranks is
+fully explainable, auditable, statistically sound, and doesn't require
 historical conversion data. The assignment explicitly rewards explainability.
         """)
 

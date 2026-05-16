@@ -1,7 +1,7 @@
 # BDR Prioritization Model — Proofpoint DS Assignment
 
 ## Live Demo
-[Click here to view the app](https://YOUR-STREAMLIT-URL.streamlit.app)
+[Click here to view the app](https://gkepgepxh6rvnardtqztii.streamlit.app/)
 
 ## Project Structure
 

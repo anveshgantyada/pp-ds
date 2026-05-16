@@ -1,3 +1,13 @@
+"""
+CRM Lead Prioritization Demo App
+==================================
+Run with:
+    streamlit run app.py
+
+Requires:
+    pip install streamlit pandas numpy plotly
+"""
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -166,15 +176,15 @@ if page == "🏠 Overview":
 
     with col_b:
         st.subheader("Engagement Recency vs Score")
-        sample = df[df["is_actionable"] & (df["days_since_last"] < 400)].sample(
+        sample = df[df["is_actionable"] & (df["days_since_last_response"] < 400)].sample(
             min(300, df["is_actionable"].sum()), random_state=42
         )
         fig4 = px.scatter(
-            sample, x="days_since_last", y="readiness_score",
+            sample, x="days_since_last_response", y="readiness_score",
             color="priority_tier",
             color_discrete_map=TIER_COLOR,
             hover_data=["full_name", "job_level", "job_persona"],
-            labels={"days_since_last": "Days Since Last Engagement",
+            labels={"days_since_last_response": "Days Since Last Engagement",
                     "readiness_score": "Readiness Score"},
             opacity=0.7,
         )
@@ -244,8 +254,9 @@ elif page == "📋 Ranked List":
     display_cols = [
         "rank", "full_name", "entity_type", "title",
         "job_level", "job_persona", "readiness_score", "priority_tier",
-        "score_recency", "score_quality", "score_profile", "score_account",
-        "days_since_last", "real_engagements", "dq_flags"
+        "engagement_component", "account_component",
+        "persona_component", "intent_component",
+        "days_since_last_response", "real_engagements", "dq_flags"
     ]
 
     show = filtered[display_cols].copy()

@@ -265,12 +265,13 @@ elif page == "📋 Ranked List":
     )
 
     def color_score(val):
-        if val >= 65: return "background-color: #dcfce7; color: #166534"
-        if val >= 40: return "background-color: #fef9c3; color: #854d0e"
+        if val >= 58:  return "background-color: #dcfce7; color: #166534"
+        if val >= 49:  return "background-color: #fef9c3; color: #854d0e"
+        if val >= 35:  return "background-color: #eff6ff; color: #1e40af"
         return "background-color: #f3f4f6; color: #374151"
 
     st.dataframe(
-        show.style.applymap(color_score, subset=["readiness_score"]),
+        show.style.map(color_score, subset=["readiness_score"]),
         use_container_width=True,
         hide_index=True,
         height=520,

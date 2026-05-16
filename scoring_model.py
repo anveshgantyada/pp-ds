@@ -4,15 +4,18 @@ import os
 import numpy as np
 import pandas as pd
 from datetime import datetime
+from scipy.stats import rankdata
 
 # ─────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────
-DATA_DIR   = "/Users/anvesh/Python Projects/data"
-OUTPUT_DIR = "/Users/anvesh/Python Projects/data"
+DATA_DIR   = "./data"
+OUTPUT_DIR = "./data"
 NOW        = pd.Timestamp("2025-05-01")
 
 # Component weights (must sum to 1.0)
+# Applied AFTER percentile ranking — so these weight the relative rank,
+# not the raw score. This is more statistically meaningful.
 WEIGHTS = {
     "engagement_recency":  0.35,
     "engagement_quality":  0.25,
@@ -388,16 +391,41 @@ print(f"  Avg profile score:  {records['score_profile'].mean():.1f}")
 print(f"  Avg account score:  {records['score_account'].mean():.1f}")
 
 # ─────────────────────────────────────────────
-# LAYER 4 — FINAL SCORE + TIER + FLAGS
+# LAYER 4 — PERCENTILE RANKING + FINAL SCORE + TIER + FLAGS
 # ─────────────────────────────────────────────
-print("\n[Layer 4] Computing final scores, tiers, and DQ flags...")
+print("\n[Layer 4] Computing percentile ranks, final scores, tiers, and DQ flags...")
 
-# --- 4a. Weighted final score ---
+# --- 4a. Convert each component to percentile rank (0-100) ---
+# rankdata assigns ranks 1..N, then we normalize to 0-100
+# method='average' handles ties by averaging their ranks
+# This means a score of 75 = "this record is better than 75% of all records"
+
+def to_percentile(series):
+    ranks = rankdata(series.fillna(0), method="average")
+    return pd.Series(
+        (ranks - 1) / (len(ranks) - 1) * 100,
+        index=series.index
+    ).round(1)
+
+records["pct_recency"] = to_percentile(records["score_recency"])
+records["pct_quality"] = to_percentile(records["score_quality"])
+records["pct_profile"] = to_percentile(records["score_profile"])
+records["pct_account"] = to_percentile(records["score_account"])
+
+print(f"  Percentile recency — median: {records['pct_recency'].median():.1f}")
+print(f"  Percentile quality — median: {records['pct_quality'].median():.1f}")
+print(f"  Percentile profile — median: {records['pct_profile'].median():.1f}")
+print(f"  Percentile account — median: {records['pct_account'].median():.1f}")
+
+# --- 4b. Weighted combination of percentile ranks → final readiness score ---
+# Now the weights are applied to relative population ranks, not raw scores.
+# A weight of 0.35 on recency means: "where you rank on recency matters
+# 35% of your final position in the overall ranking."
 records["readiness_score"] = (
-    records["score_recency"]  * WEIGHTS["engagement_recency"] +
-    records["score_quality"]  * WEIGHTS["engagement_quality"] +
-    records["score_profile"]  * WEIGHTS["profile_fit"] +
-    records["score_account"]  * WEIGHTS["account_fit"]
+    records["pct_recency"] * WEIGHTS["engagement_recency"] +
+    records["pct_quality"] * WEIGHTS["engagement_quality"] +
+    records["pct_profile"] * WEIGHTS["profile_fit"] +
+    records["pct_account"] * WEIGHTS["account_fit"]
 ).round(1)
 
 # --- 4b. DQ FLAGS (overlay — orthogonal to score) ---
@@ -553,8 +581,11 @@ OUTPUT_COLS = [
     # Score
     "readiness_score", "priority_tier", "is_actionable",
 
-    # Component scores
+    # Component scores (raw)
     "score_recency", "score_quality", "score_profile", "score_account",
+
+    # Percentile ranks (0-100, relative to full population)
+    "pct_recency", "pct_quality", "pct_profile", "pct_account",
 
     # Engagement features
     "real_engagements", "total_engagements", "auto_share",

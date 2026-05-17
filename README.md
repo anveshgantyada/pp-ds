@@ -1,14 +1,14 @@
-# BDR Prioritization Model — Proofpoint DS Assignment
+# BDR Prioritization Model — DS Assignment
 
-## Live Demo
+## Live App
 [Click here to view the app](https://gkepgepxh6rvnardtqztii.streamlit.app/)
 
 ## Project Structure
 
 ```
 pp-ds/
-├── app.py                    # Streamlit web app (5 pages)
-├── generate_crm_data.py      # Synthetic data generation script
+├── app.py                    # Streamlit web app
+├── generate_crm_data.py      # Data generation script
 ├── scoring_model.py          # Prioritization scoring pipeline
 ├── requirements.txt          # Python dependencies
 └── data/
@@ -48,7 +48,7 @@ streamlit run app.py
 Because no ground-truth outcome labels exist (no historical BDR conversion data),
 this model uses **percentile normalization** rather than supervised ML.
 
-Each signal is transformed into a relative standing within the CRM population —
+Each signal is transformed into a relative standing within the CRM population
 identifying records that are unusually engaged, unusually good-fit, or attached
 to unusually high-intent accounts.
 

@@ -12,9 +12,8 @@ random.seed(42)
 np.random.seed(42)
 Faker.seed(42)
 
-# ─────────────────────────────────────────────
 # CONFIG
-# ─────────────────────────────────────────────
+
 N_LEADS             = 600
 N_CONTACTS          = 400
 N_CONNECTED_PAIRS   = 200   # subset of leads converted → contact
@@ -26,9 +25,8 @@ OUTPUT_DIR          = "./data"
 import os
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# ─────────────────────────────────────────────
 # LOOKUP TABLES
-# ─────────────────────────────────────────────
+
 INDUSTRIES = [
     "Financial Services", "Healthcare", "Technology", "Manufacturing",
     "Retail", "Energy", "Government", "Education", "Telecommunications",
@@ -85,9 +83,8 @@ CYBERSECURITY_COMPANIES = [
     "IronWall Cybersecurity"
 ]
 
-# ─────────────────────────────────────────────
 # HELPER FUNCTIONS
-# ─────────────────────────────────────────────
+
 
 def uid():
     return str(uuid.uuid4())[:18].replace("-", "")
@@ -117,9 +114,8 @@ def shared_mailbox():
     domain = fake.domain_name()
     return f"{prefix}@{domain}"
 
-# ─────────────────────────────────────────────
 # 1. ACCOUNTS
-# ─────────────────────────────────────────────
+
 print("Generating accounts...")
 
 accounts = []
@@ -152,9 +148,8 @@ for i in range(N_ACCOUNTS):
 accounts_df = pd.DataFrame(accounts)
 account_ids = accounts_df["account_id"].tolist()
 
-# ─────────────────────────────────────────────
 # 2. LEADS
-# ─────────────────────────────────────────────
+
 print("Generating leads...")
 
 # We'll track which lead_ids are in connected pairs
@@ -274,9 +269,8 @@ for i in range(N_LEADS):
 
 leads_df = pd.DataFrame(leads)
 
-# ─────────────────────────────────────────────
 # 3. CONTACTS
-# ─────────────────────────────────────────────
+
 print("Generating contacts...")
 
 contacts = []
@@ -398,9 +392,7 @@ for i in range(n_orphan):
 
 contacts_df = pd.DataFrame(contacts)
 
-# ─────────────────────────────────────────────
 # 4. FIX CONVERSION LINKS IN LEADS
-# ─────────────────────────────────────────────
 # Replace __PLACEHOLDER__ with actual contact_ids where link is not broken
 def resolve_contact_id(row):
     if row["converted_contact_id"] == "__PLACEHOLDER__":
@@ -409,9 +401,8 @@ def resolve_contact_id(row):
 
 leads_df["converted_contact_id"] = leads_df.apply(resolve_contact_id, axis=1)
 
-# ─────────────────────────────────────────────
 # 5. INJECT DQ-2: EMAIL DUPLICATION
-# ─────────────────────────────────────────────
+
 print("Injecting email duplication (DQ-2)...")
 
 all_emails = list(leads_df["email"].dropna())
@@ -428,9 +419,7 @@ spam_indices = random.sample(range(len(leads_df)), 12)
 for idx in spam_indices:
     leads_df.at[idx, "email"] = spam_email
 
-# ─────────────────────────────────────────────
 # 6. INJECT PERSONA ARCHETYPES (Appendix B)
-# ─────────────────────────────────────────────
 print("Injecting Appendix B personas...")
 
 # Find a named ICP account
@@ -572,9 +561,7 @@ leads_df["_archetype"] = None
 # Replace last N rows with archetypes
 leads_df = pd.concat([leads_df.iloc[:-len(archetypes)], archetypes_df], ignore_index=True)
 
-# ─────────────────────────────────────────────
 # 7. CAMPAIGN MEMBERS
-# ─────────────────────────────────────────────
 print("Generating campaign members...")
 
 all_entities = (
@@ -739,9 +726,7 @@ for _ in range(2):
         "is_active":     True,
     }])], ignore_index=True)
 
-# ─────────────────────────────────────────────
 # 8. ADD PERSONA 7 (DQ-1 broken link, engagement split)
-# ─────────────────────────────────────────────
 p7_lead_id    = uid()
 p7_contact_id = uid()
 
@@ -849,9 +834,7 @@ for j in range(40):
         "is_active":     True,
     }])], ignore_index=True)
 
-# ─────────────────────────────────────────────
 # 9. TRIM TO TARGET SIZES
-# ─────────────────────────────────────────────
 # Keep leads at ~610 and contacts at ~410 (archetypes are extras; that's fine)
 print(f"\nFinal counts:")
 print(f"  Leads:           {len(leads_df)}")
@@ -859,9 +842,7 @@ print(f"  Contacts:        {len(contacts_df)}")
 print(f"  Accounts:        {len(accounts_df)}")
 print(f"  CampaignMembers: {len(cm_df)}")
 
-# ─────────────────────────────────────────────
 # 10. SAVE TO CSV
-# ─────────────────────────────────────────────
 print("\nSaving CSV files...")
 leads_df.to_csv(f"{OUTPUT_DIR}/leads.csv", index=False)
 contacts_df.to_csv(f"{OUTPUT_DIR}/contacts.csv", index=False)

@@ -3,9 +3,8 @@ import numpy as np
 import pandas as pd
 from scipy.stats import rankdata
 
-# ─────────────────────────────────────────────
 # CONFIG
-# ─────────────────────────────────────────────
+
 DATA_DIR   = "/Users/anvesh/Python Projects/data"
 OUTPUT_DIR = "/Users/anvesh/Python Projects/data"
 NOW        = pd.Timestamp("2025-05-01")
@@ -52,9 +51,9 @@ SHARED_PREFIXES = {"info", "sales", "contact", "admin", "support", "hello", "tea
 
 HARD_BLOCK_FLAGS = {"NON_PROSPECT", "COMPETITOR", "DO_NOT_CONTACT"}
 
-# ─────────────────────────────────────────────
+
 # HELPER: percentile rank → 0-1
-# ─────────────────────────────────────────────
+
 def pct_rank(series, ascending=True):
     """
     Convert a Series to percentile ranks in [0, 1].
@@ -69,9 +68,7 @@ def pct_rank(series, ascending=True):
     return pd.Series(normed, index=series.index)
 
 
-# ─────────────────────────────────────────────
 # LAYER 0 — LOAD DATA
-# ─────────────────────────────────────────────
 print("=" * 60)
 print("CRM PRIORITIZATION — PERCENTILE-NORMALIZED HYBRID MODEL")
 print("=" * 60)
@@ -88,9 +85,7 @@ print(f"  Contacts:        {len(contacts_df):,}")
 print(f"  Accounts:        {len(accounts_df):,}")
 print(f"  CampaignMembers: {len(cm_df):,}")
 
-# ─────────────────────────────────────────────
 # LAYER 1 — CLEANING & NORMALIZATION
-# ─────────────────────────────────────────────
 print("\n[Layer 1] Cleaning & normalizing...")
 
 leads_u = leads_df.rename(columns={
@@ -158,9 +153,8 @@ def normalize_mkto(row):
 records["mkto_score_normalized"] = records.apply(normalize_mkto, axis=1)
 print(f"  Unified records: {len(records):,}")
 
-# ─────────────────────────────────────────────
 # LAYER 2 — FEATURE ENGINEERING
-# ─────────────────────────────────────────────
+
 print("\n[Layer 2] Engineering raw engagement features...")
 
 cm_real = cm_df[cm_df["is_responded"] == True].copy()
@@ -216,9 +210,8 @@ print(f"  Avg real engagements:       {records['real_engagements'].mean():.1f}")
 print(f"  Zero engagement records:    {(records['real_engagements']==0).sum():,}")
 print(f"  Automation-inflated (>70%): {(records['auto_share']>0.70).sum():,}")
 
-# ─────────────────────────────────────────────
 # LAYER 3 — COMPONENT SCORING
-# ─────────────────────────────────────────────
+
 print("\n[Layer 3] Computing percentile-normalized component scores...")
 
 # ── 3a. ENGAGEMENT COMPONENT ──────────────────
@@ -291,9 +284,8 @@ print(f"  Avg account component:    {records['account_component'].mean():.3f}")
 print(f"  Avg persona component:    {records['persona_component'].mean():.3f}")
 print(f"  Avg intent component:     {records['intent_component'].mean():.3f}")
 
-# ─────────────────────────────────────────────
 # LAYER 4 — FINAL SCORE + QUANTILE TIERS + FLAGS
-# ─────────────────────────────────────────────
+
 print("\n[Layer 4] Final score, quantile tiers, DQ flags...")
 
 # ── 4a. Weighted readiness score ──────────────
@@ -405,9 +397,8 @@ def score_explanation(row):
 
 records["score_explanation"] = records.apply(score_explanation, axis=1)
 
-# ─────────────────────────────────────────────
 # OUTPUT
-# ─────────────────────────────────────────────
+
 OUTPUT_COLS = [
     "entity_id", "entity_type", "first_name", "last_name",
     "email", "email_type", "title", "job_persona", "job_level",
@@ -442,9 +433,8 @@ scored = scored.sort_values("rank").reset_index(drop=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 scored.to_csv(f"{OUTPUT_DIR}/scored_records.csv", index=False)
 
-# ─────────────────────────────────────────────
 # SUMMARY
-# ─────────────────────────────────────────────
+
 print("\n" + "=" * 60)
 print("SCORING SUMMARY")
 print("=" * 60)

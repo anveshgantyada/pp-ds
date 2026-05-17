@@ -1,13 +1,3 @@
-"""
-CRM Lead Prioritization Demo App
-==================================
-Run with:
-    streamlit run app.py
-
-Requires:
-    pip install streamlit pandas numpy plotly
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -15,9 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import os
 
-# ─────────────────────────────────────────────
 # PAGE CONFIG
-# ─────────────────────────────────────────────
 st.set_page_config(
     page_title="BDR Prioritization Dashboard",
     page_icon="🎯",
@@ -25,9 +13,8 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─────────────────────────────────────────────
 # LOAD DATA
-# ─────────────────────────────────────────────
+
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "scored_records.csv")
 
 @st.cache_data
@@ -44,9 +31,8 @@ def load_data():
 
 df = load_data()
 
-# ─────────────────────────────────────────────
 # TIER COLORS
-# ─────────────────────────────────────────────
+
 TIER_COLOR = {
     "Call Now":       "#16a34a",
     "Work This Week": "#d97706",
@@ -79,9 +65,8 @@ FLAG_DESCRIPTIONS = {
     "INCOMPLETE_PROFILE":    "2+ key fields missing (title, persona, level, account)",
 }
 
-# ─────────────────────────────────────────────
 # SIDEBAR
-# ─────────────────────────────────────────────
+
 st.sidebar.image("https://img.icons8.com/fluency/96/goal.png", width=60)
 st.sidebar.title("BDR Prioritization")
 st.sidebar.markdown("*B2B Cybersecurity · Marketing Ops*")
@@ -98,9 +83,8 @@ st.sidebar.markdown(f"**Dataset:** {len(df):,} records")
 st.sidebar.markdown(f"**Actionable:** {df['is_actionable'].sum():,}")
 st.sidebar.markdown(f"**Excluded:** {(~df['is_actionable']).sum():,}")
 
-# ─────────────────────────────────────────────
 # PAGE 1 — OVERVIEW
-# ─────────────────────────────────────────────
+
 if page == "🏠 Overview":
     st.title("🎯 BDR Prioritization Dashboard")
     st.markdown(
@@ -203,10 +187,9 @@ if page == "🏠 Overview":
     )
     st.dataframe(top10, use_container_width=True, hide_index=True)
 
-# ─────────────────────────────────────────────
 # PAGE 2 — RANKED LIST
-# ─────────────────────────────────────────────
-elif page == "📋 Ranked List":
+
+page == "📋 Ranked List":
     st.title("📋 Ranked List")
     st.markdown("All records ranked by readiness score. Use filters to narrow down.")
 
@@ -284,9 +267,8 @@ elif page == "📋 Ranked List":
         mime="text/csv"
     )
 
-# ─────────────────────────────────────────────
 # PAGE 3 — RECORD INSPECTOR
-# ─────────────────────────────────────────────
+
 elif page == "🔍 Record Inspector":
     st.title("🔍 Record Inspector")
     st.markdown("Select any record to see its full profile, engagement history, and score breakdown.")
@@ -450,9 +432,8 @@ elif page == "🔍 Record Inspector":
         )
         st.dataframe(raw_df, use_container_width=True, hide_index=True)
 
-# ─────────────────────────────────────────────
 # PAGE 4 — METHODOLOGY
-# ─────────────────────────────────────────────
+
 elif page == "⚙️ Methodology":
     st.title("⚙️ Scoring Methodology")
     st.markdown(
@@ -661,9 +642,8 @@ elif page == "⚙️ Methodology":
       penalizing them would systematically disadvantage top-of-funnel prospects
     """)
 
-# ─────────────────────────────────────────────
 # PAGE 5 — KNOWLEDGE BASE
-# ─────────────────────────────────────────────
+
 elif page == "📚 Knowledge Base":
     st.title("📚 Knowledge Base")
     st.markdown("Analyst notebook — discovery, decisions, and lessons learned.")

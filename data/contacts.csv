@@ -1,403 +1,403 @@
 contact_id,account_id,email,first_name,last_name,title,contact_status,job_persona,job_level,created_date,mql_date,mkto_contact_score,is_mql,has_lead_origin,primary_lead_id,no_longer_with_company,has_opted_out,email_bounced
-ec8d33dce6a34783,9220006c997c4ef7,cheryl.gray@snyderllc.com,Cheryl,Gray,"Education officer, environmental",Active,Champion,Individual Contributor,2023-06-01,,6,False,True,0ebf2dbef4f1469e,False,False,True
-814bdd09550f42c3,70e77fbbd13d4146,matthew.beard@beardpetersa.com,Matthew,Beard,"Engineer, aeronautical",Active,Technical Buyer,Individual Contributor,2024-02-28,,197,False,True,ae3cd141e330422b,False,False,False
-df57f15197324cd5,47f5666f432f4226,tracy.chang@alvarezjosep.com,Tracy,Chang,,Qualified,End User,,2024-09-21,,146,False,True,13bb24dac6714737,False,False,False
-36b38b499e364690,d3856d7504d241bf,thomas85@yahoo.com,Heather,Torres,"Physicist, medical",MQL,CISO,Individual Contributor,2023-10-02,2024-12-14,98,True,True,1dcc4d415bb048df,True,True,False
-398965a6017b4a2c,de39ace6e146477e,kristopher.hall@leewilsonand.com,Kristopher,Hall,,MQL,Non-Prospect,,2023-06-01,2024-11-03,130,True,True,36e4bdb71bf1431c,False,True,False
-2326855f8f094adf,0aebdf7f141a4836,support@carlson.com,Joshua,Lawrence,Ergonomist,MQL,Technical Buyer,Manager,2022-01-15,2025-03-09,81,True,True,70d6c9ba61504a94,False,False,False
-25a0f19c2b21400b,,amanda.hill@tranltd.com,Amanda,Hill,,Active,End User,,2023-08-26,,52,False,True,9e967b3c992f4ece,False,False,True
-20835f536a1f4d12,ee775723bd824e24,audrey.harrison@peterson-she.com,Audrey,Harrison,Forensic psychologist,Active,,Individual Contributor,2022-01-15,,99,False,True,bb42e14aa28f469a,False,False,False
-bd276eb5fd9541b9,3f85c46f54da4e47,travis.ray@brownhernand.com,Travis,Ray,,Attempted,End User,Individual Contributor,2025-02-15,,66,False,True,c180ae05927c4efd,False,False,False
-d64ffb1512754f6b,2f8f3a0f6a074cb3,kimberlyjames@gmail.com,Angela,Butler,,Active,End User,Manager,2023-06-30,,167,False,True,00fc987debc44352,False,True,False
-d8da93ed787f44e0,74f4467873ba41b3,contact@choi.com,Kevin,Oliver,"Geneticist, molecular",Attempted,Economic Buyer,Manager,2024-02-01,,48,False,True,a2b375b20e9b43d0,False,False,False
-0cdf889ea2874a69,,ocarter@gmx.de,Eric,Ortiz,Homeopath,MQL,Technical Buyer,,2023-06-30,2024-11-12,196,True,True,b8f045c7aa024e64,True,True,False
-f2863ce20272428f,,jesus.baker@lawrencelara.com,Jesus,Baker,,MQL,End User,Individual Contributor,2025-01-19,2024-12-14,125,True,True,198a6ceb69444b8b,False,False,False
-1c45956a3c61449b,206a595accfd48c3,douglas.brown@larson-hollo.com,Douglas,Brown,Homeopath,MQL,End User,Individual Contributor,2023-06-01,2024-12-06,73,True,True,98acaba0bbaf42ef,False,False,False
-6975cee7e3aa4de7,4c6ff1a2f55049f8,holly.bender@fernandezkim.com,Holly,Bender,Podiatrist,Active,,VP,2022-01-15,,142,False,True,0b1d80cb28034dc6,False,False,False
-431a5f9c02c64c87,82093ea79b354ada,suzanne.huff@matthewssmit.com,Suzanne,Huff,Geophysical data processor,MQL,Champion,Manager,2025-02-24,2024-11-04,99,True,True,8a5ba8f16c124c9b,False,False,False
-05280c30ffd94cdb,206a595accfd48c3,denise.moon@sheagroup.com,Denise,Moon,Regulatory affairs officer,Active,Economic Buyer,,2024-07-28,,113,False,True,63f9497121424eb6,False,False,False
-897688083bca4ae1,f7bb6cf3605a4e3e,mathew.santiago@riveraltd.com,Mathew,Santiago,Research scientist (life sciences),Active,,,2024-09-20,,3,False,True,2e655dbbca954bec,True,False,False
-1b812b5448af43e9,542689c6d93f4be6,kathleen.johnson@edwardsllc.com,Kathleen,Johnson,Commercial art gallery manager,MQL,,,2024-10-04,2025-01-23,164,True,True,052dfeba9d67404d,False,False,True
-9ca425650d134790,cebfdafefd3c496b,aaron.booth@gutierrez-lo.com,Aaron,Booth,Medical illustrator,Active,,,2023-06-01,,168,False,True,b39439d8198e485b,False,True,False
-bb19e4e28a794890,73d25b49db3c4bb2,james.dunn@kim-wolfe.com,James,Dunn,Community development worker,Active,Non-Prospect,,2024-07-24,,140,False,True,7179be4f00314a61,False,False,False
-9a060d3871fc4bd4,294a30b099d142c1,lauren.mckinney@pierce-tran.com,Lauren,Mckinney,Chief Financial Officer,Active,,,2024-02-07,,185,False,True,0c359dd4aa8f438f,False,False,True
-0c8a0e954d17484f,54c5e92a47134df5,info@jimenez.com,Steven,Wilson,Sales executive,Active,,,2022-01-15,,99,False,True,82ea3cb78ff94496,False,False,False
-963b803f0c8e4850,674a5f9ffe044852,john.arnold@lee-greene.com,John,Arnold,Copy,Qualified,Economic Buyer,Manager,2022-01-15,,121,False,True,6bca169a916049d3,False,False,True
-8499e226a5a54e79,c6d5f75384fb43ac,matthew.french@hoover-campb.com,Matthew,French,Hydrogeologist,MQL,,Individual Contributor,2023-06-01,2024-11-19,64,True,True,315d0e3633d04f28,False,False,False
-4681f67071954396,,sean.washington@arnold-danie.com,Sean,Washington,,MQL,,,2024-10-27,2024-11-18,57,True,True,398e4a7e9a2d4839,False,False,True
-0001b0b07e854e1f,e3208a541dbb4d58,contact@williams-garner.biz,John,Reyes,Nature conservation officer,Attempted,End User,,2024-02-29,,94,False,True,cf1ec3278b3448c7,False,False,True
-2a7209abf7c04d1b,c180adecefb24cb8,molly71@gmail.com,Tammie,Martinez,Secondary school teacher,MQL,Economic Buyer,Individual Contributor,2022-01-15,2024-11-21,102,True,True,110834ea016b439c,False,False,False
-292cdd35be3947a7,ca147e09badd4026,harrisontanya@yahoo.com,Monica,Booker,,Attempted,,VP,2024-02-11,,113,False,True,23eb148da0d944f6,False,False,False
-795886aa47d946ff,dc1baae87b5e441c,melissa.villarreal@finley-sims.com,Melissa,Villarreal,Ranger/warden,Nurture,,Individual Contributor,2023-06-01,,48,False,True,090f558bb0e24a46,False,False,False
-3fb54078bf874305,37f1e4d20c884876,hamiltoncorey@yahoo.com,Samantha,Bright,Chiropodist,Active,,Individual Contributor,2023-07-08,,195,False,True,13b04c639f7d42c4,False,False,True
-a88414d9f7844cff,de39ace6e146477e,anthony.nguyen@carterllc.com,Anthony,Nguyen,Plant breeder/geneticist,MQL,,Director,2023-06-01,2024-11-22,115,True,True,646fa08d6e0344a9,False,True,False
-d46aac4cdc0f4c0e,08499d2018674305,ashlee.sparks@thompsonplc.com,Ashlee,Sparks,Museum/gallery exhibitions officer,Nurture,Non-Prospect,Manager,2024-09-09,,40,False,True,d21d5be0a5514f20,False,True,False
-6ef683be52464cbf,08499d2018674305,jesse.little@scott-smith.com,Jesse,Little,"Psychologist, occupational",MQL,Champion,Manager,2024-01-04,2024-11-11,52,True,True,6201906b00e54f58,True,True,True
-beab02edc1df463e,9c1782bd9db14c2f,scott.reed@evanshaydena.com,Scott,Reed,"Programmer, multimedia",MQL,Technical Buyer,,2022-01-15,2025-02-27,105,True,True,4f198b5fb36d4849,False,False,False
-bdac28a055db4a56,a2c929714d1f4852,bailey40@hotmail.com,Timothy,Young,Occupational hygienist,Qualified,,,2024-11-19,,195,False,True,f2c03495d40247a9,False,False,False
-9afc587c68604f2a,7fa7795bb25b4161,kimberly.beltran@mcgeewalland.com,Kimberly,Beltran,Event organiser,MQL,,Director,2023-05-10,2025-04-07,13,True,True,78a2fd1b0d364a9a,True,True,True
-1b207934c9bb4451,fe02e881caac4842,john.campos@beckertaylor.com,John,Campos,Archaeologist,MQL,,,2023-06-01,2025-04-14,54,True,True,a581b459ae684c52,True,False,True
-5601a9f012684a36,291da1b67d17420c,mark62@outlook.com,Michael,Anderson,,MQL,,VP,2024-05-13,2025-02-12,180,True,True,497aff9e93aa4ff3,False,False,False
-1cdaa3657b0b46df,4d9212f629544ab8,alyssa.mcintyre@scottgroup.com,Alyssa,Mcintyre,,MQL,End User,,2022-01-15,2024-12-10,104,True,True,dfa1c5c9adf74563,False,False,False
-9c797a8f036a4bcb,554468d9beff4e90,michelleramsey@outlook.com,Charles,Webster,Occupational psychologist,Nurture,Technical Buyer,Manager,2024-06-18,,169,False,True,dabd823faafe4837,False,False,False
-3183a6e509324923,,amanda.gibson@currybakeran.com,Amanda,Gibson,Meteorologist,MQL,Non-Prospect,,2022-01-15,2024-11-05,196,True,True,57f541b6a9e548cd,False,False,False
-e0c8fba807024f0e,,angel.henson@murphybishop.com,Angel,Henson,,Nurture,CISO,,2024-03-26,,5,False,True,da8a0600412549ad,False,False,False
-91aaa70a1e244d41,cbd785d9a8444113,sophia.torres@wilson-young.com,Sophia,Torres,Soil scientist,Qualified,Technical Buyer,Director,2024-04-19,,34,False,True,1dfcdbdedadb4a9d,True,False,False
-8997ae4807554be2,,ellen.paul@barnesnewton.com,Ellen,Paul,Patent examiner,MQL,,,2024-12-09,2025-04-09,162,True,True,bf03fc2e55b74337,False,False,False
-e9b50e0034844ed9,,stephanie.johnson@robinson-wal.com,Stephanie,Johnson,Fashion designer,Active,End User,,2023-11-12,,106,False,True,72aa20d88b154bec,False,True,True
-1f25eaf74ff64f43,9cb3b0419f3b41a0,amy.levine@brown-hill.com,Amy,Levine,Community education officer,MQL,Non-Prospect,Manager,2023-06-01,2025-02-28,42,True,True,1447809381dd45c6,False,False,True
-bfed08ea59384bd0,ba682f95388d49d5,danielle.maddox@buchananands.com,Danielle,Maddox,Comptroller,MQL,Non-Prospect,Manager,2024-07-06,2025-02-20,110,True,True,56e28e1732384906,True,False,True
-a4f9b7441e1c49bf,8748fc8ee24e4175,brenda.li@murphyandson.com,Brenda,Li,"Therapist, occupational",MQL,Champion,,2023-05-30,2024-11-22,141,True,True,b9e512181b554fb3,False,True,False
-b49925fd15e642ac,4d460e953fee476b,vanessa.fernandez@rodriguezinc.com,Vanessa,Fernandez,,Active,Technical Buyer,C-Level,2022-01-15,,9,False,True,eda0c0cc651346ff,False,False,False
-4b7252165d4c4f61,7c9888bee6f641e2,brianna.smith@williams-har.com,Brianna,Smith,Secondary school teacher,MQL,End User,Manager,2024-03-22,2025-02-02,200,True,True,42d29793524e4562,False,True,False
-d24d53db93824f67,e1d05fbfe059420b,shane.cox@rodriguezgor.com,Shane,Cox,Armed forces logistics/support/administrative officer,MQL,Technical Buyer,Manager,2023-06-01,2025-01-05,72,True,True,0154e0c46a98448c,False,False,True
-f2664533d8bd4515,5f2df9e291da4598,stephen.maynard@lutzgroup.com,Stephen,Maynard,,MQL,,Manager,2025-01-05,2025-03-29,29,True,True,b92d1968e9d34929,False,False,False
-27555a2f585949cb,0ac1233ee7a44f3f,rachel.morris@jonesllc.com,Rachel,Morris,Textile designer,Qualified,Champion,Individual Contributor,2024-12-13,,146,False,True,0496f45c363e4d62,True,False,False
-80ec5a72d3774427,d98f71a181cf4949,sgarcia@yahoo.com,Kenneth,Wagner,Colour technologist,MQL,Technical Buyer,,2025-03-23,2024-12-02,158,True,True,862a4f3b2ed54919,False,False,False
-256248925cbb48f6,c171f3eb944e4e14,jason.hayes@gutierrezgro.com,Jason,Hayes,Oceanographer,MQL,Non-Prospect,,2023-12-17,2025-03-26,156,True,True,a1746869522c4b59,False,False,False
-82adec2b2e6047b6,fb7db87146894868,larry.scott@mcdanielgrou.com,Larry,Scott,Broadcast engineer,MQL,End User,Manager,2022-01-15,2025-04-18,175,True,True,8cc1d19f27bd4d0b,True,True,False
-fc2415e58d6744c9,ffd0dae2c74041be,ryan.garner@cain-hawkins.com,Ryan,Garner,Theatre director,Qualified,Technical Buyer,Manager,2024-03-01,,121,False,True,d2aea9cc10e14bdd,False,False,True
-18039f3a2ae9466e,fe02e881caac4842,support@parrish-griffith.com,Morgan,Pugh,Tourism officer,MQL,Technical Buyer,Individual Contributor,2024-09-23,2024-12-22,15,True,True,24b1036ab12b4376,False,False,False
-a3810268a0504ded,6023e7aea36f47bf,jason.douglas@boonellc.com,Jason,Douglas,"Surveyor, commercial/residential",Qualified,Economic Buyer,,2022-01-15,,147,False,True,df1b2e09eb024e9a,False,True,False
-43b89f2743304d4f,f916ea30e0744727,jeremy.patterson@villegascard.com,Jeremy,Patterson,"Surveyor, hydrographic",Active,,,2025-01-14,,193,False,True,315fdd6cd72145cd,False,False,True
-9748508c6a444ac3,f7bb6cf3605a4e3e,maria.adams@nelsonllc.com,Maria,Adams,,MQL,Champion,Manager,2023-08-04,2025-01-11,163,True,True,638a7dbc7f31402d,False,True,False
-1205164e0ab243f6,82093ea79b354ada,ashley.morales@figueroainc.com,Ashley,Morales,"Chemist, analytical",MQL,End User,,2023-06-01,2025-03-20,174,True,True,a8da0195c6f14759,False,False,True
-fbcf3e66efc547f8,ed495689b58c451a,eric.collins@frank-bradle.com,Eric,Collins,Chartered accountant,Attempted,Non-Prospect,Individual Contributor,2022-01-15,,158,False,True,07b0f55f2a624fe4,True,False,False
-c1e0fbd0dc63460f,ee0ea07437bc4204,brandon.miller@stanley-tuck.com,Brandon,Miller,,MQL,End User,,2024-01-01,2025-01-28,22,True,True,529b3e20dbb84d70,False,True,True
-37941efc5d034b1f,4c6ff1a2f55049f8,erika97@rediffmail.com,Daniel,Jordan,Secretary/administrator,Active,,,2023-07-21,,67,False,True,53cb232a962d4a03,True,True,False
-3f91ad952b0d4f99,e1d05fbfe059420b,brian.harris@saundersllc.com,Brian,Harris,Horticultural consultant,MQL,CISO,Manager,2023-11-27,2025-03-13,125,True,True,2586e405e85a47fe,False,True,False
-f1ef2b6aec614896,dad8446037794954,ryan.anderson@padillamason.com,Ryan,Anderson,,MQL,,,2022-01-15,2025-01-17,118,True,True,3948c74055ca43f6,True,False,False
-a644e3e2494b4f24,6c4abf98669d4d11,bobby.smith@atkinsplc.com,Bobby,Smith,"Pilot, airline",Nurture,,VP,2023-12-13,,107,False,True,414bcf92102c42cc,False,False,False
-afc8c4d6c19d4b51,1bab529a35254e4d,richard.burch@solisplc.com,Richard,Burch,,MQL,CISO,C-Level,2024-03-07,2025-01-09,102,True,True,87a6d9971b97404d,True,False,False
-d4bb065350dc4cc6,0983fad7081e4853,john.chapman@millerharrel.com,John,Chapman,Environmental consultant,MQL,,Individual Contributor,2023-05-25,2025-01-20,55,True,True,f6defa93305540d1,False,False,False
-c0c7bb23140f41da,14932c1069a64097,rebeccabailey@gmail.com,Cynthia,Schmidt,Data scientist,Nurture,Non-Prospect,Individual Contributor,2024-06-28,,77,False,True,15abc6737b6444ba,False,False,True
-6aad614f15e24d41,73d25b49db3c4bb2,james.morrison@jonesbeanand.com,James,Morrison,"Psychologist, forensic",Active,,VP,2022-01-15,,111,False,True,701792e7b7504ee3,False,True,False
-2f8a6061ab4a4d5d,5311269b2af04ae3,anne.reid@morrismaddox.com,Anne,Reid,Printmaker,Active,,Individual Contributor,2025-01-30,,180,False,True,c06870a6f15348c4,False,False,False
-3eeb338eb95c427b,3190811cf697464c,kevin.hill@bellinc.com,Kevin,Hill,Insurance claims handler,Active,Technical Buyer,Director,2023-06-01,,78,False,True,3d5102881ccf4a9e,True,False,True
-388c4db0ba0145f4,7977d1747af2409d,marie.jones@gilbertplc.com,Marie,Jones,,Active,,Individual Contributor,2023-06-01,,33,False,True,c25f39d7e0864429,True,True,False
-f4948212d9ac4c5c,,admin@pearson.com,Joanne,Williams,Biomedical engineer,MQL,Economic Buyer,,2024-11-21,2025-02-26,114,True,True,e049f14d95d146a8,True,False,False
-4f9baa2dba8b4457,400cf5ecd1144bf1,matthew.klein@lucaswilliam.com,Matthew,Klein,,Nurture,Economic Buyer,C-Level,2023-06-01,,80,False,True,1b29edc32c1a4836,False,False,True
-38b3bbd1c7a8410c,674a5f9ffe044852,erika05@gmail.com,Justin,Ortiz,,Nurture,Economic Buyer,Manager,2024-06-18,,84,False,True,402793f13a8d4b2d,False,True,False
-debbc2e21c544ebf,f219724055874514,justin.cummings@brandtmorris.com,Justin,Cummings,Ceramics designer,MQL,End User,,2023-06-24,2025-02-26,156,True,True,ffe6fc6e60884318,False,False,False
-c4ef81fcc7104205,9cb3b0419f3b41a0,diana.bates@larsoninc.com,Diana,Bates,,Qualified,Non-Prospect,C-Level,2023-12-07,,98,False,True,35d3dcf113ba4fe3,False,False,False
-f2a11f4642344128,351f4e0509954ffa,elizabeth.calderon@osborngaines.com,Elizabeth,Calderon,,MQL,,,2023-06-01,2025-01-05,186,True,True,932e5b8aeca44eff,False,True,False
-19013787535741f5,56c07675b3d84fac,jason.meza@lee-cooke.com,Jason,Meza,"Designer, fashion/clothing",MQL,Economic Buyer,Director,2024-09-16,2025-02-26,199,True,True,0ab06e53004e4975,False,False,False
-5a0e256b80fa4ca7,2a0bd9461672442f,support@stephenson.org,William,Fernandez,"Conservator, museum/gallery",MQL,Champion,Individual Contributor,2022-01-15,2025-02-08,200,True,True,fa197114cede473c,False,False,False
-9c898e286e7d4bf4,f8ee0f5a8d9a459a,kellie.lamb@griffithinc.com,Kellie,Lamb,Paediatric nurse,MQL,End User,Individual Contributor,2024-05-15,2024-11-29,165,True,True,79a34ea90d4b4893,False,False,True
-c271384d89db492e,319b26d53a994995,pyoung@hotmail.com,Sean,Mitchell,Insurance broker,MQL,,Manager,2024-06-03,2025-01-24,129,True,True,0aadf1fef9dd45a8,False,False,False
-fc4d48f1d79141d8,2670ce83d3ef4f45,erika.hudson@murray-campb.com,Erika,Hudson,,Qualified,End User,Director,2025-03-21,,7,False,True,c8d1b67992af4f8d,False,False,False
-779b3cd9cf814283,5f2df9e291da4598,brett75@yahoo.com,Laurie,Taylor,,Active,Technical Buyer,,2023-06-01,,113,False,True,f48bb8791cfa49b7,False,False,False
-b38d7a80e5ac408d,2630bcbe69d14f30,joshuawhitehead@yahoo.com,Melissa,Mitchell,,MQL,Non-Prospect,C-Level,2023-06-01,2025-04-26,32,True,True,e07530d3de754550,False,False,False
-1a644abe03c84c00,7663529cc93a4280,perryrandy@gmail.com,Lisa,Wilkerson,,MQL,,VP,2023-06-01,2025-04-24,184,True,True,d05187c68c924680,True,False,False
-032136d6682644b4,fb7db87146894868,nicholas.johnson@combsltd.com,Nicholas,Johnson,,MQL,,VP,2023-06-10,2025-02-17,194,True,True,939ee7f06bcd4353,False,False,False
-4590106ab2da4254,,samantha.kennedy@blakegroup.com,Samantha,Kennedy,"Production assistant, radio",Active,Technical Buyer,Manager,2022-01-15,,16,False,True,ffa24f7d096441e5,False,True,False
-a9cbfa6fea3d4ad3,,srodriguez@yahoo.com,Mary,Dunn,Field seismologist,MQL,CISO,Individual Contributor,2022-01-15,2025-02-02,86,True,True,9563ddf9d7774ac6,False,False,False
-e4a881cd1e90443b,f219724055874514,danielle.dean@rodriguezgro.com,Danielle,Dean,"Therapist, speech and language",Attempted,Champion,VP,2023-11-14,,101,False,True,262587141fff4698,False,False,True
-c691b1ec01034dc9,67b44a52a45c459d,douglas.patterson@gomezduncana.com,Douglas,Patterson,Chartered certified accountant,MQL,Non-Prospect,Manager,2022-01-15,2024-11-16,58,True,True,31bb161f29044ae4,False,False,False
-43f870925f434034,c04278d96e7649c7,william.mcneil@smithmarksan.com,William,Mcneil,Naval architect,Active,End User,,2025-03-08,,57,False,True,c04ca4d3d1164916,True,True,False
-e3f2a66427134c46,757022cd00324e96,kristina.cooper@sandovalgarc.com,Kristina,Cooper,,Qualified,CISO,,2024-10-27,,99,False,True,f2ba949c81c64e81,False,False,False
-5562b43aa609465a,,matthew.day@marshalldomi.com,Matthew,Day,,Active,End User,Individual Contributor,2023-06-01,,106,False,True,590e6858130f48df,False,True,True
-372dbdaaf3864bb7,,benjamin.harris@blackwellllc.com,Benjamin,Harris,Insurance claims handler,Active,Technical Buyer,Manager,2024-08-31,,20,False,True,341eb08c0c054188,False,False,False
-2bfa16660563413c,e4270b83113649b9,benjamin.lucas@kelly-norman.com,Benjamin,Lucas,,Active,Champion,Individual Contributor,2024-10-15,,160,False,True,a59ba2231fa14656,True,False,False
-dd8af4d32a6c42e3,565c43db21064526,pamela.paul@morgan-lopez.com,Pamela,Paul,Research scientist (medical),Active,,Individual Contributor,2023-10-26,,193,False,True,0e6eb570daed4727,False,True,False
-d27b622c5d644803,,laurie.acosta@jordanandson.com,Laurie,Acosta,Sports administrator,Qualified,,,2023-06-01,,154,False,True,28d5ea44ae594985,True,False,False
-df1383101a9e4743,8748fc8ee24e4175,donna.parker@robbinsjacks.com,Donna,Parker,Product manager,Active,,Manager,2024-09-04,,190,False,True,a478173103a449c5,False,False,True
-420fbf7172364bb2,969cebedb14e46cf,jonesdana@yahoo.com,Christina,Graham,,MQL,,Director,2024-05-31,2025-04-17,77,True,True,6c8aa3429d454967,False,False,False
-8abaab86575a4f65,,douglas.lawson@johnson-jone.com,Douglas,Lawson,Medical technical officer,MQL,Champion,C-Level,2024-08-09,2025-04-24,64,True,True,a64f3e34a584450d,False,True,False
-411d67e5335748ff,585f4650624042fd,cassie.shelton@watson-hines.com,Cassie,Shelton,"Teacher, secondary school",MQL,Economic Buyer,VP,2022-01-15,2025-02-06,184,True,True,c02acec638984635,False,True,False
-791e73cc5745427d,674a5f9ffe044852,leonard.ramirez@johnsonandso.com,Leonard,Ramirez,Restaurant manager,Attempted,End User,Individual Contributor,2024-02-26,,125,False,True,9b642437dba14a52,False,True,False
-9ecd595c8f204b20,f5268bcc049f492c,jorge.griffin@mitchellhend.com,Jorge,Griffin,,MQL,,Individual Contributor,2023-05-19,2025-04-30,157,True,True,4e8896553ebf444f,False,False,True
-a5e36b986b2d474d,94809d33861e41ae,gerald.reeves@cochranllc.com,Gerald,Reeves,"Loss adjuster, chartered",Active,,Individual Contributor,2023-07-07,,70,False,True,2c87a6d20f7a443d,True,True,True
-ae82e91a624e49bd,ac3ecd6284d04435,melissa.joseph@littleleonan.com,Melissa,Joseph,Community development worker,MQL,Technical Buyer,,2023-08-29,2025-01-12,165,True,True,e41140acbe3d43c8,False,False,False
-00d6d482e2a7440a,969cebedb14e46cf,kristy.johnson@armstrongmcd.com,Kristy,Johnson,"Conservation officer, nature",MQL,End User,,2024-03-16,2025-04-22,5,True,True,f76253b2f2aa4835,False,True,True
-98264595b1324687,4c6ff1a2f55049f8,khammond@gmail.com,Jennifer,Mendoza,"Buyer, retail",MQL,,,2024-05-27,2024-11-19,52,True,True,e582f815db254bea,False,True,False
-405de96f02464912,db8b72deabea4a0b,david89@outlook.com,Charles,Owens,"Education officer, environmental",MQL,Economic Buyer,Director,2023-05-04,2025-04-02,121,True,True,f8fbb9ad12654b74,False,False,True
-17f811020e18432f,cc5c6ef2e36c4240,sales@martin-morris.com,Marie,Holmes,Logistics and distribution manager,MQL,,Individual Contributor,2022-01-15,2024-12-07,69,True,True,8e086da13b1141c5,False,False,False
-ab0270e2ec3c4bea,b50bf2b278754d74,cynthia.pierce@weberplc.com,Cynthia,Pierce,"Social research officer, government",MQL,Champion,Manager,2024-10-27,2024-12-24,96,True,True,6d92850177ef4551,False,False,True
-ea0348acac414ef7,,brittany.carpenter@hopkinsltd.com,Brittany,Carpenter,Trade union research officer,Nurture,,Director,2023-12-12,,11,False,True,a989fa58b6854360,False,False,False
-3cc69d0f8ddb4e4d,,frykelli@libero.it,Marcia,Johnson,Geochemist,MQL,End User,Individual Contributor,2024-06-17,2025-03-13,171,True,True,fc7f6e4293db4c5a,False,False,False
-757215a25d344f07,7663529cc93a4280,anthony.small@robertsfryea.com,Anthony,Small,,Qualified,End User,Director,2023-06-01,,111,False,True,06dc7a2b7b1e4a8f,False,False,True
-c817eab06c45427a,e3208a541dbb4d58,mharris@gmx.de,Eric,Perry,Cytogeneticist,Active,CISO,,2025-02-12,,120,False,True,b598a7b3ac6d4806,False,False,False
-32d3c2e0b2ea48f6,ad4f60a1a88246fa,vanessa.reed@anderson-woo.com,Vanessa,Reed,,MQL,Economic Buyer,Individual Contributor,2023-09-15,2025-01-18,104,True,True,2a6e49904eb74cb5,False,False,False
-8ebc51fa1a174d3a,fe02e881caac4842,david.cole@davisllc.com,David,Cole,Music tutor,Attempted,End User,Director,2024-04-11,,126,False,True,0be52b77521046d7,False,False,False
-fd7091014d0c4afa,206cba67f8ad4d58,lisa.peck@edwardshines.com,Lisa,Peck,"Scientist, biomedical",Attempted,Champion,Manager,2025-01-03,,91,False,True,379d775b9f0a42a5,False,False,False
-b28398b6ce404a23,74f4467873ba41b3,andrew.landry@bryantallena.com,Andrew,Landry,Art therapist,MQL,Technical Buyer,Director,2023-05-06,2025-02-02,160,True,True,dd18923acc5643ae,False,False,True
-5ab1e167cc7645ed,554468d9beff4e90,amitchell@outlook.com,Nicole,Pena,Clinical cytogeneticist,Active,,Director,2024-10-20,,52,False,True,48b2476427ff4432,False,False,False
-6e99e3a011c34d32,4630aedd26664b7c,michael.powell@moralesplc.com,Michael,Powell,"Surveyor, planning and development",MQL,Non-Prospect,,2024-12-08,2024-12-11,147,True,True,e1db6d29737247e1,False,False,False
-facdebb8bbed4845,fe02e881caac4842,charles.gordon@ramirezhaysa.com,Charles,Gordon,Commissioning editor,MQL,,,2024-10-15,2025-01-25,125,True,True,b7e9ec1a9d054421,False,False,False
-5f965a5dc8834f00,73d25b49db3c4bb2,kari39@outlook.com,Nathaniel,Hatfield,Sales executive,Qualified,Non-Prospect,Individual Contributor,2024-02-22,,89,False,True,c58572ce9674461a,False,False,False
-0fd41305ceea4f92,dbf61afcfa974085,support@stone-hernandez.net,Derrick,Cook,Counselling psychologist,MQL,,,2024-08-13,2025-04-30,192,True,True,7b0c29ddb4834588,False,False,False
-b3e96fc0032244e2,74f4467873ba41b3,phillip.jensen@wheeler-rome.com,Phillip,Jensen,,Active,CISO,C-Level,2023-11-02,,177,False,True,639cefaf8843407b,False,False,False
-60f6c4c29e0b4273,dbbe143ca83a475d,allen.rivera@whitneyplc.com,Allen,Rivera,Insurance account manager,MQL,CISO,C-Level,2024-08-30,2025-02-14,6,True,True,3262f04750bc4ed7,False,False,False
-a84a1b33b4434c6a,7c1f05a16908456b,joseph.rios@lanegriffith.com,Joseph,Rios,"Doctor, hospital",Active,End User,,2022-01-15,,64,False,True,794efb048e3b475c,True,True,True
-01f4bd033b4e4971,,dylan.becker@armstrongltd.com,Dylan,Becker,Clinical molecular geneticist,MQL,Economic Buyer,,2023-05-25,2025-02-12,99,True,True,9480880b0d904fd2,False,False,False
-7ef19df16501475d,94809d33861e41ae,robert.gutierrez@jenkinsplc.com,Robert,Gutierrez,Public affairs consultant,Active,Non-Prospect,VP,2023-08-07,,173,False,True,44867c47614e4f13,False,False,False
-43f0566ddaa84eb1,,ann.bolton@fox-edwards.com,Ann,Bolton,,Attempted,,Individual Contributor,2022-01-15,,137,False,True,aba40e3187464d25,False,False,False
-cac53b119eab4fc2,e70835ee7fd94304,michael.ingram@beckerlaraan.com,Michael,Ingram,Radio broadcast assistant,MQL,,,2024-04-07,2024-12-27,6,True,True,058a79b1f8d04353,True,False,False
-b9ebec44b8fa48c9,e1d05fbfe059420b,angela.walker@wise-bush.com,Angela,Walker,Records manager,Qualified,Economic Buyer,Manager,2025-01-03,,185,False,True,7e161b4e5c274a01,False,False,False
-7807f80716164cd1,300180be78af4b9b,david86@gmail.com,Sarah,Griffith,Nutritional therapist,MQL,Champion,VP,2023-06-01,2025-01-05,82,True,True,f4486fde57a34002,False,False,False
-521cc3feb166497a,cc5c6ef2e36c4240,reedscott@hotmail.com,Kelly,Roberts,Furniture conservator/restorer,MQL,Technical Buyer,Manager,2023-06-01,2024-12-22,199,True,True,62418f79beb545a3,False,True,False
-2b121b1dff994f42,ee8327abbfc945c6,danielyang@gmx.de,Sarah,Horton,Film/video editor,MQL,Technical Buyer,,2023-11-04,2024-12-14,144,True,True,4168c76c1b1a4345,False,False,True
-92f829569785453e,42b4c010299140c7,jeremiah.hall@gutierrezltd.com,Jeremiah,Hall,Public house manager,Active,,C-Level,2025-02-11,,44,False,True,745f863cc9924ff7,False,False,False
-ab60b4dd1a654227,,adam.pierce@russellgroup.com,Adam,Pierce,,Active,CISO,Individual Contributor,2023-06-01,,39,False,True,9f507d6c3e364c14,False,True,False
-e1255457e7a54441,9bc16b4817824d1a,debbie.velez@pearsonandso.com,Debbie,Velez,Social researcher,Qualified,Champion,,2024-07-20,,167,False,True,a57e1783735b457e,False,True,True
-57b741617c8641af,f916ea30e0744727,sarahjohnson@gmail.com,Gregory,Khan,Occupational psychologist,Nurture,End User,Manager,2022-01-15,,58,False,True,dd6e3448c82448a9,False,False,False
-428f0a8ca3284912,9bc16b4817824d1a,monica.roberts@smithplc.com,Monica,Roberts,Toxicologist,Attempted,,VP,2024-12-04,,154,False,True,11bb6588b8414d95,False,False,False
-104c834a1a6544d6,,justin.hays@warrensmalla.com,Justin,Hays,,Attempted,,VP,2024-01-17,,162,False,True,54eae1d9824c42cc,False,True,False
-06809f279e4a4a9b,,mark.simon@scottlopezan.com,Mark,Simon,Hotel manager,MQL,Economic Buyer,,2023-06-01,2024-11-11,22,True,True,b2e86f57a1ed4620,True,False,True
-95e95e5ae7b247c4,,danielle.sullivan@robertson-mi.com,Danielle,Sullivan,,MQL,Technical Buyer,Manager,2024-02-16,2025-03-20,35,True,True,482b1ffacd8e440d,False,False,False
-54c126df297d4f80,6dd1af3232774ecb,marcus.wright@reyes-griffi.com,Marcus,Wright,,Active,Champion,Director,2022-01-15,,168,False,True,863ad037313149b7,True,False,True
-b56c99f79066490c,b92214f0f0ba45e2,bryanwilson@hotmail.com,Alexander,Valdez,Information systems manager,MQL,Champion,Individual Contributor,2022-01-15,2025-02-13,59,True,True,b61440443ad74121,False,False,False
-e2b082882aa247a2,bca104e01209402a,sandra.barron@vaughn-fowle.com,Sandra,Barron,Hotel manager,Attempted,CISO,,2023-06-01,,134,False,True,c13e503f75094ad3,True,False,False
-28f34b323a3544e6,99b51203a6134f3f,dennis.hernandez@zhangbrooksa.com,Dennis,Hernandez,Public affairs consultant,MQL,,,2022-01-15,2024-12-30,54,True,True,642e6e3dcc894a0a,False,True,False
-7de14195e6334f42,,foxallison@outlook.com,Erin,Larson,,Nurture,,,2024-08-25,,162,False,True,09dc88241b334601,False,True,False
-e3c07340ce1b4d87,1909e3cef0a242b0,bryan.kelley@harrisherrer.com,Bryan,Kelley,,Active,Non-Prospect,Director,2022-01-15,,18,False,True,f520acc78048466b,False,False,False
-636de94aacf64451,319b26d53a994995,brandy.davis@griffinbrown.com,Brandy,Davis,Pathologist,MQL,,Director,2023-07-01,2025-01-10,67,True,True,665569957e5d43cd,False,True,False
-fbb3ad39ecbf4ec0,68d859bece2245ac,emily.parker@fosterinc.com,Emily,Parker,Engineering geologist,MQL,Non-Prospect,,2023-06-01,2025-03-04,100,True,True,497f8df7dda742c9,False,True,False
-53f6dd5eb4354286,9220006c997c4ef7,amber.brown@andersengrou.com,Amber,Brown,Ambulance person,Qualified,Champion,,2024-11-22,,104,False,True,51b0a007bdfa4dad,False,False,False
-36514007902349fe,c171f3eb944e4e14,katie.good@stuartbrooks.com,Katie,Good,"Production assistant, radio",Qualified,Non-Prospect,,2023-06-01,,16,False,True,e427ad64c6d44adb,True,False,False
-a9dfa17ac0094237,74f4467873ba41b3,dorothy.ryan@daltonwilson.com,Dorothy,Ryan,,Nurture,Champion,,2023-06-15,,71,False,True,dbb1633a998246b6,False,True,True
-b53580e1ff8f431c,565c43db21064526,katelyn.good@nunez-stephe.com,Katelyn,Good,,Active,Technical Buyer,,2024-05-26,,120,False,True,a8aa693bc0d3458b,False,False,False
-f14e6c69e5c942bd,585f4650624042fd,michael.hill@cannonjohnso.com,Michael,Hill,Volunteer coordinator,Qualified,Champion,Individual Contributor,2023-08-07,,154,False,True,aa2871a936984c64,True,False,False
-a5fa7dac78eb446a,5631db9f5a8f449b,craig.johnson@powersbrenna.com,Craig,Johnson,,Active,,Director,2023-06-01,,157,False,True,d43b9547ff514197,False,False,False
-4d9d7d2127b44341,,karen.parsons@gordonllc.com,Karen,Parsons,Facilities manager,Attempted,,Individual Contributor,2023-06-01,,82,False,True,6b27a23fb2db47dc,False,True,False
-89ebc340237f46b7,531d3d988d7c4420,admin@odom.com,Loretta,Young,Patent attorney,MQL,,Director,2024-05-23,2025-02-22,173,True,True,be63a7ac7c0848bb,False,False,True
-7cd0ab9aab2645f5,3190811cf697464c,brittany.moss@garrettgroup.com,Brittany,Moss,"Surveyor, commercial/residential",Qualified,Non-Prospect,Individual Contributor,2023-05-17,,35,False,True,94c83e0082b34ccd,False,False,False
-0c6acedb2ab44800,,dawn.james@floresbutler.com,Dawn,James,Mudlogger,Active,Non-Prospect,Individual Contributor,2023-06-01,,118,False,True,c484600dab3a48a2,False,True,False
-fe7b9d67829b4d9e,49aa1d3434f74961,lindamelendez@yahoo.com,John,Perez,"Surveyor, planning and development",Active,Champion,,2024-06-07,,162,False,True,b6461229fb094042,False,False,True
-bb8645b2cd4145d2,eefceb8f0c264308,dennis.sanchez@riverainc.com,Dennis,Sanchez,"Production assistant, television",Active,End User,,2023-11-10,,145,False,True,d52514a6b64f423d,False,False,False
-4dce91c6fb904fdf,622e27df91b84fb8,russojacob@hotmail.com,James,Adams,Theatre manager,MQL,,Manager,2022-01-15,2025-03-13,100,True,True,97a33198c3c8401c,False,False,False
-a6cf1581465147f9,891a3f2706644224,rebecca.turner@lewisandsons.com,Rebecca,Turner,,Active,Champion,Manager,2024-07-15,,140,False,True,03945b55857648ef,False,True,False
-557a64db7a994353,7fa7795bb25b4161,cassandra.harris@arnoldllc.com,Cassandra,Harris,Museum/gallery conservator,Attempted,Champion,,2024-09-10,,125,False,True,c049ec91cadd440d,False,False,False
-20c6c3834e5848a4,49b2ee91ce264780,jose.hunt@owens-lang.com,Jose,Hunt,"Psychotherapist, child",MQL,,Director,2024-11-30,2025-04-13,13,True,True,0fe4d17b08ec46bb,False,False,False
-be20f6496b0547cc,0983fad7081e4853,robert.hart@figueroainc.com,Robert,Hart,Games developer,MQL,End User,VP,2023-06-01,2024-11-12,52,True,True,c4a490b9ffd841f3,False,False,False
-96c29a9868e14407,757022cd00324e96,elijah.rivera@hudson-sanch.com,Elijah,Rivera,Statistician,MQL,,Manager,2025-03-22,2025-03-02,72,True,True,133469df9806475e,False,False,False
-1697494c6fc54f60,4d9212f629544ab8,tracy.cummings@henryjackson.com,Tracy,Cummings,"Doctor, general practice",MQL,End User,Manager,2023-06-01,2025-03-05,149,True,True,d052c0d0f5644ea6,True,False,False
-3c9760464533489b,cbd785d9a8444113,jack.preston@bernardwarre.com,Jack,Preston,,Active,Non-Prospect,Director,2023-06-01,,4,False,True,54c020153c144814,True,False,True
-f5f9e02e123345a1,ba821e7953014960,crystal.jones@smithplc.com,Crystal,Jones,"Programmer, applications",Active,End User,Individual Contributor,2024-06-29,,63,False,True,8cacb918d1f54529,True,False,False
-2069ee0970dc4413,cebfdafefd3c496b,sarah.durham@freemansmith.com,Sarah,Durham,"Administrator, charities/voluntary organisations",MQL,Non-Prospect,Manager,2024-10-14,2025-02-11,0,True,True,df76e8d4f5f24743,False,False,False
-d237358c2ff54850,8748fc8ee24e4175,amanda.mitchell@licraiganddr.com,Amanda,Mitchell,Editorial assistant,MQL,End User,,2023-07-27,2025-01-07,20,True,True,31f69e4d63f647b0,False,False,False
-c3748581cd71444c,,eduardo.lee@kinggomezand.com,Eduardo,Lee,,Active,End User,Manager,2024-03-04,,5,False,True,f0ca1232ee7e4832,True,False,False
-0bd387d6f6b04e4a,,info@sutton-abbott.com,John,Terry,Chief Financial Officer,Qualified,Champion,Manager,2023-11-15,,5,False,True,0b01a6f8961f41da,False,False,False
-e2a03217e1de418a,fe02e881caac4842,christopherbruce@mail.ru,Brian,Smith,Learning disability nurse,Active,End User,,2023-07-20,,178,False,True,82ca6fa433c4428c,True,False,False
-185ff763c6394254,65f1d66e5bd746e3,samantha.hall@clayalvareza.com,Samantha,Hall,Cabin crew,Nurture,Technical Buyer,,2024-08-21,,63,False,True,6ba1c38c16b84b74,False,True,False
-0b6309f2c08b4c60,ac1a969433f44808,antonio.mcfarland@smith-clark.com,Antonio,Mcfarland,Cytogeneticist,Attempted,,Individual Contributor,2023-12-08,,165,False,True,5c6d2eb91cf6496a,False,False,False
-d5d03e309d624c46,37f5eb0bf03943d9,irhodes@hotmail.com,Anne,Knight,Learning disability nurse,Nurture,Champion,Individual Contributor,2024-02-28,,111,False,True,f06e918fc3fa42b7,True,False,False
-cd1f05a8810b46c1,,brian63@yahoo.com,Vanessa,Ramsey,Call centre manager,MQL,Technical Buyer,Individual Contributor,2023-06-01,2025-03-05,122,True,True,e00ee7f337564fc4,False,False,False
-d4b0f2e3e43a45cb,f07802446d2840f8,anthony47@outlook.com,Caitlin,Novak,Recycling officer,Nurture,Champion,Individual Contributor,2023-06-11,,50,False,True,b47c7cbdbc234a21,False,True,False
-adceeaf9aaa2430d,d98f71a181cf4949,ryan.frazier@jamesbartona.com,Ryan,Frazier,Fine artist,Active,,,2024-08-10,,178,False,True,57fd296caadc4487,False,True,False
-0994061951c94e49,1c53b76108f64cba,kristen.moore@stewart-rodr.com,Kristen,Moore,"Accountant, chartered public finance",Active,Economic Buyer,Manager,2024-07-14,,71,False,True,a1b14991effd4e81,False,False,False
-f0d72be159874845,ff51cfaff9ea47f1,curtis.miller@cole-peters.com,Curtis,Miller,,Qualified,,Individual Contributor,2024-10-13,,13,False,True,63f3c4fb75ed490c,False,False,False
-ed3af663d14944f9,206cba67f8ad4d58,angela.carlson@shields-smit.com,Angela,Carlson,,MQL,CISO,,2024-10-03,2025-03-11,42,True,True,36ec4cd513e84a07,False,False,False
-ec338a5d5d234089,,ashleyjackson@outlook.com,Anita,Haney,Museum/gallery conservator,MQL,End User,,2025-01-13,2025-03-30,200,True,True,dab0d6a3e9784ef2,False,True,True
-42f7db47e774464b,e3208a541dbb4d58,joseph.thomas@hamiltongrou.com,Joseph,Thomas,,MQL,Technical Buyer,,2023-09-13,2025-04-28,47,True,True,fdde8aae30b948ae,False,False,False
-ecbe7986f33d4661,,sheryl.le@wheeler-gonz.com,Sheryl,Le,,MQL,Champion,,2022-01-15,2025-03-19,14,True,True,2767fe9cc5b843d2,False,False,True
-65f4093266fb4e31,3bd17bd1466f4d06,scott69@gmail.com,Martin,Oliver,Copy,MQL,Champion,,2022-01-15,2025-02-27,200,True,True,81de45fb7fb14a9e,False,False,False
-a9e278748c164dc7,fb7db87146894868,james.edwards@novak-carter.com,James,Edwards,Recycling officer,Active,End User,,2024-12-10,,155,False,True,61fa764e40de41d3,True,False,False
-653bb8ecfa944c63,,kristi.diaz@gonzalezosbo.com,Kristi,Diaz,Statistician,MQL,,,2025-04-01,2024-12-13,193,True,True,de639849145a4e6b,False,False,False
-a39dc45cb18d4068,65f1d66e5bd746e3,marie16@hotmail.com,Sherry,Clark,Restaurant manager,Nurture,,Individual Contributor,2023-10-12,,155,False,True,077a295c463147bb,False,False,False
-0c91b630b75d4d32,20481ff337cb4ee7,emccormick@rediffmail.com,Johnny,Moore,,MQL,End User,Manager,2024-07-18,2025-04-21,127,True,True,eb0ea56d079e414f,False,False,False
-a0fb625caf8e4d32,206a595accfd48c3,samantha.holt@johnsonschmi.com,Samantha,Holt,Software engineer,MQL,End User,,2023-06-01,2025-02-09,76,True,True,006f0882a91047be,False,False,False
-f33e8157679c4f36,9bc5161f807f4c9b,diane.kelly@salazarharta.com,Diane,Kelly,,MQL,,Individual Contributor,2025-03-16,2024-11-30,192,True,True,9075780e2d294612,False,True,False
-6405f14db5f74b15,9c1782bd9db14c2f,sheila.carpenter@clarkmcgeean.com,Sheila,Carpenter,Manufacturing engineer,Attempted,End User,,2023-06-01,,52,False,False,,False,False,True
-601c8f7bc0c64e12,385491ad1f044bdb,eramirez@yahoo.com,Rachael,Gordon,,Nurture,End User,,2024-03-02,,141,False,False,,False,False,False
-082813b1be8d4616,75d7a068fecc4c5a,michael.tucker@gallegosharr.com,Michael,Tucker,,Active,,,2024-11-03,,133,False,False,,False,False,False
-46302e4a1c59461c,f7bb6cf3605a4e3e,rachel.hayes@marsh-doughe.com,Rachel,Hayes,,Qualified,,Director,2024-01-09,,186,False,False,,False,False,False
-83ba1988fe7a4056,ee775723bd824e24,jacob.henson@millerandson.com,Jacob,Henson,,MQL,,Individual Contributor,2024-11-05,2025-03-11,56,True,False,,True,False,False
-09b2f33d1c144fce,f07802446d2840f8,susan.jones@hillltd.com,Susan,Jones,,Active,Champion,,2024-07-14,,186,False,False,,False,True,False
-0c9bff8b970e409a,bdffb97db03e4ec7,tyler.golden@cranejohnson.com,Tyler,Golden,Special educational needs teacher,Active,End User,C-Level,2023-07-10,,142,False,False,,False,False,False
-a1317e7355ac4835,cc5c6ef2e36c4240,pwallace@yahoo.com,Sarah,Wells,Advertising art director,Attempted,,Individual Contributor,2024-06-20,,69,False,False,,False,False,False
-bebe4cf0518d4a51,5f2df9e291da4598,marystone@yahoo.com,Kelly,Brown,Legal executive,Active,Economic Buyer,Director,2023-06-01,,25,False,False,,False,False,False
-790a4da286f440b7,cbd785d9a8444113,todd88@gmail.com,Robert,Cooper,"Producer, television/film/video",MQL,,Director,2023-05-24,2025-02-09,110,True,False,,False,False,True
-384fb48806ba423f,7c9888bee6f641e2,george43@hotmail.com,Stephen,Bradley,Radio broadcast assistant,MQL,,Individual Contributor,2023-08-08,2025-01-10,42,True,False,,False,False,False
-9f51142249904404,70e77fbbd13d4146,hernandezjustin@yahoo.com,Nathan,Roberts,,Active,,,2024-12-28,,34,False,False,,False,False,False
-dc08aab616e64b57,ca95156fe1d04fad,christine.martin@mitchellmcph.com,Christine,Martin,"Designer, exhibition/display",MQL,Champion,,2023-06-01,2024-12-02,49,True,False,,False,False,False
-2968ce2963a74cab,ca9b40a5d3884526,autumn74@yahoo.com,Evan,Wilson,Merchant navy officer,MQL,,,2024-11-11,2024-11-26,131,True,False,,True,False,False
-6e4cf92b08164b4a,969cebedb14e46cf,jack.hart@wadellc.com,Jack,Hart,Data scientist,Nurture,Non-Prospect,Individual Contributor,2023-12-25,,107,False,False,,False,False,False
-dc54e39dedc8413f,3bc38b2bb37e4a9d,nathan.fernandez@fergusoninc.com,Nathan,Fernandez,,Qualified,,,2023-06-01,,72,False,False,,False,False,False
-f75a88a9b62649d3,f5ff5461298247e2,staciereilly@gmail.com,Richard,Porter,,MQL,,Individual Contributor,2023-08-09,2025-03-08,49,True,False,,False,True,False
-0bc6fb99b08045d0,622e27df91b84fb8,deborah47@outlook.com,Adam,Rodgers,,Nurture,Economic Buyer,Manager,2024-05-05,,145,False,False,,False,False,False
-8403011988cb44d9,65f1d66e5bd746e3,tara.webster@estradamarsh.com,Tara,Webster,Private music teacher,MQL,,,2023-06-01,2024-11-27,184,True,False,,False,True,True
-a75ad55a897d41f3,622e27df91b84fb8,matthew.rodriguez@mccullough-t.com,Matthew,Rodriguez,Structural engineer,MQL,Technical Buyer,,2023-11-05,2025-03-24,190,True,False,,False,False,False
-42e038bc59564805,e0c77b5aa4574012,darryl.johnson@randallgriff.com,Darryl,Johnson,Automotive engineer,Qualified,Champion,Manager,2023-12-23,,11,False,False,,False,True,False
-a499df778d904527,d98f71a181cf4949,kimberlywang@yahoo.com,Cathy,Lee,,MQL,CISO,Manager,2023-08-25,2025-02-09,166,True,False,,False,False,False
-f906cf70c2fa43b7,554468d9beff4e90,andrew.ryan@rhodes-rosar.com,Andrew,Ryan,Science writer,Active,,,2024-07-31,,139,False,False,,False,True,False
-83772b6498b54f01,36c604a3c5954b65,preston.henry@jacobshardin.com,Preston,Henry,,MQL,End User,Individual Contributor,2023-08-16,2024-11-12,60,True,False,,False,False,False
-b5393b7c3ee54c22,8748fc8ee24e4175,xwood@rediffmail.com,Raymond,Baldwin,"Administrator, charities/voluntary organisations",MQL,,,2023-06-01,2025-03-28,171,True,False,,False,True,False
-fdc064d3669440ad,6c4abf98669d4d11,fsawyer@gmail.com,Justin,Bell,,MQL,Economic Buyer,Director,2023-06-17,2025-03-22,197,True,False,,False,False,False
-4064ad55d7784943,7c1f05a16908456b,jessica.wallace@lara-roberts.com,Jessica,Wallace,Photographer,Active,,Individual Contributor,2024-11-27,,45,False,False,,False,False,False
-47e34a05ea864c0e,6bd4b847804e41fa,jessica.perry@harperthomas.com,Jessica,Perry,"Scientist, water quality",MQL,End User,Individual Contributor,2024-10-17,2025-03-20,122,True,False,,False,False,False
-3b3f2575df7442d4,6f7a7b7845d1439a,valerie.jones@aviladavisan.com,Valerie,Jones,Government social research officer,MQL,Economic Buyer,VP,2024-08-27,2024-11-23,178,True,False,,True,False,False
-5f740c16b2cb4316,7663529cc93a4280,robert.peters@bradleymelen.com,Robert,Peters,,Active,End User,Individual Contributor,2024-09-10,,170,False,False,,False,False,False
-e17941d5462b401f,c9585f6aebde42cc,keith.henry@davenport-to.com,Keith,Henry,"Surveyor, land/geomatics",Nurture,End User,VP,2023-09-05,,185,False,False,,False,True,False
-0f5a8f2b29274407,e1d05fbfe059420b,jodi.walker@moorellc.com,Jodi,Walker,Public house manager,MQL,,Manager,2023-06-01,2025-02-13,97,True,False,,False,False,False
-cffa249de967495a,5311269b2af04ae3,david.wade@butler-vasqu.com,David,Wade,,Active,,Manager,2025-03-06,,134,False,False,,False,False,False
-7ec2970bfc284261,c6d5f75384fb43ac,anthony.hubbard@gamble-jones.com,Anthony,Hubbard,,Active,Non-Prospect,,2024-09-26,,194,False,False,,False,False,False
-b6a676e2d80c47cd,3190811cf697464c,courtney71@gmail.com,Bianca,Cunningham,Midwife,MQL,Champion,,2024-06-01,2025-01-17,107,True,False,,True,False,False
-f0b3e3366a3447fd,ee0ea07437bc4204,william.johnston@martin-brown.com,William,Johnston,IT consultant,Attempted,CISO,C-Level,2023-06-01,,63,False,False,,True,True,False
-1fc0f295b0e24985,9a7dcd8c991348a3,frank45@yahoo.com,Steven,Steele,,Attempted,End User,,2024-10-10,,69,False,False,,False,False,False
-698e27dd917b4bb1,bfdbdee1f0874f88,robertsalyssa@mail.ru,Daisy,Friedman,,MQL,Technical Buyer,Manager,2024-06-06,2025-01-17,63,True,False,,False,False,False
-97b1e506c8b6456e,16f64ec320bb420b,kathygeorge@gmail.com,Willie,Miranda,,Qualified,,VP,2024-11-21,,59,False,False,,False,False,False
-2f384e701f2d465d,400cf5ecd1144bf1,amy.brennan@marshnelsona.com,Amy,Brennan,,Attempted,,Individual Contributor,2024-12-09,,37,False,False,,False,False,False
-a81a43ec77e540e6,f40faa29dd754ec4,cody.carpenter@smithplc.com,Cody,Carpenter,Herbalist,MQL,Economic Buyer,Individual Contributor,2023-06-01,2025-01-21,169,True,False,,False,False,False
-861e724984954e47,27adf4d94b4244c5,nathan.washington@mccall-marti.com,Nathan,Washington,Engineering geologist,Nurture,Non-Prospect,C-Level,2023-06-01,,36,False,False,,False,True,False
-b0474b45eef4492a,585f4650624042fd,eric.walker@popeplc.com,Eric,Walker,Visual merchandiser,Active,,,2023-06-01,,122,False,False,,False,False,True
-d15ca85acc094af9,6bd4b847804e41fa,hannah.cisneros@marquezparka.com,Hannah,Cisneros,,MQL,,Individual Contributor,2024-12-10,2025-01-26,168,True,False,,False,False,False
-6673ae7a7f2449b2,82093ea79b354ada,sandramendoza@yahoo.com,Steven,Jones,Insurance underwriter,Attempted,Non-Prospect,,2024-07-17,,38,False,False,,False,False,False
-736cd2d5c7a54c83,82093ea79b354ada,hannah.taylor@preston-harp.com,Hannah,Taylor,"Lighting technician, broadcasting/film/video",MQL,,,2023-06-01,2025-02-20,154,True,False,,False,False,False
-c0ded70eb91142af,fe02e881caac4842,gerald.torres@olsenwalkera.com,Gerald,Torres,,MQL,,Individual Contributor,2023-10-04,2025-03-03,19,True,False,,False,False,False
-8cd41bb78874486b,a2c929714d1f4852,hailey.parker@andersoninc.com,Hailey,Parker,,Active,Technical Buyer,,2023-09-18,,9,False,False,,False,False,False
-2e2d099cf28649bd,5153053f818d45f8,smithtodd@yahoo.com,Hannah,Bowers,Plant breeder/geneticist,MQL,Champion,,2023-07-15,2025-02-25,70,True,False,,False,False,False
-c6c822c522c54798,47f5666f432f4226,brad.rodriguez@palmerbrowna.com,Brad,Rodriguez,Forensic scientist,Nurture,Non-Prospect,Individual Contributor,2023-06-01,,71,False,False,,True,False,False
-f14126bd57ed489f,a2c929714d1f4852,websterkimberly@yahoo.com,Bradley,Turner,,MQL,,Individual Contributor,2023-05-19,2025-03-17,45,True,False,,False,False,False
-044f57ef00b3474c,ac1a969433f44808,ellenjohnson@hotmail.com,Jamie,Santana,Dancer,Qualified,,,2024-09-04,,40,False,False,,False,True,False
-61470ceffeeb4b6c,ad4f60a1a88246fa,meghan.mcmahon@baileymartin.com,Meghan,Mcmahon,Video editor,Active,Champion,VP,2023-06-01,,133,False,False,,False,False,False
-943790ce9fb24af4,3bc38b2bb37e4a9d,john.hudson@weissinc.com,John,Hudson,Seismic interpreter,Qualified,Champion,,2023-08-02,,113,False,False,,False,False,False
-23e76d51fda44283,7977d1747af2409d,jay.lee@jackson-webs.com,Jay,Lee,,Active,,Manager,2024-12-29,,188,False,False,,False,False,True
-08dc331ab85d4a3c,c04278d96e7649c7,samanthayork@yahoo.com,Teresa,Garcia,Public relations officer,Qualified,End User,,2023-09-28,,18,False,False,,False,False,False
-61af7fc08b2b4a0b,972a55b09b404b19,michael.lawrence@nunez-rodrig.com,Michael,Lawrence,Marine scientist,MQL,,,2024-09-03,2025-03-05,159,True,False,,False,False,False
-ae106ed2fe2d42ab,2c273c82c4d049d4,rickjuarez@gmail.com,Tina,Coleman,,MQL,Non-Prospect,Individual Contributor,2024-04-21,2025-04-28,82,True,False,,False,False,False
-7f3a18ab0df64438,d5c6faa8f56a4cd5,david.rodriguez@simpsonllc.com,David,Rodriguez,,Qualified,Non-Prospect,Individual Contributor,2024-01-08,,154,False,False,,True,True,False
-06727094a0ba439c,16f64ec320bb420b,angela.williams@snyder-cruz.com,Angela,Williams,"Programmer, multimedia",Attempted,Technical Buyer,Individual Contributor,2023-06-01,,125,False,False,,False,False,False
-d2bc1f7641334f1d,c04278d96e7649c7,caroline.collins@perez-russel.com,Caroline,Collins,,Active,Technical Buyer,C-Level,2023-06-01,,62,False,False,,False,False,True
-addc1a97285546d8,3245670d835a408b,xcrosby@yandex.com,Jacob,Jones,,Active,,,2024-06-30,,43,False,False,,False,False,True
-4e44fdc0320440df,04c36acaeb1c40cd,alexander.craig@garciakimand.com,Alexander,Craig,Chartered certified accountant,Qualified,,Director,2023-09-08,,134,False,False,,False,True,False
-58f8511b63574ecc,f219724055874514,figueroapatricia@gmail.com,David,Foster,Dispensing optician,Active,Non-Prospect,VP,2024-11-25,,164,False,False,,False,False,False
-3339c8c76ea84cf4,ed495689b58c451a,calvin.hester@gonzalez-ant.com,Calvin,Hester,Operations geologist,MQL,,Individual Contributor,2023-06-01,2024-11-09,173,True,False,,False,True,False
-b59e3a96ffd44de5,757022cd00324e96,tramirez@outlook.com,David,Massey,,Nurture,End User,,2024-11-19,,64,False,False,,True,False,False
-4c676fa4ec164404,f8ee0f5a8d9a459a,qkelly@hotmail.com,Brittney,Avila,Toxicologist,MQL,,Director,2025-02-17,2025-03-03,47,True,False,,False,False,False
-a9bb4c69c3b74f7f,7b35a9187fe2425c,stephanie.archer@ramireztatea.com,Stephanie,Archer,Fitness centre manager,Nurture,Non-Prospect,VP,2024-06-19,,197,False,False,,False,True,False
-cf940c96fcd24f4e,6bd4b847804e41fa,tracy.hall@johnsonltd.com,Tracy,Hall,,Active,Champion,Director,2023-06-01,,163,False,False,,True,False,False
-eb579de6e3b64769,542689c6d93f4be6,maria.jimenez@stantongroup.com,Maria,Jimenez,,Active,Technical Buyer,Director,2023-06-01,,26,False,False,,True,False,False
-25c67c05fe7744c4,b7c618b515174d4a,erin.hernandez@hansonwolfan.com,Erin,Hernandez,,Qualified,,C-Level,2023-06-01,,57,False,False,,True,False,True
-6af3abf016e94e8a,74f4467873ba41b3,katrina.sparks@cartergroup.com,Katrina,Sparks,,Nurture,Non-Prospect,VP,2023-11-10,,104,False,False,,False,False,False
-8f546d1eda9a4b86,9556bb3588b24be6,william.daniels@paynecisnero.com,William,Daniels,,Active,Non-Prospect,,2023-06-01,,152,False,False,,False,True,False
-4b664d0d14d54f9c,fab38126606a4f58,yedwards@outlook.com,Nicole,Wilson,Probation officer,Qualified,Champion,Individual Contributor,2024-02-01,,34,False,False,,False,True,False
-81d824cba1134689,92c3e16309b249ac,steve.johnson@hopkinschana.com,Steve,Johnson,"Development worker, international aid",Qualified,End User,,2023-06-01,,104,False,False,,False,False,False
-72610f0393034452,7e0468870ad742ae,travis.taylor@pricegallagh.com,Travis,Taylor,,MQL,,,2023-06-01,2025-04-21,133,True,False,,False,False,True
-aafd59e27c9b48a3,18dfbdb615874d63,donna.jennings@harrisonhart.com,Donna,Jennings,,Qualified,CISO,Director,2025-02-13,,4,False,False,,False,False,False
-51c6ef2005cd41e8,ac1a969433f44808,peter.simpson@jensen-gomez.com,Peter,Simpson,Higher education careers adviser,MQL,Non-Prospect,Individual Contributor,2023-07-19,2025-04-24,82,True,False,,False,False,False
-456158329395467c,319b26d53a994995,luke.johnson@andersonllc.com,Luke,Johnson,Magazine journalist,Attempted,,C-Level,2024-01-11,,36,False,False,,False,False,False
-b9c4f4427744415d,ca147e09badd4026,lisa.silva@petersondavi.com,Lisa,Silva,Marketing executive,Qualified,,Director,2023-12-30,,140,False,False,,False,False,False
-3487f0dd7eca42e7,9bc16b4817824d1a,robert.brown@wrightltd.com,Robert,Brown,Insurance underwriter,Attempted,Champion,,2025-03-14,,16,False,False,,False,False,False
-7d9b02db6d88463b,4630aedd26664b7c,brittany.lozano@meltoninc.com,Brittany,Lozano,Leisure centre manager,Qualified,Non-Prospect,Individual Contributor,2024-10-14,,196,False,False,,False,False,False
-4e356cc36bfa4a0b,fc8f645b85504a8c,geoffrey.ryan@murraygroup.com,Geoffrey,Ryan,Tax inspector,MQL,End User,Individual Contributor,2023-12-21,2024-12-18,148,True,False,,False,False,False
-acc4ba9ace8a4fba,c171f3eb944e4e14,dominguezbrianna@yahoo.com,Zachary,Fisher,Investment analyst,Nurture,,,2024-09-14,,57,False,False,,False,True,False
-5c8a3620fd8247c4,37f5eb0bf03943d9,nicholas.myers@davisfreeman.com,Nicholas,Myers,"Engineer, land",MQL,Champion,Manager,2023-12-04,2024-11-18,7,True,False,,False,True,False
-ed0c8805bd434702,e1d05fbfe059420b,garrett45@libero.it,Matthew,Shaw,Press photographer,Attempted,,,2024-03-27,,4,False,False,,False,False,False
-cae03539f47a4c54,206cba67f8ad4d58,james.reid@pittmanplc.com,James,Reid,"Engineer, site",Qualified,End User,,2023-07-17,,139,False,False,,False,False,False
-922717337eff4035,8fd1d51c0cdb4918,nballard@gmail.com,Karl,Williams,Chief Executive Officer,Nurture,,,2025-03-17,,196,False,False,,False,False,False
-6b0f1a4d6adc4744,82093ea79b354ada,joshua98@hotmail.com,Jennifer,Lane,Public relations officer,Nurture,,,2024-07-29,,42,False,False,,False,False,True
-8670ba5af2294190,16f64ec320bb420b,ronald.reed@pearsonllc.com,Ronald,Reed,,Qualified,,,2023-06-01,,6,False,False,,True,True,False
-79892b041f3740c2,6f70441fa47a4ff7,linda.reynolds@edwardsperry.com,Linda,Reynolds,"Scientist, biomedical",Nurture,,Manager,2023-06-01,,113,False,False,,False,False,True
-76f907bcdd6c4804,37f5eb0bf03943d9,nicoleburton@mail.ru,Shawn,Hines,"Scientist, clinical (histocompatibility and immunogenetics)",MQL,,Individual Contributor,2024-02-26,2025-01-06,171,True,False,,False,True,True
-f4ceba529c52455d,2670ce83d3ef4f45,michelle.ray@guerreroltd.com,Michelle,Ray,,Qualified,End User,Manager,2025-02-12,,5,False,False,,False,False,False
-85a7a67793f0403f,16048cf1ae21427d,joseph.little@farrellmeado.com,Joseph,Little,Best boy,Active,Non-Prospect,,2023-06-01,,102,False,False,,False,False,True
-2d4acf4c447b4240,6023e7aea36f47bf,alexa.diaz@allenltd.com,Alexa,Diaz,,MQL,Non-Prospect,Individual Contributor,2023-06-01,2025-03-20,108,True,False,,False,False,False
-b6cd53446e8e4c07,73de4dc083e249e0,megan.jenkins@waltersgroup.com,Megan,Jenkins,,Active,Economic Buyer,,2023-06-01,,43,False,False,,False,False,False
-86c39229e8e04089,89072b1858e346cc,madison.lucas@mcdaniel-you.com,Madison,Lucas,Field trials officer,Attempted,Champion,,2024-08-02,,36,False,False,,False,False,False
-9dfc5ecc40e441e7,82093ea79b354ada,daniel.lee@roblesllc.com,Daniel,Lee,,Attempted,,Individual Contributor,2023-08-07,,107,False,False,,False,False,False
-f8bd1b1d67684d68,351f4e0509954ffa,clucas@yahoo.com,Todd,Esparza,"Engineer, drilling",MQL,End User,Director,2023-09-27,2025-04-01,81,True,False,,False,False,False
-cbc162c250a544cf,585f4650624042fd,kristine48@gmx.de,Erik,Taylor,"Editor, commissioning",Attempted,End User,Individual Contributor,2024-02-14,,127,False,False,,False,False,False
-3b9f97a1cd724794,8fd1d51c0cdb4918,dawn.williams@tuckersmitha.com,Dawn,Williams,,MQL,,C-Level,2023-06-01,2024-11-20,100,True,False,,False,False,True
-247922bf289a4cec,2630bcbe69d14f30,lesterrichard@yahoo.com,Lee,Evans,Medical physicist,Active,End User,Individual Contributor,2023-06-01,,145,False,False,,False,False,False
-a40f5ed68a4a4bab,351f4e0509954ffa,emily.blackwell@hahn-ramsey.com,Emily,Blackwell,Counselling psychologist,Nurture,Non-Prospect,Manager,2023-06-01,,32,False,False,,False,True,False
-3a2c558feb2843d9,16048cf1ae21427d,joel.duncan@fitzpatrickb.com,Joel,Duncan,"Scientist, water quality",Attempted,Non-Prospect,Manager,2023-09-24,,74,False,False,,False,False,False
-9a5e7da2da8443ab,ba821e7953014960,johnathan.wilkerson@greenellc.com,Johnathan,Wilkerson,Landscape architect,Qualified,Champion,,2023-06-30,,112,False,False,,True,False,False
-c6d43aac4b604c4c,554468d9beff4e90,marisa.mclaughlin@manningwalls.com,Marisa,Mclaughlin,Clinical biochemist,Active,Economic Buyer,Manager,2023-06-01,,160,False,False,,False,False,False
-139a205c4ec849d2,54c5e92a47134df5,gregory.booker@ortiz-roy.com,Gregory,Booker,Banker,Attempted,Champion,Manager,2024-10-26,,191,False,False,,True,False,False
-6ca7d8d710004de9,291da1b67d17420c,tracy.brooks@stewartgroup.com,Tracy,Brooks,Public relations officer,Active,,,2023-06-01,,186,False,False,,False,False,False
-2914d75b99f14f9e,1909e3cef0a242b0,felicia.richmond@coxltd.com,Felicia,Richmond,Mental health nurse,Active,Non-Prospect,,2024-04-16,,151,False,False,,False,True,False
-1e7bb034db4d4ef1,9bc5161f807f4c9b,skinnereileen@yahoo.com,Lori,Smith,Audiological scientist,Nurture,,Individual Contributor,2024-06-30,,146,False,False,,False,False,False
-a224e4d207d248b6,f8ee0f5a8d9a459a,johnnycruz@hotmail.com,Hannah,Mccormick,Medical laboratory scientific officer,Nurture,Non-Prospect,,2024-04-21,,43,False,False,,False,False,False
-91dd165c36b24fee,92c3e16309b249ac,rebecca.jennings@camachomathe.com,Rebecca,Jennings,"Nurse, learning disability",MQL,Champion,,2023-11-02,2025-01-20,125,True,False,,False,False,False
-24e21ed2325a48d6,f916ea30e0744727,sara.hardin@davis-carson.com,Sara,Hardin,Fashion designer,MQL,,Manager,2024-08-15,2025-02-11,131,True,False,,False,True,False
-2de8aa3a4da24ce0,f5ff5461298247e2,kenneth.villarreal@moonltd.com,Kenneth,Villarreal,,MQL,,VP,2023-06-01,2025-04-21,78,True,False,,True,False,True
-7ce7a2eec6ff43f4,ca147e09badd4026,rmccormick@gmail.com,Natasha,Wang,Catering manager,Attempted,,VP,2023-06-01,,81,False,False,,True,False,False
-8b1bea8d72aa4eaf,ee775723bd824e24,madeline.shepard@mclaughlin-h.com,Madeline,Shepard,Learning mentor,Nurture,Champion,VP,2025-02-24,,31,False,False,,False,False,False
-f7b1d78517df42a4,9c1782bd9db14c2f,hollowayholly@hotmail.com,Jennifer,Mcdowell,,Active,End User,C-Level,2023-06-01,,84,False,False,,False,False,False
-e4f0cf8e88434d45,ff7cd62b2de64ebd,carl.fisher@lirojasandch.com,Carl,Fisher,,Qualified,End User,Manager,2023-09-28,,130,False,False,,False,False,False
-fb4a85ed00b94ec6,47f5666f432f4226,kathleen.davidson@mccoyltd.com,Kathleen,Davidson,,Nurture,Technical Buyer,Individual Contributor,2023-06-01,,30,False,False,,False,False,False
-95c7702a4b1341ae,56c07675b3d84fac,aaron.gonzalez@edwards-mill.com,Aaron,Gonzalez,,Active,Technical Buyer,,2024-03-16,,164,False,False,,False,False,False
-474f0cd8d1a94158,a2c929714d1f4852,john.reeves@hinesbradfor.com,John,Reeves,,Active,,,2023-06-01,,77,False,False,,False,False,False
-4a46ba43132d40ea,42b4c010299140c7,jorgemcdaniel@gmx.de,Shannon,Russo,Land,Qualified,Champion,VP,2024-08-17,,38,False,False,,False,True,False
-15386c1c99164e5f,351f4e0509954ffa,lauren.gonzalez@richardson-l.com,Lauren,Gonzalez,Multimedia programmer,Active,End User,Director,2023-06-01,,34,False,False,,False,True,False
-308554af180d4758,9556bb3588b24be6,shirley.wilkerson@smithinc.com,Shirley,Wilkerson,,Active,,,2025-03-24,,183,False,False,,False,False,False
-41ce5ac8da7c463f,18dfbdb615874d63,deborah.sims@mccannandson.com,Deborah,Sims,Garment/textile technologist,Attempted,Economic Buyer,,2023-06-01,,68,False,False,,False,False,False
-265628b79dd64c4b,6c4abf98669d4d11,jacqueline.jackson@williamson-b.com,Jacqueline,Jackson,Database administrator,Active,Technical Buyer,Manager,2023-12-24,,140,False,False,,False,False,False
-387b621e512e4d0b,c171f3eb944e4e14,christopher.richardson@wilsonhiggin.com,Christopher,Richardson,Professor Emeritus,Nurture,Technical Buyer,Director,2024-08-22,,83,False,False,,False,True,False
-9a29e24c125646bb,fb7db87146894868,margaret.snyder@reevesandson.com,Margaret,Snyder,,Attempted,Technical Buyer,,2024-05-02,,36,False,False,,False,True,False
-1ec129c450104edd,7fa8524bf9d041eb,keith.snyder@reynoldsands.com,Keith,Snyder,Tourism officer,MQL,Technical Buyer,,2024-05-21,2025-03-30,190,True,False,,False,False,False
-0dd9094a90e044cd,3bc38b2bb37e4a9d,robertortiz@yahoo.com,Jason,Holloway,Dancer,Nurture,End User,,2023-11-08,,149,False,False,,False,False,False
-a86cbdad57894f6a,757022cd00324e96,christinesolomon@yahoo.com,Anthony,Cherry,Merchant navy officer,Nurture,Non-Prospect,,2023-12-09,,83,False,False,,False,False,False
-b72f77724e084d53,d3856d7504d241bf,smithdean@gmail.com,Brandi,Holland,,Active,,Individual Contributor,2023-06-01,,11,False,False,,False,False,False
-7d5dd33181ec4139,f40faa29dd754ec4,jennifererickson@hotmail.com,Terri,Sanders,"Therapist, speech and language",Active,End User,Manager,2024-08-29,,163,False,False,,False,False,False
-68b3f922b1534265,4630aedd26664b7c,jonathan.davis@williamsands.com,Jonathan,Davis,Public affairs consultant,Attempted,End User,,2024-08-03,,28,False,False,,False,False,False
-2eda037591c644d2,3245670d835a408b,smithwilliam@hotmail.com,Rebekah,Barajas,,Active,End User,,2023-06-13,,122,False,False,,False,False,False
-628803e4a7144ffd,4c6ff1a2f55049f8,kevin.foster@anderson-mcc.com,Kevin,Foster,Architectural technologist,MQL,Non-Prospect,Individual Contributor,2023-12-07,2024-11-06,29,True,False,,False,True,False
-174eca10a1d24a62,6dd1af3232774ecb,beverly.green@vasquezmorga.com,Beverly,Green,Chartered public finance accountant,Qualified,,Individual Contributor,2023-12-11,,22,False,False,,False,False,True
-32a19f3f3f2b4ab0,c5c4db3214824c1a,jorgeedwards@outlook.com,Logan,Moreno,Conference centre manager,Active,CISO,,2023-10-08,,75,False,False,,False,False,False
-a6b7548ca3144259,4c6ff1a2f55049f8,victor.mcpherson@adkins-howe.com,Victor,Mcpherson,,MQL,Champion,Individual Contributor,2024-12-16,2025-02-17,142,True,False,,False,False,False
-4beecc721501425a,f5ff5461298247e2,raven.baker@black-graham.com,Raven,Baker,"Development worker, international aid",MQL,CISO,,2023-06-01,2024-11-30,89,True,False,,False,False,True
-9c8d4d1ced024bc3,04c36acaeb1c40cd,leslie.vang@petersltd.com,Leslie,Vang,Printmaker,Active,Champion,Director,2024-11-21,,116,False,False,,False,False,False
-d54c1db3f6a0459b,92c3e16309b249ac,isaacharrison@hotmail.com,Brian,Hernandez,,MQL,,Director,2023-06-01,2025-04-11,123,True,False,,False,False,False
-ee26863cbf754a55,b153106a795e42bd,janice.graham@williams-kel.com,Janice,Graham,"Surveyor, mining",Active,Technical Buyer,C-Level,2023-06-01,,58,False,False,,False,False,False
-05c913d021ef4076,c1371e129678491e,todd.vasquez@camachomarti.com,Todd,Vasquez,Herpetologist,Active,,,2023-06-25,,15,False,False,,False,False,False
-200ee42b956245c9,dbb99a8c4d544709,henry.jackson@carsonelliot.com,Henry,Jackson,"Engineer, petroleum",Nurture,Economic Buyer,Individual Contributor,2024-05-21,,95,False,False,,False,False,False
-2d14f16ab09a40e2,926e0b44f34642a4,robertjones@gmail.com,Brandy,Bonilla,,Nurture,,Individual Contributor,2023-06-01,,188,False,False,,False,False,True
-8e37d6f6fbc54111,400cf5ecd1144bf1,erica.clay@mitchellltd.com,Erica,Clay,,MQL,,VP,2023-10-20,2024-11-10,7,True,False,,False,True,False
-2454dabe54ee4263,6a802cd973b94b9d,phillip.garza@hoodandsons.com,Phillip,Garza,,MQL,Non-Prospect,VP,2024-12-18,2025-01-02,12,True,False,,False,False,False
-6cbdee4dcab14f4d,dbbe143ca83a475d,christopher.rivas@castillofull.com,Christopher,Rivas,"Accountant, chartered public finance",Qualified,,,2023-06-01,,114,False,False,,False,False,False
-667ccdb1a0474051,ee0ea07437bc4204,unguyen@outlook.com,Mark,Williams,"Teacher, adult education",Nurture,Non-Prospect,,2023-06-01,,112,False,False,,False,False,False
-3679cdbf9e8346f9,9556bb3588b24be6,marcus01@mail.ru,David,Boyer,Sports development officer,MQL,,,2023-06-01,2025-04-16,79,True,False,,False,False,True
-a8b736ea597e4608,18dfbdb615874d63,stephanie.james@scott-allen.com,Stephanie,James,Oceanographer,MQL,Non-Prospect,VP,2023-12-10,2025-02-25,149,True,False,,False,False,False
-be445b3dec7a44ac,723f72f57f2a46bb,christopher.phelps@pricegroup.com,Christopher,Phelps,,MQL,Champion,Individual Contributor,2024-05-14,2025-04-14,156,True,False,,False,True,False
-1be7c2d960c24234,cebfdafefd3c496b,deborah.best@martinezgrou.com,Deborah,Best,Podiatrist,Attempted,Champion,Individual Contributor,2023-11-14,,30,False,False,,False,False,False
-51411dc026d84420,5f2df9e291da4598,jill.dorsey@munozhowarda.com,Jill,Dorsey,,Active,,,2023-06-01,,82,False,False,,False,False,False
-6506e890b5fb40fb,699cc26c636445dc,william.burns@alvarez-hart.com,William,Burns,Pharmacologist,MQL,,,2025-03-17,2025-02-22,169,True,False,,False,False,True
-64d054ae754a4828,3245670d835a408b,christopher.henderson@austin-hamil.com,Christopher,Henderson,Physiological scientist,Active,End User,VP,2023-05-26,,139,False,False,,False,False,False
-27b4e648431b4c6e,3f85c46f54da4e47,prhodes@yahoo.com,Christopher,Palmer,"Designer, fashion/clothing",Qualified,End User,Manager,2023-12-29,,137,False,False,,False,False,False
-9c4ed3e52369436e,f916ea30e0744727,sarah.rose@warrenrobert.com,Sarah,Rose,Purchasing manager,MQL,CISO,C-Level,2024-07-09,2025-03-26,91,True,False,,False,False,False
-a3d9d6779c664d8d,cb394c3b3fa34bc8,kevin.joyce@leachskinner.com,Kevin,Joyce,Hotel manager,MQL,,Individual Contributor,2023-06-01,2025-04-19,23,True,False,,False,True,False
-f88ae8421b3b4ea1,dbb99a8c4d544709,ashley.arnold@palmerplc.com,Ashley,Arnold,,Active,Technical Buyer,Individual Contributor,2023-10-26,,171,False,False,,False,False,False
-faec317d02cb46a3,5311269b2af04ae3,robert.marshall@carrollkinga.com,Robert,Marshall,,MQL,Economic Buyer,Individual Contributor,2025-02-09,2024-12-01,22,True,False,,False,False,False
-3db408d60b6e4183,6a802cd973b94b9d,lwhite@yahoo.com,Kayla,Smith,"Nurse, learning disability",Active,Non-Prospect,Individual Contributor,2023-06-01,,199,False,False,,False,False,False
-df42254d5023425d,351f4e0509954ffa,brandon.butler@evansmatthew.com,Brandon,Butler,,MQL,,Individual Contributor,2023-06-16,2024-11-25,67,True,False,,False,False,False
-d09650c862054072,ba682f95388d49d5,cindy.baker@clarkinc.com,Cindy,Baker,,Qualified,Technical Buyer,,2024-10-20,,70,False,False,,False,True,False
-ac9942c078ea4adc,f219724055874514,jordan.nunez@ferguson-smi.com,Jordan,Nunez,Commercial horticulturist,MQL,,Manager,2023-07-13,2025-01-09,38,True,False,,False,False,False
-e1f2c6c5e12c4461,ac3ecd6284d04435,qholt@yahoo.com,Alexander,Rios,Town planner,Nurture,Economic Buyer,,2023-06-01,,163,False,False,,False,False,False
-50e951ca6dee40cf,73d25b49db3c4bb2,jessica.turner@wardnunezand.com,Jessica,Turner,,MQL,,Individual Contributor,2024-07-21,2025-02-24,85,True,False,,False,False,False
-41f1b9a6fe91435f,3111079c15a54a9b,alexanderrodriguez@rediffmail.com,Linda,Miller,,MQL,End User,,2024-01-18,2025-04-22,145,True,False,,False,False,False
-060e58fe37ad4cf3,351f4e0509954ffa,clarkdeborah@gmail.com,Heather,Lopez,Financial controller,Nurture,End User,C-Level,2023-08-02,,0,False,False,,False,False,False
-b3e626ff9781410a,fab38126606a4f58,christophercarrillo@yahoo.com,Ryan,Garrett,Data scientist,Nurture,Non-Prospect,,2024-12-15,,139,False,False,,False,False,False
-bfa07f305b974d2d,4c6ff1a2f55049f8,thomas.johnson@barreraltd.com,Thomas,Johnson,,Attempted,Champion,Individual Contributor,2023-06-01,,80,False,False,,False,True,False
-1a65ac14f3e744b1,7977d1747af2409d,tamara.ruiz@richards-har.com,Tamara,Ruiz,,Active,,Individual Contributor,2024-07-23,,121,False,False,,True,False,True
-159dc8ccf8ff4b9d,67b44a52a45c459d,maria.myers@smith-mccoy.com,Maria,Myers,Podiatrist,Active,Champion,,2023-06-01,,95,False,False,,False,False,True
-39f0e81c12174986,e3208a541dbb4d58,tiffany.allison@lanesimonand.com,Tiffany,Allison,,Nurture,Non-Prospect,Individual Contributor,2024-05-31,,96,False,False,,False,False,False
-51e0134a0604491e,f5ff5461298247e2,tony.tucker@hardymcconne.com,Tony,Tucker,Ranger/warden,MQL,Champion,,2024-10-18,2025-02-10,113,True,False,,False,False,False
-628731974c544b45,9bc16b4817824d1a,jesse.brown@hendersonllc.com,Jesse,Brown,,Attempted,,Director,2025-03-03,,97,False,False,,False,False,False
-d090e51352694330,8fd1d51c0cdb4918,bryan.orozco@small-wilson.com,Bryan,Orozco,Writer,Nurture,,,2024-08-10,,30,False,False,,False,False,False
-89da585a358c45f6,89072b1858e346cc,sheila.reed@grahammartin.com,Sheila,Reed,,Active,Economic Buyer,Individual Contributor,2024-05-13,,25,False,False,,True,False,False
-12687a6127da42da,4d460e953fee476b,maurice.hall@matthewsltd.com,Maurice,Hall,"Librarian, academic",MQL,Technical Buyer,Individual Contributor,2023-06-01,2024-12-30,126,True,False,,False,True,False
-2c81b1b02d8144d3,1bab529a35254e4d,sanderson@mail.ru,Sandra,Castaneda,Newspaper journalist,Qualified,Champion,Manager,2023-06-01,,108,False,False,,True,False,False
-a1af442bffe44432,56b8c363130b4061,susan.whitaker@delgadowarda.com,Susan,Whitaker,"Designer, television/film set",MQL,Non-Prospect,,2023-11-28,2025-01-10,192,True,False,,False,False,False
-d5bb30999c16464e,531d3d988d7c4420,estradadavid@hotmail.com,Christy,Campbell,"Engineer, communications",Qualified,Technical Buyer,,2023-06-01,,68,False,False,,True,False,False
-5426a457f02e4b69,5311269b2af04ae3,eric.vasquez@hahn-snyder.com,Eric,Vasquez,Farm manager,MQL,Economic Buyer,,2023-06-01,2025-03-12,73,True,False,,False,False,False
-4e46d4d9b7d641dc,969cebedb14e46cf,jason.williams@howardllc.com,Jason,Williams,Marketing executive,Qualified,Champion,,2024-02-19,,42,False,False,,False,True,False
-c571cd44ac7c4d53,e4270b83113649b9,romanmatthew@gmail.com,Erica,Thompson,Clothing/textile technologist,Nurture,,C-Level,2023-06-01,,10,False,False,,False,False,False
-e1bac0683ba34d5c,b92214f0f0ba45e2,christina.martinez@tuckerllc.com,Christina,Martinez,Marine scientist,Active,End User,Director,2024-07-02,,179,False,False,,False,False,False
-66780027f4344df9,1d01599a797a4651,kayla.carrillo@adamshernand.com,Kayla,Carrillo,"Scientist, biomedical",Nurture,Economic Buyer,Director,2024-04-13,,66,False,False,,False,True,False
-a5d88cb7cafd4a20,94d3962a530149cd,cassandra.garcia@housegroup.com,Cassandra,Garcia,"Programmer, systems",MQL,End User,Manager,2023-09-14,2024-11-17,185,True,False,,False,False,False
-d09f27825d10469b,56b8c363130b4061,sydney.campos@harringtonpl.com,Sydney,Campos,"Civil engineer, consulting",Qualified,Economic Buyer,Individual Contributor,2023-07-04,,195,False,False,,False,True,False
-7a3a8276ab6748ee,972a55b09b404b19,madison.williams@jacksoninc.com,Madison,Williams,"Engineer, land",MQL,,,2024-11-12,2025-03-02,153,True,False,,False,False,False
-25208a334254474b,6023e7aea36f47bf,jean87@yahoo.com,Rhonda,Moore,Child psychotherapist,MQL,,,2023-10-16,2024-12-06,168,True,False,,False,True,False
-d055c5d80b584ec5,206cba67f8ad4d58,eric.cox@martinezands.com,Eric,Cox,,Nurture,,VP,2023-08-19,,3,False,False,,False,True,True
-1b806bc567c14f89,6f70441fa47a4ff7,tara.hammond@sanchezgroup.com,Tara,Hammond,Licensed conveyancer,Nurture,Non-Prospect,Manager,2025-02-14,,173,False,False,,False,False,True
-718d80c916f74f41,cb394c3b3fa34bc8,nathan65@rediffmail.com,Justin,Jackson,Financial trader,MQL,Non-Prospect,Director,2024-06-10,2025-03-01,164,True,False,,False,False,False
-d1f213346ff04c93,db8b72deabea4a0b,edward.molina@cobb-taylor.com,Edward,Molina,"Pilot, airline",MQL,Technical Buyer,Individual Contributor,2023-06-01,2024-12-01,8,True,False,,True,False,False
-2d7a2628d7ac4f96,2c43202748dd4a2f,robert.ortiz@crane-black.com,Robert,Ortiz,Medical illustrator,Active,End User,C-Level,2023-06-01,,176,False,False,,True,False,False
-b378d9aaaceb4f6e,cc5c6ef2e36c4240,sherry.ramos@robbinsplc.com,Sherry,Ramos,Building control surveyor,Active,,Individual Contributor,2025-01-03,,114,False,False,,False,True,False
-d6bdcfd194fd4382,d3856d7504d241bf,christopher.edwards@hamiltongrou.com,Christopher,Edwards,,Attempted,Champion,Manager,2023-06-01,,96,False,False,,False,False,False
-5e698ea59010450e,bdffb97db03e4ec7,donna.may@brownwelchan.com,Donna,May,"Scientist, product/process development",Qualified,Champion,Manager,2023-10-17,,164,False,False,,False,False,False
-c575cfd22e024392,0928040fe2bf4b58,security.manager@highintent.com,Nina,Kowalski,Security Manager,Active,Technical Buyer,Manager,2024-11-19,,55,False,False,,False,False,False
-4cf70209f9ca4f68,ff51cfaff9ea47f1,broken.link@splitdata.com,Tom,Brokenlink,Director of IT,Active,Technical Buyer,Director,2024-03-22,2025-04-18,75,True,True,a926855b4fac4f74,False,False,False
+aaf419940586428a,5222885603444a2b,cheryl.gray@snyderllc.com,Cheryl,Gray,"Education officer, environmental",Attempted,Champion,Individual Contributor,2022-01-15,,98,False,True,0e98a4323b7e417c,False,False,True
+31110214af114c2c,77c8c3c88eb14977,matthew.beard@beardpetersa.com,Matthew,Beard,"Engineer, aeronautical",Qualified,Technical Buyer,Individual Contributor,2025-03-08,,69,False,True,b93fc97756dd4544,False,False,False
+c0da4e89ac0540cd,8c4b560093a84fdc,tracy.chang@alvarezjosep.com,Tracy,Chang,,MQL,End User,,2023-06-15,2025-02-27,105,True,True,f43799fb22e54bf5,False,False,False
+96e989da68254457,6061601e92cc41ac,thomas85@yahoo.com,Heather,Torres,"Physicist, medical",Qualified,CISO,Individual Contributor,2024-11-19,,156,False,True,f0e4f07723ff481c,True,False,False
+f669ca9a4acd434d,b0f9b74b088b4295,kristopher.hall@leewilsonand.com,Kristopher,Hall,,Nurture,Non-Prospect,,2025-02-24,,2,False,True,a15cf34c6c994d76,False,False,False
+6b22af91cce6467a,7bb61528e44b48b4,joshua.lawrence@carlsonhoope.com,Joshua,Lawrence,,MQL,Champion,Director,2022-01-15,2025-04-14,54,True,True,79caf699ab584fed,False,False,False
+f6203f5b97d34f97,95d0c4c8b63a4dee,brandon08@yahoo.com,Alexis,Ferguson,,MQL,,C-Level,2024-05-13,2025-03-17,121,True,True,53096329d289478b,True,False,False
+18431ee82d7b4441,df6c63afbf9d4157,curtis.smith@harrison-ale.com,Curtis,Smith,Educational psychologist,Qualified,End User,Director,2022-01-15,,30,False,True,40f9fa74e1f64eac,False,False,False
+9f5e8a0147164745,59667f3bc6f347c2,danny.jones@jones-soto.com,Danny,Jones,Astronomer,Active,Champion,,2023-06-01,,29,False,True,6d14a5c65466472b,False,False,False
+177d9cd73f9f483a,,stacy.miller@wilsongroup.com,Stacy,Miller,Trading standards officer,Attempted,Economic Buyer,,2025-02-20,,97,False,True,cf3d3d371acf4c16,False,True,True
+2db7a24dd22e4d5a,5222885603444a2b,shannon.ramos@branchtorres.com,Shannon,Ramos,,Attempted,Economic Buyer,Manager,2023-08-10,,149,False,True,8733545633cb440b,False,False,False
+f660eb290bc240aa,030ca3bf068d4b35,contact@thompson.com,Joseph,Miller,"Accountant, chartered",Active,,VP,2023-06-01,,21,False,True,6f551af0e6e64e0b,False,True,False
+e6fe353aa34e40f1,92dcf995cbfd43f9,jacqueline71@yahoo.com,Kelly,Hall,Facilities manager,MQL,,Manager,2023-06-01,2024-11-19,171,True,True,317899368e174ef0,False,False,True
+f45c994a5a57444b,1ec41f6ee0b840c9,donna.peck@wilson-walke.com,Donna,Peck,Database administrator,Attempted,End User,VP,2022-01-15,,4,False,True,f011ddc38abb4c86,False,True,False
+50aa4e71898048be,0ebf06d5092e4a43,gabriel.parker@hollowaymors.com,Gabriel,Parker,,Nurture,Champion,VP,2024-03-24,,71,False,True,ee359c9d1377460a,False,False,True
+385891a5a9c0474f,,amber.kim@williamsreyn.com,Amber,Kim,,Active,Economic Buyer,Manager,2023-06-01,,114,False,True,5d75ce2415644419,False,True,False
+36493755806947c9,1e8b775c15444036,mary.johnston@keyltd.com,Mary,Johnston,Geophysical data processor,MQL,End User,,2023-06-01,2024-12-05,159,True,True,3e67f5ac01fa4ed0,False,True,False
+32e961efb8e64d0a,6583a0e750f449a6,denise.moon@sheagroup.com,Denise,Moon,,Active,End User,Manager,2023-06-01,,9,False,True,f928cd9a04a6489a,False,True,False
+e2a2bc9203784e6f,5c33daf00a5747ba,mathew.santiago@riveraltd.com,Mathew,Santiago,Research scientist (life sciences),Active,,Manager,2024-03-22,,104,False,True,57f33970a13744ab,False,False,False
+7b8fe1c874bd468a,2c72758ae4e14791,kathleen.johnson@edwardsllc.com,Kathleen,Johnson,Commercial art gallery manager,Active,Champion,,2024-07-08,,115,False,True,e5e584ac6b91490c,False,False,False
+ef82df930bb8410a,23c35f2974ac4158,aaron.booth@gutierrez-lo.com,Aaron,Booth,Medical illustrator,Active,,,2024-05-10,,32,False,True,666ae545ae644c78,True,False,False
+2eb104fc6a944a08,5121cef210e14080,info@kim-wolfe.com,James,Dunn,Air cabin crew,MQL,,,2023-06-01,2025-04-27,19,True,True,3b457bc1043c4a06,False,False,False
+e9a429b3d92e435e,e2f68b6ed7de42d0,andrea.tran@walkerinc.com,Andrea,Tran,"Psychologist, clinical",Nurture,Economic Buyer,Manager,2024-04-17,,160,False,True,bf69f9a848264267,False,False,False
+3f4aefe7c9e64292,059435d5a9a64e60,tyrone.moran@thorntonperr.com,Tyrone,Moran,,MQL,,Individual Contributor,2024-04-28,2025-04-10,180,True,True,5842cd105f5e46b9,False,False,False
+88d9c89712ee44f4,,patrick.weeks@francistaylo.com,Patrick,Weeks,,MQL,Technical Buyer,Individual Contributor,2022-01-15,2025-04-10,53,True,True,e548daa6ea064625,False,False,True
+91096f981d644411,94d526cc9d8d4d89,lori.campbell@monroe-carpe.com,Lori,Campbell,Recruitment consultant,Active,Technical Buyer,Individual Contributor,2023-07-01,,126,False,True,19ff62cb0162456c,False,False,False
+cb23f2ad6df04ed7,e7ff8b5d4dc54429,ugibson@mail.ru,Michael,Arnold,Energy engineer,MQL,End User,Manager,2022-01-15,2024-12-13,50,True,True,4ab2ef10c0914af2,False,False,True
+ca33b8e88dff426e,16542f93045f49c4,robert.flores@thornton-she.com,Robert,Flores,Nature conservation officer,MQL,,Individual Contributor,2024-09-20,2025-02-07,19,True,True,2f9aea08641848fe,False,False,True
+4bce0bbdb2114ad9,f76f177aee044584,tammie.martinez@riveragarcia.com,Tammie,Martinez,Chiropodist,MQL,,Director,2024-08-11,2024-11-18,153,True,True,ea3610f1901c46d6,False,False,False
+3de3b62bbd374572,2ca7757f4b45418f,contact@harrison.com,Monica,Booker,Youth worker,Qualified,Technical Buyer,Manager,2023-06-01,,167,False,True,8cc61fe276634742,False,False,False
+cf6c7be59e3e48ed,,emily.ferguson@sims-clay.com,Emily,Ferguson,Ranger/warden,Nurture,Non-Prospect,Individual Contributor,2022-01-15,,15,False,True,6f89ecf90a59414b,False,True,False
+65f97209bb6943b6,,hamiltoncorey@outlook.com,Samantha,Bright,Chiropodist,Nurture,Non-Prospect,Manager,2023-06-01,,81,False,True,316854ab6e974087,False,True,False
+176eaaeaba114ffc,db078e2235f64190,anthony.nguyen@carterllc.com,Anthony,Nguyen,,Attempted,Technical Buyer,Individual Contributor,2023-05-05,,186,False,True,32eaa7e7f7594705,False,False,False
+28ba59ed1ba142a7,,ashlee.sparks@thompsonplc.com,Ashlee,Sparks,,Active,End User,Manager,2023-11-27,,139,False,True,8f42ae18ef994673,False,False,False
+cfe102fcdc1a4cbb,adac81a37e35411e,jesse.little@scott-smith.com,Jesse,Little,,Nurture,,C-Level,2025-02-17,,83,False,True,094dd14e5b23455a,False,False,False
+0fba81bae85e46b9,8d0c0b4154954ecf,scott.reed@evanshaydena.com,Scott,Reed,,Attempted,CISO,Individual Contributor,2023-12-14,,188,False,True,18f66fedf13f408c,False,False,False
+54b0ef4275f64277,c2a1eeca07f349f5,timothy.young@howardphilli.com,Timothy,Young,,MQL,,,2022-01-15,2025-04-27,38,True,True,431d46feda7f48eb,True,False,False
+85b28cd0df964442,46af312ea5b447a6,kimberly.beltran@mcgeewalland.com,Kimberly,Beltran,Event organiser,MQL,Non-Prospect,C-Level,2023-05-25,2025-01-20,55,True,True,c9511151278a48c7,False,False,False
+1b9ad624fcf947ad,,john.campos@beckertaylor.com,John,Campos,Archaeologist,Nurture,,Director,2024-06-28,,77,False,True,7dd13377c8154769,False,False,True
+5b8f29a617ee4c0c,7bb61528e44b48b4,michael.anderson@murphy-perry.com,Michael,Anderson,"Engineer, control and instrumentation",Qualified,Technical Buyer,Manager,2022-01-15,,40,False,True,79ae9be297ac4ed8,False,False,False
+25360d5663ef44cd,2c72758ae4e14791,alyssa.mcintyre@scottgroup.com,Alyssa,Mcintyre,,MQL,Technical Buyer,Individual Contributor,2024-12-14,2024-12-19,74,True,True,f238d76424b049a7,False,True,False
+57899cf30853451e,,charles.webster@daltonltd.com,Charles,Webster,Occupational psychologist,MQL,Champion,,2024-08-23,2025-02-10,40,True,True,ad1ea936a8924e3a,False,False,True
+185ab818f2a94f8b,,admin@curry.com,Amanda,Gibson,Clinical cytogeneticist,MQL,,,2024-01-18,2025-01-25,135,True,True,685651ac361540d8,False,False,True
+58347b37ac194162,d767f6d9624f4012,anna.herman@hollandltd.com,Anna,Herman,"Psychologist, forensic",MQL,Non-Prospect,Individual Contributor,2024-11-21,2025-02-26,114,True,True,41c51e88d6434083,True,False,False
+c255c53028a14545,,sophia.torres@wilson-young.com,Sophia,Torres,Soil scientist,Attempted,End User,Individual Contributor,2023-06-01,,121,False,True,6108c350d9874376,False,False,False
+7a351588078f43ab,1b7db62ec0c34772,contact@barnes.biz,Ellen,Paul,Child psychotherapist,Nurture,CISO,Manager,2024-04-27,,200,False,True,6efa078799e2499f,False,False,False
+64f98b7dcefe4ed0,b0f9b74b088b4295,joshua.vaughn@ramosandsons.com,Joshua,Vaughn,,Active,Economic Buyer,VP,2022-01-15,,130,False,True,4f66d1b541b14f66,True,False,False
+acc7a5c3c99c400c,4f38099407b5424a,amy.levine@brown-hill.com,Amy,Levine,,MQL,,Director,2023-06-01,2025-01-05,186,True,True,e99c38f305104f2f,False,True,False
+10fe7a1693244616,9537bfa90c294dd4,danielle.maddox@buchananands.com,Danielle,Maddox,,MQL,End User,Manager,2024-09-16,2025-02-26,199,True,True,7ca4ca17e1194061,False,False,False
+acc2294bed05480e,6926da70bca94eaa,brenda.li@murphyandson.com,Brenda,Li,,MQL,,Director,2022-01-15,2025-02-20,143,True,True,dccee8b900744391,False,True,False
+1d002fd3efd14e19,2dd0b9169c894f1b,danieldelacruz@outlook.com,Vanessa,Fernandez,"Conservator, museum/gallery",MQL,End User,Director,2023-11-22,2024-11-16,137,True,True,cdbb75a006114731,False,False,True
+cc76e5fd863445ee,73ba1d326ec04b46,brianna.smith@williams-har.com,Brianna,Smith,Secondary school teacher,Attempted,Champion,Director,2022-01-15,,49,False,True,21cec14d20404ed1,False,False,True
+b87697b8990748dd,,shane.cox@rodriguezgor.com,Shane,Cox,,MQL,Non-Prospect,Director,2023-06-01,2025-03-25,76,True,True,1c9acc1c906d4523,True,False,False
+722b25ed59234651,ceb966cdc6384b44,stephen.maynard@lutzgroup.com,Stephen,Maynard,Physiological scientist,Nurture,Technical Buyer,Director,2022-01-15,,94,False,True,1cf5c8a3f4d14f40,False,True,False
+b55158fc75ef4252,e0b5db20985047b8,rachel.morris@jonesllc.com,Rachel,Morris,Textile designer,MQL,Technical Buyer,Manager,2023-06-01,2025-02-19,80,True,True,1bad641b07e74709,False,False,True
+820ceb3523964e88,,sgarcia@libero.it,Kenneth,Wagner,Colour technologist,MQL,,,2024-09-11,2025-04-26,32,True,True,8436aa423c1147b0,False,False,False
+c52500eed1a247b6,e91d8e08aef44e24,jason.hayes@gutierrezgro.com,Jason,Hayes,,Qualified,,VP,2023-06-01,,96,False,True,911dbc51b0494c2b,False,False,False
+bda770a739914610,95c10f8bd7aa454a,larry.scott@mcdanielgrou.com,Larry,Scott,,Active,,Individual Contributor,2024-02-21,,156,False,True,dce2ab0fd8fa4b07,False,True,True
+e85ad41a88104fc8,357162ab1e144be6,ryan.garner@cain-hawkins.com,Ryan,Garner,,Active,End User,Manager,2022-01-15,,16,False,True,da422659f5644382,False,True,False
+01bb85c6fc114849,2dd0b9169c894f1b,uparrish@yahoo.com,Morgan,Pugh,Arts development officer,MQL,Non-Prospect,,2022-01-15,2025-02-02,86,True,True,45cbfb294ddc47f6,False,False,False
+7bfa226f62414bd8,3634def622744939,gwalker@rediffmail.com,Becky,Lewis,Maintenance engineer,Active,Technical Buyer,Individual Contributor,2023-11-14,,106,False,True,46f2f49e7f1b42b2,True,True,False
+6f7318852c8b42cd,46af312ea5b447a6,lindsay.bruce@austindayand.com,Lindsay,Bruce,"Geologist, engineering",MQL,Champion,VP,2022-01-15,2025-04-16,66,True,True,d0403b022dde4699,True,False,False
+c80fe48b502c4043,1e8b775c15444036,kathryn.dorsey@smith-kane.com,Kathryn,Dorsey,,MQL,End User,,2023-09-08,2025-04-20,178,True,True,f71a85c305c5476e,False,True,True
+95fd7b4f065b4258,0877f35742934926,nicholaschavez@mail.ru,Anthony,Reese,"Designer, industrial/product",Qualified,,,2022-01-15,,99,False,True,e295f71474104d43,False,False,False
+920c7c32abb74f2e,e5d15d07d9344bf6,shelly.carlson@mooreplc.com,Shelly,Carlson,Artist,Active,CISO,Manager,2023-06-01,,106,False,True,b5628a11fc8c4ace,False,True,True
+a83cf0a526a64743,,kariwilson@yahoo.com,Catherine,Perry,,Active,,Individual Contributor,2024-08-31,,20,False,True,50ba8a2559be46e9,False,False,False
+851031771d1d475b,4e04328f54ba487f,brandon69@yandex.com,Brittany,Rose,Automotive engineer,Active,Technical Buyer,C-Level,2024-10-15,,160,False,True,d722612db145446e,True,False,False
+e65a3b978ad045e6,8c4b560093a84fdc,katrina.duran@murphy-smith.com,Katrina,Duran,Planning and development surveyor,MQL,End User,,2023-10-26,2025-02-06,65,True,True,5a1a8de319284d1c,False,False,False
+0c951d453c154527,,jane.mason@drakejonesan.com,Jane,Mason,Archivist,MQL,CISO,,2024-02-24,2024-11-15,7,True,True,4a6509f4e3164200,True,False,False
+9080f6f09a954df3,9af6ab3d22ec4a9f,michelle.johnston@sullivanbowm.com,Michelle,Johnston,,Nurture,Non-Prospect,,2024-02-11,,27,False,True,d30180a12faa4f21,False,False,False
+4319336b7b074a06,4c305fd121594708,laurie.montgomery@gillespiedav.com,Laurie,Montgomery,,MQL,End User,C-Level,2023-06-01,2025-04-17,77,True,True,27d652b7a0984a3f,False,True,False
+41c0292714dd4caf,1db129c9cdc549eb,randy.collins@walker-maxwe.com,Randy,Collins,,MQL,,,2024-08-09,2025-04-27,130,True,True,93a69db066904421,False,False,False
+0a71f8d5fadb4f6d,23783564a94e405a,admin@briggs.com,Kimberly,Bell,Early years teacher,Active,Champion,VP,2022-01-15,,83,False,True,f1a91cb3f6684866,False,False,False
+638283ed2b3b42ba,2ca7757f4b45418f,stephanie.burton@webster-wolf.com,Stephanie,Burton,,Active,End User,,2023-11-15,,170,False,True,a542e69695854a2c,False,True,False
+ba66b7dc282a4ede,d60e83d4aaf84797,edward17@outlook.com,Claudia,Lin,Private music teacher,Nurture,,,2025-04-01,,2,False,True,7344345ee68041bd,False,False,True
+a6a63d45c242474c,f5bef6adcef4425a,william.collins@johnson-wood.com,William,Collins,Historic buildings inspector/conservation officer,Nurture,Economic Buyer,Director,2023-06-01,,55,False,True,f901e483d8754602,True,False,False
+0f94757f77ba49bf,6061601e92cc41ac,ycarpenter@yandex.com,Christina,Hunter,Architectural technologist,MQL,Technical Buyer,,2024-03-16,2025-04-22,5,True,True,c2e9e649e24b4ca1,False,True,True
+e2705999f42142c1,e0b5db20985047b8,jacob.jacobs@hernandezbro.com,Jacob,Jacobs,,MQL,Non-Prospect,,2024-05-27,2024-11-19,52,True,True,384291ce34534af3,False,False,False
+8c2c1549327b4f3a,7a6510efd7a84196,jasmine.ritter@millsmoorean.com,Jasmine,Ritter,,MQL,Technical Buyer,,2023-05-04,2025-04-08,44,True,True,c62d0d4b2b964970,False,False,False
+08393fe814024e3b,f2ff6d526ecc4697,carla.mccormick@cookriveraan.com,Carla,Mccormick,Nature conservation officer,MQL,Champion,Individual Contributor,2023-12-22,2024-12-07,69,True,True,9ad1edab361b45a0,False,False,False
+91a804aad8c44fd5,,tamara.morrison@cookplc.com,Tamara,Morrison,Counsellor,MQL,CISO,C-Level,2024-10-27,2024-12-24,96,True,True,da3a787347a14c02,False,False,True
+5062506d9932456a,94d526cc9d8d4d89,eileen.anderson@hurleycollin.com,Eileen,Anderson,Land/geomatics surveyor,Nurture,,Individual Contributor,2023-12-12,,11,False,True,ac0229acddaa4ab4,False,False,False
+6cba655f720c4f1b,b584263ac2f14f6c,lucasrodney@hotmail.com,Wendy,Gaines,Medical illustrator,MQL,CISO,Director,2024-06-17,2025-02-20,68,True,True,8f097ec667684ae8,False,True,False
+fdfef4b903cd45ea,7bb61528e44b48b4,stephanie.peterson@lee-cooke.com,Stephanie,Peterson,"Designer, fashion/clothing",MQL,Technical Buyer,Individual Contributor,2024-09-21,2024-12-07,166,True,True,2f7c6d7dc8934500,True,False,False
+d7aa9d22d1cb46db,1d33a6596398412b,stanleynancy@gmail.com,William,Fernandez,,Qualified,Non-Prospect,Individual Contributor,2024-01-12,,59,False,True,787a0a39e89a43d3,False,False,True
+a6abb2b3fc7a4242,a7e80d78b7444561,francis.guerra@lambmartinan.com,Francis,Guerra,Paediatric nurse,MQL,End User,,2022-01-15,2024-11-13,139,True,True,10dc907c214a4d97,False,True,False
+9dbe429836044ead,41e421f65ac14b7e,pyoung@hotmail.com,Sean,Mitchell,Insurance broker,MQL,Champion,,2023-09-15,2025-03-17,163,True,True,657938add4614a2a,False,True,False
+14e87529bf5443a7,cf77893042d94f67,smurray@yandex.com,Erika,Hudson,,Attempted,Non-Prospect,,2024-03-16,,172,False,True,706eb9c1e30b456b,False,False,False
+d6406b3912c44252,dd10743545984d5b,laurie.taylor@williams-cas.com,Laurie,Taylor,,Active,Economic Buyer,Director,2024-03-29,,64,False,True,73a96920b76144b9,False,True,False
+6ed0a7ac6ad9494f,698bd246707b462d,david.miller@nelsonplc.com,David,Miller,Data processing manager,MQL,Economic Buyer,Director,2023-12-11,2024-11-21,10,True,True,f1f7d86f58214a60,False,False,False
+fd897ab193b947ce,,perryrandy@gmail.com,Lisa,Wilkerson,,MQL,,Director,2023-06-01,2025-03-09,146,True,True,dbec762b4fbb49d7,False,False,False
+c34f9505fd2f4f10,,combsdebra@rediffmail.com,Nicholas,Johnson,Dancer,Attempted,Champion,Director,2024-02-21,,28,False,True,429413ad913f4749,False,True,True
+8b3f30b35550489e,f15674f656e04428,heather.taylor@harrisongilb.com,Heather,Taylor,,Qualified,End User,Individual Contributor,2023-08-21,,42,False,True,ee88dcaf0fd644e0,False,True,False
+2ac4b09da06a4d0e,124777c3a0be4896,srodriguez@rediffmail.com,Shelby,Lynch,Field seismologist,Attempted,,Individual Contributor,2023-11-18,,140,False,True,20f68fc501874c56,False,False,False
+6b9fe4129c9e4115,d14f6b1b979047fe,danielle.dean@rodriguezgro.com,Danielle,Dean,,MQL,CISO,Individual Contributor,2024-08-20,2024-11-17,27,True,True,fa4894007b794a2c,False,False,False
+c26e0c00f198482b,6e4e0179219a47d1,john62@outlook.com,Douglas,Patterson,,Nurture,Economic Buyer,,2024-09-21,,27,False,True,e4d00aa7d627429f,False,False,False
+8ab8089b41044dcd,d60e83d4aaf84797,myerstheodore@yahoo.com,William,Mcneil,Naval architect,Active,Non-Prospect,,2024-05-23,,53,False,True,aca80f971b3349d1,False,True,False
+cae1c536432447b3,b584263ac2f14f6c,kristina.cooper@sandovalgarc.com,Kristina,Cooper,Learning mentor,Active,Champion,Individual Contributor,2025-03-08,,198,False,True,341602abd5d14d35,False,True,False
+3ccdae2620284458,c7fe60d17ed940ef,contact@marshall.com,Matthew,Day,Biomedical scientist,Active,,,2024-12-01,,178,False,True,00ed5270e92049f1,False,False,False
+43580c79aa744c18,2d2768a58ef54c89,bradley.gonzalez@stewartllc.com,Bradley,Gonzalez,"Scientist, biomedical",Qualified,Champion,Director,2024-05-25,,157,False,True,3e8ceabc6797494d,False,False,False
+c4d63c4b69cb46f3,11ceb449cc7d4988,justinatkins@mail.ru,Jon,Mullins,Art gallery manager,Qualified,Economic Buyer,Individual Contributor,2023-11-07,,98,False,True,6f91acdf95c04644,False,False,True
+5364184fb7f64b3f,14e52283fbbf4c2a,lmorgan@gmx.de,Pamela,Paul,,Active,Non-Prospect,Individual Contributor,2023-08-09,,125,False,True,5c5a0f6030384288,False,False,False
+91cfea350f644b72,95d0c4c8b63a4dee,jordanwanda@yahoo.com,Laurie,Acosta,,Qualified,Technical Buyer,,2025-01-03,,185,False,True,0ec5161fa6984c94,False,False,False
+186e4704b0d94734,ad575c2b40b54cb7,kenneth.griffin@simmonsnorri.com,Kenneth,Griffin,Archivist,Active,,C-Level,2023-06-01,,154,False,True,cfa3193d17ba4b71,False,True,True
+f711c644636f43f2,cc3eb7dc532f4c62,joshua.whitney@jonesltd.com,Joshua,Whitney,"Optician, dispensing",Qualified,,Individual Contributor,2023-06-01,,151,False,True,9642116fc89c4e04,False,False,False
+76bf69e3ae184839,,ernest.johnson@gregorykiman.com,Ernest,Johnson,,MQL,,Individual Contributor,2024-01-02,2024-12-14,144,True,True,8db58b1b80cf4a3b,False,True,False
+1ba7aa236b654adc,df6c63afbf9d4157,cassie.shelton@watson-hines.com,Cassie,Shelton,,Active,Technical Buyer,VP,2025-02-11,,44,False,True,b49af152740a45e6,False,False,False
+1e191a197ac343fc,94d526cc9d8d4d89,johnsonjacob@outlook.com,Leonard,Ramirez,,MQL,,Individual Contributor,2023-06-01,2024-12-27,19,True,True,a73a7216e4584bbb,False,False,False
+5f717f4704bc4fe0,,wendymitchell@gmail.com,Kimberly,Padilla,Recycling officer,MQL,,,2023-06-01,2025-03-04,11,True,True,9b1b805d05864545,False,False,False
+15708db845724f5b,,zosborn@gmail.com,Shannon,Roach,IT consultant,Active,Economic Buyer,Individual Contributor,2023-05-03,,179,False,True,b157b34bc1b041d2,False,False,False
+2fc1afec34144c60,ffd3cb287c604c9d,patricia.york@mckinneygrav.com,Patricia,York,Medical illustrator,MQL,End User,Manager,2022-01-15,2024-11-03,127,True,True,be36002751a749e7,True,False,False
+db686455f23d458b,,joel.snyder@spencer-wood.com,Joel,Snyder,,Active,End User,Individual Contributor,2023-10-12,,107,False,True,1ec46331d5ad4ed7,False,False,False
+648561248acd4a42,3ab83df5354e4752,cameron.sanders@higginsfoxan.com,Cameron,Sanders,"Teacher, special educational needs",MQL,Economic Buyer,C-Level,2024-01-25,2025-01-18,170,True,True,3ebb795e9dd84e95,False,True,True
+afd567132c06450f,11ceb449cc7d4988,david89@outlook.com,Dawn,Cole,"Education officer, environmental",MQL,Champion,Director,2024-07-26,2025-04-08,30,True,True,a161837b38a34bd9,False,True,False
+1a6ed02276474d50,7a1313cef6c94a1e,fred53@outlook.com,Marie,Holmes,Logistics and distribution manager,MQL,Technical Buyer,Manager,2023-05-22,2025-04-13,142,True,True,7d2e5a80a1eb42ff,False,False,False
+b9fbc0fe0a624adc,61761a4a5f2542fc,cynthia.pierce@weberplc.com,Cynthia,Pierce,,MQL,Economic Buyer,Manager,2023-05-30,2025-02-13,59,True,True,dca06f07ba7b4ced,False,False,False
+7ae7b272b9fa477f,9d8e915d08b04fcd,brittany.carpenter@hopkinsltd.com,Brittany,Carpenter,Trade union research officer,Attempted,Economic Buyer,,2023-06-01,,134,False,True,586028badf994db9,True,False,False
+100d409f31a14510,eca6b757db81486f,sales@fry.com,Marcia,Johnson,,Attempted,,Director,2022-01-15,,48,False,True,fb24ba2a9b8d4a41,False,False,False
+b8d905b8dba542ea,7a1313cef6c94a1e,courtney.roberts@webb-ballard.com,Courtney,Roberts,"Optician, dispensing",MQL,Non-Prospect,,2022-01-15,2025-03-29,18,True,True,beccb173d5b34730,False,False,True
+281f9d23934341e1,117eedb9bec041e3,eric.perry@harris-lawso.com,Eric,Perry,Intelligence analyst,Active,Economic Buyer,Individual Contributor,2024-11-04,,131,False,True,036deccc5cd94143,True,False,True
+76c8ed6d705e41bf,23c35f2974ac4158,raymond.hodges@hoffmanflore.com,Raymond,Hodges,,Attempted,End User,Individual Contributor,2023-06-01,,57,False,True,909ee7d389984327,False,True,True
+41df424ab90d4af4,2c72758ae4e14791,kwright@libero.it,Kelly,Cruz,Land,Active,,,2025-02-17,,171,False,True,45dcbd988cd54be6,True,False,False
+bd22c6b4689249c7,0ebf06d5092e4a43,wendy.owens@jimenez-davi.com,Wendy,Owens,,Attempted,Non-Prospect,,2024-08-14,,157,False,True,d78a5a8253be4a1e,False,False,True
+ae14da17368c4b2e,eb47db9472c542a3,brandon.campbell@khanpenaandr.com,Brandon,Campbell,Software engineer,MQL,Technical Buyer,Individual Contributor,2023-06-21,2024-11-28,197,True,True,4d443dd8ecfc4380,False,False,False
+190a6b34003f4233,14e52283fbbf4c2a,kathryn50@outlook.com,Dennis,Baker,,MQL,Non-Prospect,C-Level,2022-01-15,2025-02-18,164,True,True,bc7ad1bc64c34569,False,True,False
+4582461f1ac64c6b,b168eec0bf0d4a5c,michael.roberts@gordon-duran.com,Michael,Roberts,,Nurture,,Individual Contributor,2023-12-13,,137,False,True,87327822404145c3,False,False,False
+f5477c8a6da74ed2,,phillip.norton@grant-diaz.com,Phillip,Norton,,Attempted,Non-Prospect,,2023-12-07,,176,False,True,dd6f44c6d6f14ec5,False,False,False
+25a7b8bffbda4b55,2074d64bf0be465e,vincent.williams@reevesgroup.com,Vincent,Williams,,MQL,End User,Individual Contributor,2023-07-28,2024-11-04,120,True,True,abab5caf18864367,False,False,True
+2e3a5a2174bb454e,bcbc86ea2b414bc7,francisco94@gmail.com,Donald,Velazquez,"Therapist, horticultural",MQL,Technical Buyer,,2024-04-16,2025-02-20,161,True,True,8ca3b0e6c9a240a2,True,False,False
+48a4bb1ddc414662,0ebf06d5092e4a43,tracy.hart@cabrera-rich.com,Tracy,Hart,Clinical molecular geneticist,Attempted,Non-Prospect,VP,2023-08-02,,82,False,True,56051776ea3241db,False,False,True
+3b2403c3162c41ac,310877c2461f43ac,carlsonjoseph@outlook.com,Jessica,Watts,Technical sales engineer,MQL,,Manager,2024-05-23,2025-02-22,173,True,True,5b4f1bee75d7423f,False,True,False
+b6cfaa06d2704505,,alexandria.griffith@hernandez-be.com,Alexandria,Griffith,Ambulance person,Qualified,Economic Buyer,Individual Contributor,2023-05-17,,35,False,True,ff3588bc2062471d,False,False,False
+3b17dbd1a16f4639,,lee.hernandez@harrisshawan.com,Lee,Hernandez,Public affairs consultant,Active,End User,,2023-06-01,,148,False,True,7148f92e3b0a4137,False,False,False
+4345a36ec0a646bd,486a7f7aecd84d2e,ufox@rediffmail.com,Ann,Bolton,Early years teacher,MQL,Champion,Manager,2024-06-07,2024-11-16,86,True,True,4311ef75b9f248a2,False,False,False
+652802bd91274e89,1e8b775c15444036,michael.ingram@beckerlaraan.com,Michael,Ingram,,Nurture,Non-Prospect,Director,2024-03-14,,123,False,True,97c325d1ea5f44f8,False,True,True
+b6f6cc848df94f04,6e4e0179219a47d1,angela.walker@wise-bush.com,Angela,Walker,,MQL,,VP,2024-04-17,2025-01-24,64,True,True,d69232dfc5094a14,False,True,False
+14c41452160d40f4,44d7a8a9fc3d4106,sarah.griffith@martinez-rho.com,Sarah,Griffith,Museum education officer,Attempted,Champion,C-Level,2024-02-24,,65,False,True,6d7279c67c4043c1,False,True,True
+9d38418f6c59493c,2dd0b9169c894f1b,linda.roberts@moses-miller.com,Linda,Roberts,Private music teacher,Active,Technical Buyer,,2023-08-13,,130,False,True,84e44a4693874ec9,False,True,True
+bd63086e621b4ab8,ceb966cdc6384b44,amanda.fitzpatrick@nelsonrodrig.com,Amanda,Fitzpatrick,Film/video editor,MQL,End User,C-Level,2023-06-01,2025-03-26,99,True,True,2dbed577e7ec4c09,False,False,False
+d8f43e8c77994c1f,dcd25584c7804dd9,jeremiah.hall@gutierrezltd.com,Jeremiah,Hall,,MQL,Non-Prospect,VP,2023-06-01,2024-12-11,17,True,True,3cf2ede0ad1a48e4,True,True,True
+0aa4bc073e6d43e7,3634def622744939,richarddonovan@outlook.com,Adam,Pierce,Publishing copy,MQL,,,2024-11-22,2024-11-12,52,True,True,d58c91ef12914b3f,False,False,False
+6f2101b471314300,f4c5348bc44c466c,info@velez.org,Justin,Mitchell,Exhibition designer,MQL,,Director,2025-03-22,2025-01-10,184,True,True,c949aa7c546d4342,False,True,False
+329b12ed8466497e,357162ab1e144be6,sandra.butler@peckinc.com,Sandra,Butler,,MQL,Economic Buyer,Individual Contributor,2022-01-15,2024-12-10,192,True,True,f108d9f379c3434c,True,True,False
+a412f436ee5e4dc0,a4b3f70c35ee4fec,monica.roberts@smithplc.com,Monica,Roberts,,Active,,,2024-08-02,,81,False,True,3eaf6a3577694671,False,True,False
+60ddffcea9ca4f85,3634def622744939,justin.hays@warrensmalla.com,Justin,Hays,Retail merchandiser,MQL,,Individual Contributor,2024-03-05,2024-11-24,41,True,True,2309aab896e2447f,False,False,True
+f9ab7902fbfc4877,5121cef210e14080,mark.simon@scottlopezan.com,Mark,Simon,Hotel manager,MQL,End User,Individual Contributor,2024-06-29,2025-01-03,104,True,True,3a2b32da2b974b36,False,False,False
+e32d471031d349b9,8e800947c7174be9,danielle.sullivan@robertson-mi.com,Danielle,Sullivan,Chief of Staff,MQL,,Individual Contributor,2024-10-06,2024-12-03,171,True,True,6df4a54be9ac41f1,True,False,False
+515e1f8d26ae448a,3634def622744939,patrick74@gmail.com,Marcus,Wright,Landscape architect,MQL,Technical Buyer,Individual Contributor,2024-03-02,2025-01-07,20,True,True,c4d8fc2b269a48a1,False,True,False
+afb27362d94744e3,,bryanwilson@outlook.com,Jose,Ward,,Active,,,2024-03-04,,5,False,True,48b007b51f8e4899,False,True,False
+f82fe5b6c8664ea6,44d7a8a9fc3d4106,sandra.barron@vaughn-fowle.com,Sandra,Barron,,Qualified,Non-Prospect,Director,2023-11-15,,5,False,True,cb794a1a761f492a,False,False,False
+674ea59eff4f4ec0,c348fa4c16884f49,dennis.hernandez@zhangbrooksa.com,Dennis,Hernandez,Public affairs consultant,Qualified,,Director,2023-07-20,,19,False,True,6fe4d55e1aae4a60,False,True,False
+ce8259b115c04b79,e532eb8deac647ae,erin.larson@foxplc.com,Erin,Larson,Medical illustrator,Nurture,Non-Prospect,,2024-02-13,,63,False,True,419d033ac92c4732,False,False,False
+878261dfb76c4fe8,5222885603444a2b,bryan.kelley@harrisherrer.com,Bryan,Kelley,"Scientist, product/process development",Attempted,Champion,,2023-12-08,,165,False,True,9e05e006f76f453a,False,False,False
+84fd1701381d4731,,brandy.davis@griffinbrown.com,Brandy,Davis,,Nurture,Non-Prospect,,2024-02-28,,111,False,True,4616b9973bb04aed,True,False,False
+5ca20f30e4e84c5e,9d417ebcdc724444,emily.parker@fosterinc.com,Emily,Parker,,Active,End User,,2023-06-01,,93,False,True,a7f4c240d8a84395,True,True,False
+8e2dd02ec5794f61,996a7c319b984214,andersenthomas@mail.ru,Amber,Brown,Historic buildings inspector/conservation officer,Active,Technical Buyer,C-Level,2022-01-15,,9,False,True,0c56f998fa964d12,False,False,False
+e14a09ec7da74137,16542f93045f49c4,darlene.daniel@brooks-vance.com,Darlene,Daniel,"Production assistant, radio",Active,Champion,Individual Contributor,2024-12-30,,157,False,True,ce660cab875b4fd3,True,False,False
+10de033042b6465f,88567846d40a46de,dorothy.ryan@daltonwilson.com,Dorothy,Ryan,,MQL,,Director,2023-06-01,2025-02-10,47,True,True,9892cccbf234476a,False,False,False
+240b3a29a43a4968,,katelyn.good@nunez-stephe.com,Katelyn,Good,Ship broker,Nurture,,Individual Contributor,2022-01-15,,200,False,True,a4c4e9ffe54a4809,False,False,False
+eda537e2082d44a5,,michael.hill@cannonjohnso.com,Michael,Hill,Volunteer coordinator,MQL,,Individual Contributor,2024-10-03,2025-03-11,42,True,True,4e143ad954e345e7,False,False,False
+726558d5a3be4593,f76f177aee044584,sanchezbradley@gmail.com,Craig,Johnson,,Qualified,,,2025-01-13,,45,False,True,09bc0e068421492d,False,True,False
+e79ae282252a44a9,9d417ebcdc724444,donald.holder@cabreraltd.com,Donald,Holder,Teaching laboratory technician,Active,,VP,2024-03-20,,62,False,True,35a1c227f91647b2,False,False,False
+c63fc11748f14133,c2a1eeca07f349f5,loretta.young@odomplc.com,Loretta,Young,,MQL,Technical Buyer,,2023-06-01,2025-04-18,100,True,True,532edeae240941fc,False,False,False
+8ea8b95233b04730,328e85b5274747bd,stacy.hobbs@garrettgroup.com,Stacy,Hobbs,"Surveyor, commercial/residential",Active,CISO,Manager,2024-11-17,,94,False,True,8e330830f7ec44fd,True,False,False
+47e10e9023ab4e4d,f92b6d8968cc4f28,dawn.james@floresbutler.com,Dawn,James,,MQL,Non-Prospect,Individual Contributor,2022-01-15,2025-01-24,193,True,True,1170eb0c4d63453d,False,False,False
+45c751d61fa543c8,3e6292cf65e74982,john.perez@thomasfordan.com,John,Perez,,Attempted,CISO,C-Level,2023-06-01,,140,False,True,15c00063331c453b,False,False,False
+7407809a3a3c4d08,ea6815dbbcef4835,nielsenmelanie@rediffmail.com,John,Harris,Chief Executive Officer,Nurture,Non-Prospect,Individual Contributor,2023-06-09,,155,False,True,14e4186a11ee4dfc,False,True,False
+95fd9e0a4c0c4132,608f25deccd541b5,emily.morrison@lopezplc.com,Emily,Morrison,"Surveyor, land/geomatics",Active,Non-Prospect,Individual Contributor,2024-07-18,,128,False,True,f63cc0fbc0214b0d,False,False,True
+87b0e6b9f4394918,d767f6d9624f4012,kevin.stout@gilesltd.com,Kevin,Stout,Commercial/residential surveyor,MQL,Champion,Individual Contributor,2022-01-15,2025-02-13,105,True,True,49d617844ed945da,False,False,False
+121f408de05e451c,030ca3bf068d4b35,andrearowe@hotmail.com,Cassandra,Harris,Museum/gallery conservator,MQL,Technical Buyer,Manager,2024-05-14,2024-11-18,55,True,True,4e05b0b7d84e468e,True,False,False
+3bbeb88066404b42,ffd3cb287c604c9d,jose.hunt@owens-lang.com,Jose,Hunt,,Active,Non-Prospect,,2023-12-28,,166,False,True,811c5bb83bdb407a,False,False,False
+98f70569bb174543,03a6f3a5b4364ec8,robert.hart@figueroainc.com,Robert,Hart,Games developer,Nurture,,Individual Contributor,2022-01-15,,182,False,True,73324cd8b68d41e2,False,True,False
+ad66b2d4d80c46ed,cf77893042d94f67,elijah.rivera@hudson-sanch.com,Elijah,Rivera,Statistician,Active,,,2024-02-01,,163,False,True,76088e34bb284d7d,False,False,False
+988c55399648492e,514cbd01afce49e6,tracy.cummings@henryjackson.com,Tracy,Cummings,,MQL,,VP,2023-06-01,2024-12-20,75,True,True,c6329f3e55e94378,True,False,False
+4f7a5f3abb19467d,3ab83df5354e4752,warrenmary@outlook.com,Jack,Preston,,MQL,Champion,,2025-02-19,2025-02-05,122,True,True,a055e41b7a2946e3,True,True,False
+1fb9a748767343b4,b584263ac2f14f6c,crystal.jones@smithplc.com,Crystal,Jones,"Programmer, applications",MQL,Technical Buyer,Director,2022-01-15,2024-12-21,69,True,True,ab0ce0dc0056419a,False,False,False
+02101115a2bd45d1,030ca3bf068d4b35,sarah.durham@freemansmith.com,Sarah,Durham,"Administrator, charities/voluntary organisations",Qualified,End User,C-Level,2023-06-01,,156,False,True,5c3b15cdf2794f75,False,True,False
+eb345aeb9b474871,8e800947c7174be9,amanda.mitchell@licraiganddr.com,Amanda,Mitchell,Editorial assistant,Qualified,,VP,2022-01-15,,194,False,True,a8615e69154d464b,False,False,True
+cc76e2431fcd482c,47edd43a56cd40d7,eduardo.lee@kinggomezand.com,Eduardo,Lee,Careers information officer,Qualified,Champion,Individual Contributor,2022-01-15,,112,False,True,48c437b039f54900,False,False,False
+fdeded0c7f814b39,,john.terry@sutton-abbot.com,John,Terry,Ambulance person,MQL,Technical Buyer,,2022-01-15,2025-03-27,11,True,True,8e4bf0b2790a4b9d,False,False,False
+0d2cb55ff0204616,624c76dabc3248da,warnerchristopher@outlook.com,Angela,Brown,,MQL,,Individual Contributor,2022-01-15,2025-03-08,145,True,True,40071fae516d4588,False,False,False
+a4cc25373112444a,357162ab1e144be6,cody.rice@hallltd.com,Cody,Rice,,MQL,Champion,,2022-01-15,2025-03-19,16,True,True,cdee4d4b7d564dc6,False,False,False
+250ae1b20d1b4f6d,382719f93f304b39,gabrielle.ramirez@elliottjohns.com,Gabrielle,Ramirez,International aid/development worker,Nurture,Technical Buyer,,2023-11-13,,87,False,True,998fd075957d42ba,False,False,False
+b174785c457a42d6,217f4df12e6b44eb,douglas.hoover@hickman-evan.com,Douglas,Hoover,,MQL,Champion,,2024-07-11,2024-11-11,189,True,True,3d22eb58e4b84734,False,False,False
+864874041da947f1,624c76dabc3248da,icampos@gmx.de,Erica,Fernandez,,Qualified,,Individual Contributor,2022-01-15,,71,False,True,45dabd557ea04be8,False,False,False
+997768af834843da,1e8b775c15444036,jesse.jones@mackfriedman.com,Jesse,Jones,"Journalist, newspaper",MQL,End User,,2022-01-15,2025-01-17,130,True,True,7fd88e66fe244a3f,False,False,True
+706d9ca92cc7409a,df6c63afbf9d4157,tracy.kelly@reynolds-fra.com,Tracy,Kelly,,Active,Technical Buyer,,2023-06-01,,57,False,True,01acd90b17d64780,True,False,False
+a945e161c01a47ad,,lauren.marquez@adamsgroup.com,Lauren,Marquez,"Designer, exhibition/display",MQL,Champion,Director,2023-12-13,2025-01-18,129,True,True,0b30ac08153448ce,False,False,False
+3b776019ded64c0a,,sherry.wallace@garcia-mille.com,Sherry,Wallace,Plant breeder/geneticist,MQL,,,2024-04-27,2025-02-09,169,True,True,0aae274798a140ce,False,False,False
+560c4c885f084a2c,fd268161c23b42f0,dakota.davis@davisgeorgea.com,Dakota,Davis,Musician,MQL,End User,,2025-02-02,2025-04-23,39,True,True,bafe40e3f84d441f,False,False,True
+09c9f0fe936e44bf,624c76dabc3248da,contact@stein.com,Kimberly,Hardy,,Active,Technical Buyer,Director,2023-06-01,,125,False,True,d10f117fe5de4b99,False,True,False
+55771afe88064138,c40aacc0387145ba,joseph.thomas@hamiltongrou.com,Joseph,Thomas,Hydrographic surveyor,Attempted,End User,,2023-06-01,,40,False,True,5534e851b60b410d,False,False,False
+2178b76041464458,2b90dec03ca046d3,sheryl.le@wheeler-gonz.com,Sheryl,Le,Clinical biochemist,MQL,,,2024-12-19,2025-04-07,138,True,True,b8d8a1d036d647f6,True,True,False
+f949386faf0040c5,e5d15d07d9344bf6,scott69@mail.ru,Martin,Oliver,Copy,MQL,,,2023-06-08,2025-01-27,8,True,True,21bb80e4008a47f4,False,False,True
+90d53475283f4f71,fd268161c23b42f0,james.edwards@novak-carter.com,James,Edwards,,MQL,Non-Prospect,Manager,2024-04-01,2025-02-10,22,True,True,2985a0526cad48a9,True,True,False
+3f58a5ea7e034296,,brittanygardner@libero.it,Kristi,Diaz,,Active,End User,,2022-01-15,,0,False,True,108faca1020643bc,True,True,True
+eea952b2fd754b8c,38ef6aeacfb84fd9,sherry.clark@guerra-jones.com,Sherry,Clark,Osteopath,MQL,,,2023-06-01,2024-11-25,134,True,True,382084a4874349f5,False,False,False
+500ee6f48f1841bc,837f1cf4406340fc,donna.espinoza@jones-ewing.com,Donna,Espinoza,Quality manager,Attempted,,,2022-01-15,,164,False,True,0bbe89a78b724847,False,True,False
+00793bf367644a9b,05964633905649db,heather.stephens@miles-burnet.com,Heather,Stephens,"Therapist, music",MQL,Champion,Individual Contributor,2024-08-15,2024-12-30,170,True,True,5dcd316937174db6,False,False,True
+c8ba071217f14aef,2dd0b9169c894f1b,elizabeth.jackson@williamsterr.com,Elizabeth,Jackson,Office manager,MQL,,,2024-03-30,2025-03-01,102,True,True,1041c40e0f4d4d5e,False,False,False
+1178992d75f04fb8,8acdbd7b7e314548,gregory81@yandex.com,Steven,Williams,"Surveyor, mining",MQL,End User,Director,2025-02-23,2024-12-01,32,True,False,,False,True,False
+1127df2172c04f86,30b5a7a630234b03,jenna.harris@allen-wilson.com,Jenna,Harris,,Attempted,Champion,,2023-05-15,,8,False,False,,False,False,False
+4564b8d497fd4198,304195bb506c49ab,karenhodges@mail.ru,Jo,Goodwin,,Active,Non-Prospect,Individual Contributor,2023-11-09,,181,False,False,,False,False,False
+1e454c0adb8a4881,59667f3bc6f347c2,michael.adams@hendersonbro.com,Michael,Adams,Production manager,Active,,Individual Contributor,2023-11-20,,154,False,False,,False,False,False
+d5d61c3a50e44043,4942a6ac0790452d,harrisonamanda@yahoo.com,Todd,Rose,,MQL,,,2024-04-21,2024-12-28,174,True,False,,False,False,False
+f86ff94df20244e5,6061601e92cc41ac,rachel.hayes@marsh-doughe.com,Rachel,Hayes,,Nurture,End User,Manager,2025-02-20,,116,False,False,,True,False,False
+26a2f769e1904780,95c10f8bd7aa454a,millerrachael@libero.it,Jacob,Henson,Homeopath,Active,End User,Individual Contributor,2023-07-18,,166,False,False,,False,False,False
+64cf445473d7488a,ea6815dbbcef4835,susan.jones@hillltd.com,Susan,Jones,Data scientist,Active,,,2024-07-31,,139,False,False,,False,True,False
+0d740dcd3a70482d,117eedb9bec041e3,tyler.golden@cranejohnson.com,Tyler,Golden,,MQL,End User,Individual Contributor,2023-08-16,2024-11-12,60,True,False,,False,False,False
+25f3da10ed1e4943,2d2768a58ef54c89,pwallace@mail.ru,Sarah,Wells,Advertising art director,MQL,,,2023-06-01,2025-03-28,171,True,False,,False,True,False
+fb0c3528914e4dd3,096a330ee7014f7b,marystone@rediffmail.com,Kelly,Brown,,MQL,Economic Buyer,Director,2023-06-17,2025-03-22,197,True,False,,False,False,False
+2197e9fa40774bc3,2638e83008e64582,robert.cooper@buchanantuck.com,Robert,Cooper,Senior tax professional/tax inspector,Active,,Individual Contributor,2024-11-27,,45,False,False,,False,False,False
+6467cbdb619f45de,ffd3cb287c604c9d,meagan.wallace@bradley-vill.com,Meagan,Wallace,Information officer,MQL,End User,Individual Contributor,2024-10-17,2025-03-20,122,True,False,,False,False,False
+d4c9844a1c9f4ade,97a001e9d3cc440f,george.green@watson-rober.com,George,Green,Art gallery manager,MQL,Economic Buyer,VP,2024-08-27,2024-11-23,178,True,False,,True,False,False
+8a4e20f67d2e4cf1,3c9e2ac8fbf64621,eddie.mitchell@montgomeryan.com,Eddie,Mitchell,,Active,End User,Individual Contributor,2024-09-10,,170,False,False,,False,False,False
+6f5be3a3704d4b5d,d8e325b650e84c07,justin.mcpherson@schwartzestr.com,Justin,Mcpherson,Field seismologist,Nurture,End User,VP,2023-09-05,,185,False,False,,False,True,False
+2195328c849a40e0,7cd2c43d9453462d,daryl.chaney@martinezgree.com,Daryl,Chaney,"Surveyor, planning and development",MQL,,Manager,2023-06-01,2025-02-13,97,True,False,,False,False,False
+9ce96d13f97045d4,9d8e915d08b04fcd,jasmine.wade@hernandez-we.com,Jasmine,Wade,,Active,,Manager,2025-03-06,,134,False,False,,False,False,False
+29515e8cf34f428c,1ec41f6ee0b840c9,amanda.martinez@sullivangrou.com,Amanda,Martinez,,Active,Non-Prospect,,2024-09-26,,194,False,False,,False,False,False
+21c2c51d36104704,837f1cf4406340fc,adamrodgers@gmail.com,Stacie,Reilly,"Runner, broadcasting/film/video",MQL,Champion,,2024-06-01,2025-01-17,107,True,False,,True,False,False
+c5f31bf488a34883,1e8b775c15444036,mark.thornton@kemp-montes.com,Mark,Thornton,"Teacher, secondary school",Attempted,CISO,C-Level,2023-06-01,,63,False,False,,True,True,False
+1980a7068c854572,2274086d752b4ab9,hmorgan@yahoo.com,Elizabeth,Marsh,,Attempted,End User,,2024-10-10,,69,False,False,,False,False,False
+153d63dc505f4cad,7d2b72afa060461d,parkerrichard@gmx.de,Rachel,Taylor,,MQL,Technical Buyer,Manager,2024-06-06,2025-01-17,63,True,False,,False,False,False
+5772fa9dfa394f5c,bcbc86ea2b414bc7,franklinjames@gmail.com,Sean,Davis,,Qualified,,VP,2024-11-21,,59,False,False,,False,False,False
+7f72724cab174ee4,8acdbd7b7e314548,jeffrey.walls@gonzalez-mil.com,Jeffrey,Walls,,Attempted,,Individual Contributor,2024-12-09,,37,False,False,,False,False,False
+2b75034c69ea4891,4e93dfdd0d8d4e71,erica.rosario@fosterhenrya.com,Erica,Rosario,Sales promotion account executive,MQL,Economic Buyer,Individual Contributor,2023-06-01,2025-01-21,169,True,False,,False,False,False
+38027b7773b444a2,004efbb65a2d4971,sherry.kerr@sanders-bald.com,Sherry,Kerr,Physiotherapist,Nurture,Non-Prospect,C-Level,2023-06-01,,36,False,False,,False,True,False
+469973fbded84a63,16542f93045f49c4,mike.watson@cooper-parke.com,Mike,Watson,Product designer,Active,,,2023-06-01,,122,False,False,,False,False,True
+38b1c7aa4636435e,ffd3cb287c604c9d,nancy.miller@barronfiguer.com,Nancy,Miller,,MQL,,Individual Contributor,2024-12-10,2025-01-26,168,True,False,,False,False,False
+d3917946f82342c9,bf44642603944f7e,achandler@yahoo.com,Keith,Shaffer,Corporate treasurer,Attempted,Non-Prospect,,2024-07-17,,38,False,False,,False,False,False
+b4afa2265893433c,bf44642603944f7e,mary.harper@clarkgroup.com,Mary,Harper,"Scientist, water quality",MQL,,,2023-06-01,2025-02-20,154,True,False,,False,False,False
+7e42afa216f549bd,a4b3f70c35ee4fec,valerie.jones@aviladavisan.com,Valerie,Jones,,MQL,,Individual Contributor,2023-10-04,2025-03-03,19,True,False,,False,False,False
+29c2dce0feb44357,e3535f84d4af4f91,robert.peters@bradleymelen.com,Robert,Peters,,Active,Technical Buyer,,2023-09-18,,9,False,False,,False,False,False
+ec53f881c37642e6,f7591bc079154eba,mary47@yahoo.com,Keith,Henry,"Surveyor, land/geomatics",MQL,Champion,,2023-07-15,2025-02-25,70,True,False,,False,False,False
+5e61ac8e6648407c,8c4b560093a84fdc,jodi.walker@moorellc.com,Jodi,Walker,Public house manager,Nurture,Non-Prospect,Individual Contributor,2023-06-01,,71,False,False,,True,False,False
+82d069f886d041d1,e3535f84d4af4f91,robert73@yahoo.com,David,Wade,,MQL,,Individual Contributor,2023-05-19,2025-03-17,45,True,False,,False,False,False
+63f55c754da84377,adf0c0baa90642fb,georgemichael@hotmail.com,David,Ramirez,Quarry manager,Qualified,,,2024-09-04,,40,False,False,,False,True,False
+471b749201534cc8,608f25deccd541b5,ariana.oneill@jenningsmcca.com,Ariana,Oneill,Midwife,Active,Champion,VP,2023-06-01,,133,False,False,,False,False,False
+0bf8b4cd1cdd45c9,7a6510efd7a84196,william.johnston@martin-brown.com,William,Johnston,IT consultant,Qualified,Champion,,2023-08-02,,113,False,False,,False,False,False
+a9b9beb598a64e0d,37f4317924b74710,steven.steele@martin-nelso.com,Steven,Steele,,Active,,Manager,2024-12-29,,188,False,False,,False,False,True
+cced2f11e3604477,cf77893042d94f67,robertsalyssa@yahoo.com,Daisy,Friedman,Camera operator,Qualified,End User,,2023-09-28,,18,False,False,,False,False,False
+36a5072e7c114803,1d33a6596398412b,willie.miranda@duranplc.com,Willie,Miranda,Diplomatic Services operational officer,MQL,,,2024-09-03,2025-03-05,159,True,False,,False,False,False
+8323bf2a154a4bdc,a7decdfd52624fd4,joseph51@gmail.com,Amy,Brennan,,MQL,Non-Prospect,Individual Contributor,2024-04-21,2025-04-28,82,True,False,,False,False,False
+22a64050da28405b,1e4d0fc3310d454b,betty.morrow@taylorllc.com,Betty,Morrow,,Qualified,Non-Prospect,Individual Contributor,2024-01-08,,154,False,False,,True,True,False
+100358e49bfa45bc,bcbc86ea2b414bc7,kimberly.jenkins@garciaandson.com,Kimberly,Jenkins,Retail manager,Attempted,Technical Buyer,Individual Contributor,2023-06-01,,125,False,False,,False,False,False
+bb531ce9ace14ee2,cf77893042d94f67,jeffrey.lopez@austinguerra.com,Jeffrey,Lopez,,Active,Technical Buyer,C-Level,2023-06-01,,62,False,False,,False,False,True
+6c1b9e7925f24b0b,b584263ac2f14f6c,butlersabrina@mail.ru,Jennifer,Park,,Active,,,2024-06-30,,43,False,False,,False,False,True
+4584c1a4405e4e47,310877c2461f43ac,lori.mclean@bailey-vazqu.com,Lori,Mclean,Corporate treasurer,Qualified,,Director,2023-09-08,,134,False,False,,False,True,False
+6b35a212e3fa4148,6e4e0179219a47d1,gerald40@rediffmail.com,Lisa,Preston,Commissioning editor,Active,Non-Prospect,VP,2024-11-25,,164,False,False,,False,False,False
+ac547e2fc29d4a47,46af312ea5b447a6,jeffrey.vincent@wattsllc.com,Jeffrey,Vincent,Comptroller,MQL,,Individual Contributor,2023-06-01,2024-11-09,173,True,False,,False,True,False
+a73fc52346244c3f,4942a6ac0790452d,yvazquez@outlook.com,Jason,Zavala,,Nurture,End User,,2024-11-19,,64,False,False,,True,False,False
+4d79333a26014686,c40aacc0387145ba,gwilliams@hotmail.com,Chris,Hampton,Amenity horticulturist,MQL,,Director,2025-02-17,2025-03-03,47,True,False,,False,False,False
+23cb934b321d45e5,2ca7757f4b45418f,laura.palmer@harrisonllc.com,Laura,Palmer,Armed forces logistics/support/administrative officer,Nurture,Non-Prospect,VP,2024-06-19,,197,False,False,,False,True,False
+f6f30f828d3b4e72,ffd3cb287c604c9d,carl.contreras@pattonplc.com,Carl,Contreras,,Active,Champion,Director,2023-06-01,,163,False,False,,True,False,False
+389daead94af45c3,1a9995abad154d16,briana.gonzalez@belldavisand.com,Briana,Gonzalez,,Active,Technical Buyer,Director,2023-06-01,,26,False,False,,True,False,False
+76814aef8eb041cb,59d001f0845541a3,stacy.bailey@wyattltd.com,Stacy,Bailey,,Qualified,,C-Level,2023-06-01,,57,False,False,,True,False,True
+0f5539ac11034ddc,129b154e122548cb,john.hudson@weissinc.com,John,Hudson,,Nurture,Non-Prospect,VP,2023-11-10,,104,False,False,,False,False,False
+42597707939c484c,33e9ba42bdcf4959,jay.lee@jackson-webs.com,Jay,Lee,,Active,Non-Prospect,,2023-06-01,,152,False,False,,False,True,False
+6f6934d17dd84da2,05964633905649db,samanthayork@yandex.com,Teresa,Garcia,Public relations officer,Qualified,Champion,Individual Contributor,2024-02-01,,34,False,False,,False,True,False
+df10a3379efc4cd8,624c76dabc3248da,michael.lawrence@nunez-rodrig.com,Michael,Lawrence,Marine scientist,Qualified,End User,,2023-06-01,,104,False,False,,False,False,False
+e6ebe9c1fb754f85,7bb61528e44b48b4,tina.coleman@perezrodrigu.com,Tina,Coleman,,MQL,,,2023-06-01,2025-04-21,133,True,False,,False,False,True
+708e08ffce2b4624,c8222d323f3f4c6e,steven.stone@farmer-bush.com,Steven,Stone,,Qualified,CISO,Director,2025-02-13,,4,False,False,,False,False,False
+0d54de816632454b,adf0c0baa90642fb,jennifer.miller@wilson-campb.com,Jennifer,Miller,Tourism officer,MQL,Non-Prospect,Individual Contributor,2023-07-19,2025-04-24,82,True,False,,False,False,False
+4ad46524d9274d05,c348fa4c16884f49,jill.mcdaniel@perez-russel.com,Jill,Mcdaniel,Phytotherapist,Attempted,,C-Level,2024-01-11,,36,False,False,,False,False,False
+73dac0dbbb234944,8e800947c7174be9,jacob.jones@crosby-richa.com,Jacob,Jones,"Administrator, Civil Service",Qualified,,Director,2023-12-30,,140,False,False,,False,False,False
+e2efc031a92542c1,d6a99138ae44470b,yolanda.vasquez@sandersplc.com,Yolanda,Vasquez,Chartered certified accountant,Attempted,Champion,,2025-03-14,,16,False,False,,False,False,False
+a8a6d4d6a6874d47,47edd43a56cd40d7,david.foster@garzagarciaa.com,David,Foster,Dispensing optician,Qualified,Non-Prospect,Individual Contributor,2024-10-14,,196,False,False,,False,False,False
+a2e77d0dde2a4aac,db078e2235f64190,calvin.hester@gonzalez-ant.com,Calvin,Hester,Operations geologist,MQL,End User,Individual Contributor,2023-12-21,2024-12-18,148,True,False,,False,False,False
+97da32d4c5734120,8d0c0b4154954ecf,tramirez@rediffmail.com,David,Massey,Television camera operator,Nurture,,,2024-09-14,,57,False,False,,False,True,False
+318abe96b4414192,83a12664aa8148b3,brittney.avila@hardingkelly.com,Brittney,Avila,Ophthalmologist,MQL,Champion,Manager,2023-12-04,2024-11-18,7,True,False,,False,True,False
+cfdb1ecd6e6c437c,7cd2c43d9453462d,katrinarodriguez@libero.it,Vanessa,Dixon,Fitness centre manager,Attempted,,,2024-03-27,,4,False,False,,False,False,False
+0482cdbe98724c51,a2c6a95ed2b549e5,tracy.hall@johnsonltd.com,Tracy,Hall,Astronomer,Qualified,End User,,2023-07-17,,139,False,False,,False,False,False
+b395c3306ea140d5,7a1313cef6c94a1e,stantonpatrick@gmail.com,Maria,Jimenez,"Journalist, newspaper",Nurture,,,2025-03-17,,196,False,False,,False,False,False
+a0481abe9ff44f07,bf44642603944f7e,wolfdonna@hotmail.com,Eric,Howell,"Scientist, product/process development",Nurture,,,2024-07-29,,42,False,False,,False,False,True
+43e2fdd56a854f1c,bcbc86ea2b414bc7,katrina.sparks@cartergroup.com,Katrina,Sparks,,Qualified,,,2023-06-01,,6,False,False,,True,True,False
+7140a2cd48714340,03a6f3a5b4364ec8,william.daniels@paynecisnero.com,William,Daniels,Planning and development surveyor,Nurture,,Manager,2023-06-01,,113,False,False,,False,False,True
+f944f068d1b341c9,83a12664aa8148b3,yedwards@gmx.de,Nicole,Wilson,Probation officer,MQL,,Individual Contributor,2024-02-26,2025-01-06,171,True,False,,False,True,True
+5a25ac30c5214150,9537bfa90c294dd4,steve.johnson@hopkinschana.com,Steve,Johnson,,Qualified,End User,Manager,2025-02-12,,5,False,False,,False,False,False
+d0c6d0c015714807,14e52283fbbf4c2a,travis.taylor@pricegallagh.com,Travis,Taylor,Recycling officer,Active,Non-Prospect,,2023-06-01,,102,False,False,,False,False,True
+5111bf67264544ae,c8fa434fa5ba4df1,donna.jennings@harrisonhart.com,Donna,Jennings,,MQL,Non-Prospect,Individual Contributor,2023-06-01,2025-03-20,108,True,False,,False,False,False
+77c27df037614b0f,6f2e417b37344727,peter.simpson@jensen-gomez.com,Peter,Simpson,,Active,Economic Buyer,,2023-06-01,,43,False,False,,False,False,False
+79c8f886b2b44f29,4c305fd121594708,luke.johnson@andersonllc.com,Luke,Johnson,Magazine journalist,Attempted,Champion,,2024-08-02,,36,False,False,,False,False,False
+481913a11a29482a,bf44642603944f7e,lisa.silva@petersondavi.com,Lisa,Silva,,Attempted,,Individual Contributor,2023-08-07,,107,False,False,,False,False,False
+83fd2cc0929b4e83,dd10743545984d5b,johnwong@yahoo.com,Robert,Brown,"Therapist, drama",MQL,End User,Director,2023-09-27,2025-04-01,81,True,False,,False,False,False
+4c2be6e39cfa473a,16542f93045f49c4,danny20@gmx.de,Christopher,Watts,Solicitor,Attempted,End User,Individual Contributor,2024-02-14,,127,False,False,,False,False,False
+8dfaee071d424e98,7a1313cef6c94a1e,mark.murray@bradley-vale.com,Mark,Murray,,MQL,,C-Level,2023-06-01,2024-11-20,100,True,False,,False,False,True
+94e6840f17144d20,b168eec0bf0d4a5c,odomnicholas@yahoo.com,Andrew,Harrison,Newspaper journalist,Active,End User,Individual Contributor,2023-06-01,,145,False,False,,False,False,False
+59674b5585f74955,dd10743545984d5b,marcus.davis@garcia-leona.com,Marcus,Davis,Legal secretary,Nurture,Non-Prospect,Manager,2023-06-01,,32,False,False,,False,True,False
+704c0efef5ae4598,14e52283fbbf4c2a,tyler.cain@morganmendez.com,Tyler,Cain,Press photographer,Attempted,Non-Prospect,Manager,2023-09-24,,74,False,False,,False,False,False
+2fd6518a5f314436,e5d15d07d9344bf6,james.reid@pittmanplc.com,James,Reid,"Engineer, site",Qualified,Champion,,2023-06-30,,112,False,False,,True,False,False
+ee8e7e0ccc714129,ea6815dbbcef4835,karl.williams@moralesperez.com,Karl,Williams,Chief Executive Officer,Active,Economic Buyer,Manager,2023-06-01,,160,False,False,,False,False,False
+b5d7a0943f774277,5121cef210e14080,jennifer.lane@rogersjonesa.com,Jennifer,Lane,Public relations officer,Attempted,Champion,Manager,2024-10-26,,191,False,False,,True,False,False
+4468e32f8e444c94,b54110af4e0d4c19,ronald.reed@pearsonllc.com,Ronald,Reed,Retail merchandiser,Active,,,2023-06-01,,186,False,False,,False,False,False
+d1d54aeec03447f1,44d7a8a9fc3d4106,linda.reynolds@edwardsperry.com,Linda,Reynolds,"Scientist, biomedical",Active,Non-Prospect,,2024-04-16,,151,False,False,,False,True,False
+3847eff07ecc4cae,d14f6b1b979047fe,nicoleburton@yahoo.com,Shawn,Hines,"Scientist, clinical (histocompatibility and immunogenetics)",Nurture,,Individual Contributor,2024-06-30,,146,False,False,,False,False,False
+56197bc9ef734e6f,c40aacc0387145ba,donnaholloway@yandex.com,Michelle,Ray,"Psychologist, sport and exercise",Nurture,Non-Prospect,,2024-04-21,,43,False,False,,False,False,False
+b0fcfbb61c9747b4,624c76dabc3248da,joseph.little@farrellmeado.com,Joseph,Little,Best boy,MQL,Champion,,2023-11-02,2025-01-20,125,True,False,,False,False,False
+293082c6f08e48d3,a0de2a105fff4d35,alexa.diaz@allenltd.com,Alexa,Diaz,Hydrologist,MQL,,Manager,2024-08-15,2025-02-11,131,True,False,,False,True,False
+5dc87cf280ba4a91,486a7f7aecd84d2e,megan.jenkins@waltersgroup.com,Megan,Jenkins,,MQL,,VP,2023-06-01,2025-04-21,78,True,False,,True,False,True
+906c63dddd2041e3,8e800947c7174be9,gloria36@gmail.com,Madison,Lucas,Field trials officer,Attempted,,VP,2023-06-01,,81,False,False,,True,False,False
+79d06880fce0465c,140828181008405c,daniel.lee@roblesllc.com,Daniel,Lee,"Psychologist, forensic",Nurture,Champion,VP,2025-02-24,,31,False,False,,False,False,False
+8288ffdc45e44ba3,aa54fe9216b94308,clucas@hotmail.com,Todd,Esparza,,Active,End User,C-Level,2023-06-01,,84,False,False,,False,False,False
+6eaf4b12c4244a35,eb47db9472c542a3,erik.taylor@clarke-ramir.com,Erik,Taylor,,Qualified,End User,Manager,2023-09-28,,130,False,False,,False,False,False
+9175b713a6d043b6,8c4b560093a84fdc,gregory.phelps@tuckersmitha.com,Gregory,Phelps,,Nurture,Technical Buyer,Individual Contributor,2023-06-01,,30,False,False,,False,False,False
+a3ffc55f501e4c68,0cf9a9fd3ef143b4,lee.evans@lestergroup.com,Lee,Evans,,Active,Technical Buyer,,2024-03-16,,164,False,False,,False,False,False
+db093815e91c423f,e3535f84d4af4f91,emily.blackwell@hahn-ramsey.com,Emily,Blackwell,,Active,,,2023-06-01,,77,False,False,,False,False,False
+8607ea8042cc4d4b,1db129c9cdc549eb,boydmaria@gmx.de,Joel,Duncan,"Scientist, water quality",Qualified,Champion,VP,2024-08-17,,38,False,False,,False,True,False
+991efdfa15f7458e,dd10743545984d5b,johnathan.wilkerson@greenellc.com,Johnathan,Wilkerson,Landscape architect,Active,End User,Director,2023-06-01,,34,False,False,,False,True,False
+abc68d63cdce455d,33e9ba42bdcf4959,marisa.mclaughlin@manningwalls.com,Marisa,Mclaughlin,,Active,,,2025-03-24,,183,False,False,,False,False,False
+b4fb65d391a3419f,c8222d323f3f4c6e,gregory.booker@ortiz-roy.com,Gregory,Booker,Banker,Attempted,Economic Buyer,,2023-06-01,,68,False,False,,False,False,False
+ac8cdb34cf0d4bbd,096a330ee7014f7b,tracy.brooks@stewartgroup.com,Tracy,Brooks,Public relations officer,Active,Technical Buyer,Manager,2023-12-24,,140,False,False,,False,False,False
+ba9c502883e04267,8d0c0b4154954ecf,felicia.richmond@coxltd.com,Felicia,Richmond,Mental health nurse,Nurture,Technical Buyer,Director,2024-08-22,,83,False,False,,False,True,False
+0943a513b37947de,f76f177aee044584,lori.smith@johnsonsteve.com,Lori,Smith,,Attempted,Technical Buyer,,2024-05-02,,36,False,False,,False,True,False
+cf5715e64c544ff6,2074d64bf0be465e,hannah.mccormick@kinggroup.com,Hannah,Mccormick,Insurance broker,MQL,Technical Buyer,,2024-05-21,2025-03-30,190,True,False,,False,False,False
+f950a479577c421d,7a6510efd7a84196,nicholsjoel@yahoo.com,Danielle,Haynes,Probation officer,Nurture,End User,,2023-11-08,,149,False,False,,False,False,False
+c75e6b302bb34cc3,4942a6ac0790452d,qpennington@rediffmail.com,Paul,Browning,Illustrator,Nurture,Non-Prospect,,2023-12-09,,83,False,False,,False,False,False
+08dd399a64b6426d,6061601e92cc41ac,kennethvillarreal@gmail.com,Christopher,Carson,,Active,,Individual Contributor,2023-06-01,,11,False,False,,False,False,False
+6a39fb8dd8c648d3,4e93dfdd0d8d4e71,rmccormick@hotmail.com,Ruth,Welch,Catering manager,Active,End User,Manager,2024-08-29,,163,False,False,,False,False,False
+177db71e8d224064,47edd43a56cd40d7,madeline.shepard@mclaughlin-h.com,Madeline,Shepard,Learning mentor,Attempted,End User,,2024-08-03,,28,False,False,,False,False,False
+e8aa582e7f184380,b584263ac2f14f6c,hollowayholly@hotmail.com,Jennifer,Mcdowell,,Active,End User,,2023-06-13,,122,False,False,,False,False,False
+b74c7bb8b86c4f39,0877f35742934926,carl.fisher@lirojasandch.com,Carl,Fisher,Air broker,MQL,Non-Prospect,Individual Contributor,2023-12-07,2024-11-06,29,True,False,,False,True,False
+f659b94c26a440d0,972df179896c4aab,kathleen.davidson@mccoyltd.com,Kathleen,Davidson,Copy,Qualified,,Individual Contributor,2023-12-11,,22,False,False,,False,False,True
+680d25cc4bc34dfa,fb63b953d32146fc,lee11@yandex.com,Aaron,Gonzalez,"Designer, industrial/product",Active,CISO,,2023-10-08,,75,False,False,,False,False,False
+2e4341b2975c41e9,0877f35742934926,john.reeves@hinesbradfor.com,John,Reeves,,MQL,Champion,Individual Contributor,2024-12-16,2025-02-17,142,True,False,,False,False,False
+40a43438b8c14560,486a7f7aecd84d2e,shannon.russo@greenltd.com,Shannon,Russo,"Therapist, horticultural",MQL,CISO,,2023-06-01,2024-11-30,89,True,False,,False,False,True
+0377764b15bc4f45,310877c2461f43ac,margaret.marsh@millerllc.com,Margaret,Marsh,"Education officer, environmental",Active,Champion,Director,2024-11-21,,116,False,False,,False,False,False
+0cea50456bf04b4a,624c76dabc3248da,andrewjohnson@yandex.com,Phillip,Bennett,,MQL,,Director,2023-06-01,2025-04-11,123,True,False,,False,False,False
+e88724abeafd4263,cfd4742f057a457a,deborah.sims@mccannandson.com,Deborah,Sims,Garment/textile technologist,Active,Technical Buyer,C-Level,2023-06-01,,58,False,False,,False,False,False
+2d13a190df7f4473,30b5a7a630234b03,jacqueline.jackson@williamson-b.com,Jacqueline,Jackson,Database administrator,Active,,,2023-06-25,,15,False,False,,False,False,False
+96f6c76ac620424e,23783564a94e405a,christopher.richardson@wilsonhiggin.com,Christopher,Richardson,Professor Emeritus,Nurture,Economic Buyer,Individual Contributor,2024-05-21,,95,False,False,,False,False,False
+3a562041231b4490,cc3eb7dc532f4c62,jenniferlee@gmail.com,Margaret,Snyder,,Nurture,,Individual Contributor,2023-06-01,,188,False,False,,False,False,True
+806831de6b94469e,8acdbd7b7e314548,keith.snyder@reynoldsands.com,Keith,Snyder,,MQL,,VP,2023-10-20,2024-11-10,7,True,False,,False,True,False
+2dcf18a80d8e4db0,0defc70b1f6f47c4,jason.holloway@byrdbarnesan.com,Jason,Holloway,,MQL,Non-Prospect,VP,2024-12-18,2025-01-02,12,True,False,,False,False,False
+c256667f8be04f3c,2dd0b9169c894f1b,anthony.cherry@williamsonan.com,Anthony,Cherry,Merchant navy officer,Qualified,,,2023-06-01,,114,False,False,,False,False,False
+f27adcd50d604cfe,1e8b775c15444036,smithdean@outlook.com,Brandi,Holland,Jewellery designer,Nurture,Non-Prospect,,2023-06-01,,112,False,False,,False,False,False
+e9b0a11d7b46493d,33e9ba42bdcf4959,jennifererickson@gmx.de,Terri,Sanders,"Therapist, speech and language",MQL,,,2023-06-01,2025-04-16,79,True,False,,False,False,True
+af8c8d7b450d4e9d,c8222d323f3f4c6e,jonathan.davis@williamsands.com,Jonathan,Davis,Public affairs consultant,MQL,Non-Prospect,VP,2023-12-10,2025-02-25,149,True,False,,False,False,False
+827a9b4a720f4d5b,94d526cc9d8d4d89,rebekah.barajas@coffeygeorge.com,Rebekah,Barajas,,MQL,Champion,Individual Contributor,2024-05-14,2025-04-14,156,True,False,,False,True,False
+4023c4102aed411a,62bcba88525a4e53,adam.wagner@turner-foste.com,Adam,Wagner,Metallurgist,Attempted,Champion,Individual Contributor,2023-11-14,,30,False,False,,False,False,False
+a32870e7977f408e,9d417ebcdc724444,david.mcclain@carpenterllc.com,David,Mcclain,,Active,,,2023-06-01,,82,False,False,,False,False,False
+93da956727124f8e,2a7da0d9e597417e,william.conrad@anderson-ste.com,William,Conrad,Set designer,MQL,,,2025-03-17,2025-02-22,169,True,False,,False,False,True
+a4d7f4a377374ad5,b584263ac2f14f6c,ryan.green@williams-and.com,Ryan,Green,Health visitor,Active,End User,VP,2023-05-26,,139,False,False,,False,False,False
+7a2c0dce573a431f,059435d5a9a64e60,raven49@rediffmail.com,Julie,Howe,"Geneticist, molecular",Qualified,End User,Manager,2023-12-29,,137,False,False,,False,False,False
+a75b4ef3236749f8,a0de2a105fff4d35,zachary.graham@stewartgroup.com,Zachary,Graham,Dentist,MQL,CISO,C-Level,2024-07-09,2025-03-26,91,True,False,,False,False,False
+bcb76ed6c2894aef,38ef6aeacfb84fd9,angela.livingston@yatesbrownan.com,Angela,Livingston,Event organiser,MQL,,Individual Contributor,2023-06-01,2025-04-19,23,True,False,,False,True,False
+f0e96d76ce2349ee,23783564a94e405a,isaac.harrison@mccarthygrou.com,Isaac,Harrison,,Active,Technical Buyer,Individual Contributor,2023-10-26,,171,False,False,,False,False,False
+a1d5ebe937ac4e8a,9d8e915d08b04fcd,wanda.ho@alexanderltd.com,Wanda,Ho,,MQL,Economic Buyer,Individual Contributor,2025-02-09,2024-12-01,22,True,False,,False,False,False
+6f69f3a8b10d464c,0defc70b1f6f47c4,daviddavis@yahoo.com,Todd,Vasquez,Herpetologist,Active,Non-Prospect,Individual Contributor,2023-06-01,,199,False,False,,False,False,False
+481f2c0799ed4eb5,dd10743545984d5b,henry.jackson@carsonelliot.com,Henry,Jackson,,MQL,,Individual Contributor,2023-06-16,2024-11-25,67,True,False,,False,False,False
+74505e72ac204f2f,a027bf6264664a50,brandy.bonilla@wangwhiteand.com,Brandy,Bonilla,,Qualified,Technical Buyer,,2024-10-20,,70,False,False,,False,True,False
+44622dae5b224bbd,6e4e0179219a47d1,kayla.rhodes@johnson-mald.com,Kayla,Rhodes,Community development worker,MQL,,Manager,2023-07-13,2025-01-09,38,True,False,,False,False,False
+e5866106d9544a03,5ca7552f79ab4f5e,hooderic@yahoo.com,Phillip,Garza,Ceramics designer,Nurture,Economic Buyer,,2023-06-01,,163,False,False,,False,False,False
+4ae63509eec74beb,030ca3bf068d4b35,steve.zimmerman@gibson-moses.com,Steve,Zimmerman,,MQL,,Individual Contributor,2024-07-21,2025-02-24,85,True,False,,False,False,False
+c9f086f3e11043c8,4f38099407b5424a,douglasstephanie@mail.ru,Diane,Rivera,,MQL,End User,,2024-01-18,2025-04-22,145,True,False,,False,False,False
+9324ec1ee3e749ed,dd10743545984d5b,jasonwilliams@gmail.com,Stacey,Cooke,Heritage manager,Nurture,End User,C-Level,2023-08-02,,0,False,False,,False,False,False
+41d4e4e707554684,05964633905649db,paynecarrie@yahoo.com,Marcus,Brown,Chief Executive Officer,Nurture,Non-Prospect,,2024-12-15,,139,False,False,,False,False,False
+fa0b75bd7f164e4a,0877f35742934926,raymond.thompson@davis-phelps.com,Raymond,Thompson,,Attempted,Champion,Individual Contributor,2023-06-01,,80,False,False,,False,True,False
+4cf6657b8da34ab5,37f4317924b74710,paul.powell@goodwinvalde.com,Paul,Powell,,Active,,Individual Contributor,2024-07-23,,121,False,False,,True,False,True
+9cb9a12355e1452b,a7e80d78b7444561,laurie.fitzgerald@mckee-munoz.com,Laurie,Fitzgerald,Mechanical engineer,Active,Champion,,2023-06-01,,95,False,False,,False,False,True
+632c3de8b7c446f2,0bcadb57d2cd46e7,elizabeth.collier@gonzalezgrif.com,Elizabeth,Collier,,Nurture,Non-Prospect,Individual Contributor,2024-05-31,,96,False,False,,False,False,False
+3089500341ca4579,486a7f7aecd84d2e,anna.henderson@shepherd-aus.com,Anna,Henderson,Politician's assistant,MQL,Champion,,2024-10-18,2025-02-10,113,True,False,,False,False,False
+980c68397185438f,d6a99138ae44470b,crystal.davis@petersonford.com,Crystal,Davis,,Attempted,,Director,2025-03-03,,97,False,False,,False,False,False
+35695a44d12a4e3c,7a1313cef6c94a1e,sarah.rose@warrenrobert.com,Sarah,Rose,Purchasing manager,Nurture,,,2024-08-10,,30,False,False,,False,False,False
+d07a03dc43c14a9d,4c305fd121594708,kevin.joyce@leachskinner.com,Kevin,Joyce,,Active,Economic Buyer,Individual Contributor,2024-05-13,,25,False,False,,True,False,False
+7cd529b5a8f64595,f6abb4c840c948bd,ashley.arnold@palmerplc.com,Ashley,Arnold,"Physicist, medical",MQL,Technical Buyer,Individual Contributor,2023-06-01,2024-12-30,126,True,False,,False,True,False
+d51df535d7f8447e,328e85b5274747bd,michael91@gmx.de,Robert,Marshall,Retail manager,Qualified,Champion,Manager,2023-06-01,,108,False,False,,True,False,False
+95819ab25d964b10,b74231fc4b44420f,allen.yang@white-white.com,Allen,Yang,"Nurse, learning disability",MQL,Non-Prospect,,2023-11-28,2025-01-10,192,True,False,,False,False,False
+c6ca28e30c13461d,67316c7f694142fc,lee77@hotmail.com,Brandon,Butler,Youth worker,Qualified,Technical Buyer,,2023-06-01,,68,False,False,,True,False,False
+132c7dbaf0864bca,9d8e915d08b04fcd,lindsey.peterson@clarkinc.com,Lindsey,Peterson,Trade mark attorney,MQL,Economic Buyer,,2023-06-01,2025-03-12,73,True,False,,False,False,False
+81dec6d84c5545e1,1b7db62ec0c34772,jordan.nunez@ferguson-smi.com,Jordan,Nunez,Commercial horticulturist,Qualified,Champion,,2024-02-19,,42,False,False,,False,True,False
+0c80519f63164502,f15674f656e04428,qholt@gmail.com,Alexander,Rios,Town planner,Nurture,,C-Level,2023-06-01,,10,False,False,,False,False,False
+db31860a683449ae,165dc9edfc3d4cb1,jessica.turner@wardnunezand.com,Jessica,Turner,Nutritional therapist,Active,End User,Director,2024-07-02,,179,False,False,,False,False,False
+c65ca09a99d44d46,2e5e7aeb1dd44dfd,linda.miller@smithinc.com,Linda,Miller,"Administrator, sports",Nurture,Economic Buyer,Director,2024-04-13,,66,False,False,,False,True,False
+e2f0708081904733,298fcfe147bb4dae,heather.lopez@clarkltd.com,Heather,Lopez,Dance movement psychotherapist,MQL,End User,Manager,2023-09-14,2024-11-17,185,True,False,,False,False,False
+8d005188d42b4d38,b74231fc4b44420f,debra.graham@garrisonryan.com,Debra,Graham,"Psychologist, educational",Qualified,Economic Buyer,Individual Contributor,2023-07-04,,195,False,False,,False,True,False
+cafa0ad7d8c54a1a,1d33a6596398412b,eddie.henderson@martinandson.com,Eddie,Henderson,"Producer, television/film/video",MQL,,,2024-11-12,2025-03-02,153,True,False,,False,False,False
+c05d384fa5a14f9a,c8fa434fa5ba4df1,mrichards@yahoo.com,Tamara,Ruiz,Hospital pharmacist,MQL,,,2023-10-16,2024-12-06,168,True,False,,False,True,False
+82328c22b9df4f03,a2c6a95ed2b549e5,ashley.bass@cookinc.com,Ashley,Bass,,Nurture,,VP,2023-08-19,,3,False,False,,False,True,True
+98f691f47c294684,03a6f3a5b4364ec8,tiffany.allison@lanesimonand.com,Tiffany,Allison,Animator,Nurture,Non-Prospect,Manager,2025-02-14,,173,False,False,,False,False,True
+45d0cf21efe2488b,38ef6aeacfb84fd9,dhall@mail.ru,Tony,Tucker,"Secretary, company",MQL,Non-Prospect,Director,2024-06-10,2025-03-01,164,True,False,,False,False,False
+b9e87f7648af4b2d,70f344df1e314b65,andrew.ray@brownorozcoa.com,Andrew,Ray,Public librarian,MQL,Technical Buyer,Individual Contributor,2023-06-01,2024-12-01,8,True,False,,True,False,False
+d2f6106c8ec1478f,217f4df12e6b44eb,daryl.dean@reedterryand.com,Daryl,Dean,Holiday representative,Active,End User,C-Level,2023-06-01,,176,False,False,,True,False,False
+85bf9b47921042d5,95c10f8bd7aa454a,jessica.harrison@hall-robinso.com,Jessica,Harrison,"Librarian, academic",Active,,Individual Contributor,2025-01-03,,114,False,False,,False,True,False
+a744724b2a644af4,6061601e92cc41ac,sandra.castaneda@sandovalande.com,Sandra,Castaneda,,Attempted,Champion,Manager,2023-06-01,,96,False,False,,False,False,False
+ad374e510d1c41eb,f4c5348bc44c466c,susan.whitaker@delgadowarda.com,Susan,Whitaker,"Designer, television/film set",Qualified,Champion,Manager,2023-10-17,,164,False,False,,False,False,False
+66f3c7b60076469b,76468254e9484ec5,christy.campbell@millerwebban.com,Christy,Campbell,"Designer, graphic",MQL,,,2024-03-11,2024-11-29,33,True,False,,False,False,False
+8962b91905a94efd,dcd25584c7804dd9,catherine.garcia@hahn-snyder.com,Catherine,Garcia,Farm manager,Nurture,End User,Manager,2024-05-27,,146,False,False,,False,True,True
+7d6f011f12664f23,1b7db62ec0c34772,jason.williams@howardllc.com,Jason,Williams,Marketing executive,Active,,Individual Contributor,2024-12-30,,19,False,False,,True,False,False
+606e5efeba7547a7,564f746359164f45,romanmatthew@mail.ru,Erica,Thompson,Clothing/textile technologist,MQL,Technical Buyer,Manager,2024-10-02,2024-11-27,115,True,False,,True,False,False
+a2905cc575794775,38ef6aeacfb84fd9,tomchaney@gmail.com,Christina,Martinez,Marine scientist,MQL,,,2023-05-05,2024-12-27,129,True,False,,False,False,False
+69cb0873a73d4fbe,a83a575be6504c8a,kayla.carrillo@adamshernand.com,Kayla,Carrillo,"Scientist, biomedical",Attempted,Economic Buyer,,2025-01-27,,13,False,False,,False,False,False
+90c6f58cf2144ff9,2b90dec03ca046d3,cassandra.garcia@housegroup.com,Cassandra,Garcia,,Attempted,,VP,2023-06-01,,132,False,False,,False,False,False
+db45737058db4800,e532eb8deac647ae,sydney.campos@harringtonpl.com,Sydney,Campos,"Civil engineer, consulting",MQL,Technical Buyer,Manager,2024-03-15,2025-04-14,164,True,False,,False,False,True
+b3eefe0417b045c5,c8222d323f3f4c6e,madison.williams@jacksoninc.com,Madison,Williams,"Engineer, land",MQL,End User,Individual Contributor,2023-06-01,2025-03-14,190,True,False,,False,False,False
+5ce2ec3cf6ca48cf,fd268161c23b42f0,rhonda.moore@erickson-gil.com,Rhonda,Moore,,MQL,,C-Level,2023-08-03,2025-04-27,179,True,False,,False,False,False
+1043dd2b6102482a,e74d29d2f7eb499a,jessica.garcia@coxfuentesan.com,Jessica,Garcia,"Engineer, drilling",Nurture,Technical Buyer,,2023-08-29,,105,False,False,,False,False,False
+6dfca0b2a38a4081,837f1cf4406340fc,scott.perry@sanchezgroup.com,Scott,Perry,Licensed conveyancer,Active,Technical Buyer,VP,2024-11-08,,197,False,False,,False,True,False
+eb94d49498914306,1b7db62ec0c34772,justin.jackson@watson-fisch.com,Justin,Jackson,,Nurture,Non-Prospect,Director,2024-08-17,,186,False,False,,False,False,False
+96a759ed427742ed,d14f6b1b979047fe,icobb@outlook.com,Crystal,Sanchez,"Pilot, airline",Active,Technical Buyer,,2023-09-21,,183,False,False,,False,False,False
+6e5dd68a6abd44b2,7cd2c43d9453462d,robert.ortiz@crane-black.com,Robert,Ortiz,Medical illustrator,Active,Champion,,2023-06-26,,13,False,False,,False,False,False
+b935ba3975c04ec5,feab46cf6feb4347,security.manager@highintent.com,Nina,Kowalski,Security Manager,Active,Technical Buyer,Manager,2024-11-07,,55,False,False,,False,False,False
+d4a27e8ec80a4147,4f38099407b5424a,broken.link@splitdata.com,Tom,Brokenlink,Director of IT,Active,Technical Buyer,Director,2024-05-11,2025-04-23,75,True,True,c1c9b37b5b3a41af,False,False,False

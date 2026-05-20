@@ -310,11 +310,34 @@ def compute_flags(row):
     if row.get("email_type") == "free_email":       flags.append("FREE_EMAIL")
     if row.get("email_type") == "shared_mailbox":   flags.append("SHARED_MAILBOX")
     if row.get("auto_share", 0) > 0.70:             flags.append("AUTOMATION_INFLATED")
-    if (row.get("is_converted") and
+
+    # BROKEN_CONV_LINK: only applies to LEAD records that are marked converted
+    # Contacts with has_lead_origin=True are not "converted leads" — they are the
+    # target of conversion. Flagging them would be incorrect.
+    if (row.get("entity_type") == "lead" and
+        row.get("is_converted") and
         (pd.isna(row.get("converted_contact_id")) or
-         row.get("converted_contact_id") == "")):   flags.append("BROKEN_CONV_LINK")
+         row.get("converted_contact_id") == "")):
+        flags.append("BROKEN_CONV_LINK")
+
+    # STALE_LEGACY_SCORE: high Marketo score but no engagement in 6+ months
     if (row.get("days_since_last_response", 999) > 180 and
-        row.get("mkto_score_normalized", 0) > 50):  flags.append("STALE_LEGACY_SCORE")
+        row.get("mkto_score_normalized", 0) > 50):
+        flags.append("STALE_LEGACY_SCORE")
+
+    # RECYCLED_RISK: record re-engaged recently but has a long history of going dark
+    # Detected by: recent engagement (≤30d) + old record (mkto score > 40) +
+    # high total engagements but low 90d engagements relative to total
+    # This flags the "churn-and-return" pattern without blocking the record
+    total_eng  = row.get("real_engagements", 0)
+    recent_90d = row.get("real_responses_90d", 0)  # using 90d as proxy
+    days_last  = row.get("days_since_last_response", 999)
+    mkto_norm  = row.get("mkto_score_normalized", 0)
+    if (days_last <= 30 and total_eng >= 4 and
+        mkto_norm > 40 and
+        recent_90d <= 3 and total_eng >= recent_90d * 3):
+        flags.append("RECYCLED_RISK")
+
     if row.get("real_engagements", 0) == 0:         flags.append("NO_ENGAGEMENT")
     missing = sum([
         pd.isna(row.get("title"))       or str(row.get("title",""))       == "",
@@ -333,12 +356,37 @@ records["flag_count"] = records["dq_flags"].apply(
 # ── 4c. Actionability ─────────────────────────
 def is_actionable(row):
     flags = set(row["dq_flags"].split("|")) if row["dq_flags"] else set()
-    if flags & HARD_BLOCK_FLAGS: return False
+    # Absolute hard blocks — no exceptions
+    if flags & {"NON_PROSPECT", "COMPETITOR", "DO_NOT_CONTACT"}:
+        return False
+    # No longer with company — always block
+    if "NO_LONGER_WITH_COMPANY" in flags:
+        return False
+    # Bounced email — block UNLESS attended physical event in last 90 days
+    if "EMAIL_BOUNCED" in flags and row.get("webinar_event_attended_90d", 0) == 0:
+        return False
+    # Opted out — block UNLESS recent non-email engagement
     if "OPT_OUT" in flags and row.get("webinar_event_attended_90d", 0) == 0:
         return False
     return True
 
 records["is_actionable"] = records.apply(is_actionable, axis=1)
+
+# ── Stale engagement penalty ───────────────────
+# Records with strong profile/account fit but zero recent engagement
+# can still score high because profile/account components are strong.
+# Apply a direct multiplier penalty when last engagement > 180 days.
+# This ensures "great profile, stale engagement" lands Nurture/Low, not Call Now.
+def apply_stale_penalty(row):
+    days = row.get("days_since_last_response", 999)
+    score = row["readiness_score"]
+    if days > 365:
+        return round(score * 0.55, 1)   # >1 year stale → heavy penalty
+    if days > 180:
+        return round(score * 0.72, 1)   # 6-12 months stale → moderate penalty
+    return score
+
+records["readiness_score"] = records.apply(apply_stale_penalty, axis=1)
 
 # ── 4d. QUANTILE-BASED TIER ASSIGNMENT ────────
 # Tiers based on score distribution of ACTIONABLE records only

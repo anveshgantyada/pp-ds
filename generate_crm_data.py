@@ -109,6 +109,9 @@ def free_email(known_only=False):
     )
     return fake.user_name() + "@" + random.choice(domains)
 
+def free_email_unknown():
+    return fake.user_name() + "@" + random.choice(FREE_EMAIL_DOMAINS_UNKNOWN)
+
 def shared_mailbox():
     prefix = random.choice(["info", "sales", "contact", "admin", "support"])
     domain = fake.domain_name()
@@ -191,7 +194,7 @@ for i in range(N_LEADS):
     elif email_type == "free_known":
         email = free_email(known_only=True)
     elif email_type == "free_unknown":
-        email = free_email(known_only=False)   # DQ-11
+        email = free_email_unknown()   # DQ-11
     else:
         email = shared_mailbox()
 
@@ -215,12 +218,18 @@ for i in range(N_LEADS):
     else:
         converted_contact_id = "__PLACEHOLDER__" if is_converted else None
 
-    # DQ-10: disqualification resets on re-MQL
-    is_disqualified = (not is_mql) and (random.random() < 0.20)
-    dq_reason  = random.choice(DQ_REASONS) if is_disqualified else None
-    dq_date    = rand_date(365, 30) if is_disqualified else None
-    # If re-MQL'd after DQ, fields cleared (DQ-10)
-    if is_mql and is_disqualified and random.random() < 0.50:
+    # DQ-10: disqualification resets on re-MQL.
+    # Records previously DQ'd but currently MQL have visible DQ fields cleared.
+    was_ever_dq = random.random() < 0.25
+    if is_mql and was_ever_dq:
+        is_disqualified = False
+        dq_reason       = None
+        dq_date         = None
+    elif not is_mql and was_ever_dq:
+        is_disqualified = True
+        dq_reason       = random.choice(DQ_REASONS)
+        dq_date         = rand_date(365, 30)
+    else:
         is_disqualified = False
         dq_reason       = None
         dq_date         = None
@@ -364,7 +373,7 @@ for i in range(n_orphan):
     elif email_type == "free_known":
         email = free_email(known_only=True)
     else:
-        email = free_email(known_only=False)
+        email = free_email_unknown()
 
     contacts.append({
         "contact_id":            contact_id,
@@ -658,6 +667,32 @@ for entity_type, entity_id in all_entities:
 
 cm_df = pd.DataFrame(campaign_members)
 
+# Persona 2: deterministic STALE engagement — all meaningful activity is >180 days old
+# This demonstrates strong profile/account fit with stale readiness, as Appendix B expects.
+p2 = leads_df[leads_df["_archetype"] == "persona_2_stale_engagement"]
+if not p2.empty:
+    p2_id = p2.iloc[0]["lead_id"]
+    cm_df = cm_df[cm_df["entity_id"] != p2_id]
+    stale_campaigns = [
+        ("Enterprise Security Summit 2024", "Event", "Attended", 270),
+        ("CISO Roundtable Q1 2024", "Webinar", "Attended", 310),
+        ("Security ROI Whitepaper", "Content Syndication", "Responded", 240),
+        ("Threat Intelligence Report", "Content Syndication", "Responded", 290),
+        ("Q4 2023 Security Webinar", "Webinar", "Registered", 350),
+    ]
+    for camp_name, camp_type, status, days_ago in stale_campaigns:
+        cm_df = pd.concat([cm_df, pd.DataFrame([{
+            "cm_id":         uid(),
+            "entity_id":     p2_id,
+            "entity_type":   "lead",
+            "campaign_name": camp_name,
+            "campaign_type": camp_type,
+            "member_status": status,
+            "is_responded":  status in ["Attended", "Responded"],
+            "response_date": (NOW - timedelta(days=days_ago)).date(),
+            "is_active":     False,
+        }])], ignore_index=True)
+
 # Add recent webinar attendances for persona 1 and 3
 for _, row in leads_df[leads_df["_archetype"].isin(
         ["persona_1_vp_security_recent", "persona_3_junior_high_activity"])].iterrows():
@@ -688,6 +723,38 @@ if not p6.empty:
         "response_date": (NOW - timedelta(days=5)).date(),
         "is_active":     True,
     }])], ignore_index=True)
+
+# Persona 9: deterministic recycled bouncer pattern
+# Shows 3 engagement bursts separated by long gaps — classic churn-and-return
+# This makes STALE_LEGACY_SCORE fire and tells the recycled story clearly
+p9 = leads_df[leads_df["_archetype"] == "persona_9_recycled_bouncer"]
+if not p9.empty:
+    cm_df = cm_df[cm_df["entity_id"] != p9.iloc[0]["lead_id"]]  # remove random rows
+    recycled_history = [
+        # Burst 1 — ~2 years ago
+        ("Security Awareness Webinar Q1 2023",  "Webinar", "Attended",   730),
+        ("CISO Forum 2023",                      "Event",   "Attended",   700),
+        # Long gap — went dark for ~12 months
+        # Burst 2 — ~12 months ago
+        ("Cloud Security Summit 2024",           "Webinar", "Attended",   365),
+        ("Zero Trust Report Download",           "Content Syndication", "Responded", 340),
+        # Long gap — went dark again for ~10 months
+        # Burst 3 — recent re-engagement (this is why it re-MQL'd)
+        ("Security ROI Webinar May 2025",        "Webinar", "Attended",    15),
+        ("Threat Intelligence Q2 2025",          "Content Syndication", "Responded", 10),
+    ]
+    for camp_name, camp_type, status, days_ago in recycled_history:
+        cm_df = pd.concat([cm_df, pd.DataFrame([{
+            "cm_id":         uid(),
+            "entity_id":     p9.iloc[0]["lead_id"],
+            "entity_type":   "lead",
+            "campaign_name": camp_name,
+            "campaign_type": camp_type,
+            "member_status": status,
+            "is_responded":  status in ["Attended", "Responded"],
+            "response_date": (NOW - timedelta(days=days_ago)).date(),
+            "is_active":     days_ago < 30,
+        }])], ignore_index=True)
 
 # Add orphan contact 10 (Persona 10): high-intent account, 2 recent form fills
 p10_contact_id = uid()
@@ -834,8 +901,23 @@ for j in range(40):
         "is_active":     True,
     }])], ignore_index=True)
 
-# 9. TRIM TO TARGET SIZES
-# Keep leads at ~610 and contacts at ~410 (archetypes are extras; that's fine)
+# 9. CAP CAMPAIGN MEMBERS TO TARGET SIZE (~4,500)
+# Preserve archetype rows, then sample regular engagement rows down to the assignment target.
+print(f"\nPre-cap CampaignMembers: {len(cm_df)}")
+TARGET_CM = N_CAMPAIGN_MEMBERS
+
+archetype_ids = set(leads_df[leads_df["_archetype"].notna()]["lead_id"].tolist())
+cm_archetype = cm_df[cm_df["entity_id"].isin(archetype_ids)]
+cm_regular = cm_df[~cm_df["entity_id"].isin(archetype_ids)]
+
+remaining = max(TARGET_CM - len(cm_archetype), 0)
+if len(cm_regular) > remaining:
+    cm_regular = cm_regular.sample(remaining, random_state=42)
+
+cm_df = pd.concat([cm_regular, cm_archetype], ignore_index=True)
+cm_df = cm_df.sample(frac=1, random_state=42).reset_index(drop=True)
+print(f"Post-cap CampaignMembers: {len(cm_df)}")
+
 print(f"\nFinal counts:")
 print(f"  Leads:           {len(leads_df)}")
 print(f"  Contacts:        {len(contacts_df)}")

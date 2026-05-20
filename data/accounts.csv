@@ -1,201 +1,201 @@
 account_id,account_name,industry,employee_count,annual_revenue,is_icp_qualified,is_named_account,intent_score,do_not_contact,country
-de39ace6e146477e,"Rodriguez, Figueroa and Sanchez",Retail,5913,332622148.91,False,False,17,False,Germany
-2208e0054f8c480c,Doyle Ltd,Financial Services,1357,268174584.85,True,True,27,False,Germany
-b87b057386114d0f,"Mcclain, Miller and Henderson",Media,1815,415643899.36,False,False,28,False,USA
-ffe473f086644f37,Davis and Sons,Technology,10426,2499131402.42,True,False,43,False,USA
-04c36acaeb1c40cd,"Guzman, Hoffman and Baldwin",Government,32060,2422215366.31,False,True,44,False,India
-f5268bcc049f492c,"Gardner, Robinson and Lawrence",Government,8764,1613075748.38,False,True,37,False,Germany
-92c3e16309b249ac,Blake and Sons,Media,33701,6549386161.82,False,True,84,False,USA
-e408898d646741d0,"Henderson, Ramirez and Lewis",Government,15,3999313.75,False,False,81,False,USA
-891a3f2706644224,Garcia-James,Media,308,67003488.43,False,False,82,False,Germany
-926e0b44f34642a4,Abbott-Munoz,Education,3987,443365289.64,False,False,81,False,USA
-ca95156fe1d04fad,Blair PLC,Financial Services,229,24563002.12,True,False,51,False,USA
-5153053f818d45f8,Dudley Group,Manufacturing,4590,1053306625.65,False,False,50,False,Germany
-c04278d96e7649c7,Arnold Ltd,Media,118,10019094.43,False,False,33,False,USA
-70e77fbbd13d4146,"Mcclure, Ward and Lee",Technology,2636,370355656.41,True,False,11,False,Australia
-7fa7795bb25b4161,Williams and Sons,Government,91,22569805.54,False,False,49,False,France
-75d7a068fecc4c5a,Galloway-Wyatt,Financial Services,2030,594322276.64,True,False,14,False,UK
-f07802446d2840f8,James Group,Government,375,29208016.27,False,False,0,False,Australia
-2f8f3a0f6a074cb3,"Flowers, Martin and Kelly",Telecommunications,457,109904181.24,False,False,80,False,Germany
-2630bcbe69d14f30,"Adams, Zuniga and Wong",Technology,1815,160100818.1,True,False,99,False,Australia
-554468d9beff4e90,"Reid, Ferguson and Sanchez",Healthcare,2328,400768522.07,True,False,39,False,USA
-c6d5f75384fb43ac,Gray-Mayo,Media,4879,340013909.65,False,False,8,False,UK
-7c1f05a16908456b,"Watts, Robinson and Nguyen",Telecommunications,83,17839829.57,False,False,67,False,USA
-972a55b09b404b19,Perez Inc,Media,189,45136280.54,False,False,39,False,Germany
-4c6ff1a2f55049f8,Morales-Jones,Education,425,116833996.49,False,True,28,False,USA
-9ac195a5971945e6,"Walter, Edwards and Rios",Financial Services,1943,382984785.57,True,True,80,False,USA
-67b44a52a45c459d,Wilkerson-Day,Manufacturing,22,1489715.42,False,False,62,False,USA
-89072b1858e346cc,Baker and Sons,Education,3361,565211829.86,False,False,24,False,Germany
-400cf5ecd1144bf1,"Hoffman, Baker and Richards",Media,417,63707412.28,False,True,83,False,USA
-6023e7aea36f47bf,"Ross, Robinson and Bright",Healthcare,873,117702793.63,True,False,24,False,USA
-6dd1af3232774ecb,"Snyder, Campos and Callahan",Healthcare,122,20210156.09,False,False,70,False,Germany
-f916ea30e0744727,Burton Ltd,Healthcare,4425,237575878.75,True,False,30,False,USA
-dad8446037794954,Carlson-Cruz,Technology,153,42168439.61,False,False,49,False,India
-49aa1d3434f74961,"Ferrell, Rice and Maddox",Media,647,100771460.86,False,False,71,False,USA
-206a595accfd48c3,Frazier Inc,Financial Services,126,13157578.3,False,False,69,False,USA
-b207e26c0f334ad7,"Dyer, Potter and Mack",Telecommunications,38,6429490.91,False,False,65,False,USA
-e1d05fbfe059420b,Rodriguez-Graham,Manufacturing,1279,279849214.01,False,False,72,False,UK
-1c53b76108f64cba,Smith-Bowen,Insurance,1336,206821121.72,False,False,40,False,USA
-206cba67f8ad4d58,"Baker, Mason and White",Government,7574,830651851.28,False,True,82,False,USA
-0d852bf1fb464355,Harrell LLC,Insurance,14755,772112391.58,False,False,12,False,USA
-94809d33861e41ae,"Romero, Gonzalez and Brooks",Healthcare,268,75928378.33,True,False,47,False,USA
-ee0ea07437bc4204,Ryan PLC,Legal,3882,487692887.26,False,False,85,False,USA
-14932c1069a64097,George Group,Technology,5849,1665400398.24,True,False,13,False,USA
-ff7cd62b2de64ebd,Rodriguez LLC,Manufacturing,308,70656138.41,False,False,33,False,USA
-8748fc8ee24e4175,Allen-Allen,Government,13330,974084643.65,False,False,5,True,India
-723f72f57f2a46bb,"Arroyo, Miller and Tucker",Education,7146,645966200.61,False,False,54,False,USA
-e3208a541dbb4d58,Spence PLC,Energy,6222,1159765694.86,False,False,18,False,USA
-1909e3cef0a242b0,Anderson Group,Manufacturing,221,60715586.17,False,False,85,False,India
-c171f3eb944e4e14,"Martin, Rose and Obrien",Media,36633,10750292912.57,False,False,30,False,France
-7663529cc93a4280,Hickman Ltd,Financial Services,21604,5840728921.39,True,False,42,False,USA
-9bc5161f807f4c9b,"Harris, Collins and Carney",Media,7033,820761138.89,False,True,4,False,USA
-cebfdafefd3c496b,"Brooks, Lam and Hayes",Manufacturing,40167,5519532483.68,False,False,84,False,USA
-bca104e01209402a,Walker LLC,Retail,14550,4244559115.98,False,False,65,False,France
-27adf4d94b4244c5,Chapman and Sons,Healthcare,2357,671295484.94,True,False,33,False,France
-0928040fe2bf4b58,"Robinson, Jones and Welch",Government,220,16962140.1,False,False,100,False,Germany
-757022cd00324e96,Jones Inc,Insurance,1474,215644517.19,False,False,5,False,USA
-b7c618b515174d4a,Jones-Young,Media,45288,10040996617.37,False,False,25,False,USA
-dc1baae87b5e441c,"Washington, Ryan and Cummings",Legal,7705,1585603108.41,False,False,92,False,UK
-cc5c6ef2e36c4240,"Johnston, Sanchez and Kennedy",Media,8346,1097880630.98,False,False,16,False,Germany
-b92214f0f0ba45e2,Lee-Davis,Technology,847,200767493.11,True,False,38,False,India
-56c07675b3d84fac,Gomez-Jenkins,Insurance,347,35583347.91,False,False,41,False,USA
-ca147e09badd4026,"Brown, Valdez and Lucas",Media,181,30461674.91,False,False,10,False,Germany
-6c4abf98669d4d11,Powell LLC,Manufacturing,2373,174051956.44,False,False,28,False,USA
-7c9888bee6f641e2,Wright and Sons,Insurance,16,4735744.09,False,False,9,False,Australia
-5f2df9e291da4598,"West, Henderson and Ramirez",Government,1797,412566902.54,False,False,31,False,Canada
-531d3d988d7c4420,Baxter Inc,Manufacturing,16986,4154862257.34,False,False,89,False,USA
-1d01599a797a4651,Morton-Chase,Education,82,13457467.42,False,False,71,False,France
-f219724055874514,Williams PLC,Telecommunications,814,206553824.24,False,False,70,False,USA
-1bab529a35254e4d,Novak and Sons,Manufacturing,41109,6680929412.67,False,False,35,False,UK
-912296fab4b74dd7,Russell Group,Healthcare,6960,825799557.64,True,False,30,False,USA
-0cdd606d21b544f4,Hancock Inc,Manufacturing,1331,112593968.97,False,False,19,False,USA
-3111079c15a54a9b,Gray Group,Government,670,124387366.03,False,True,53,False,India
-65f1d66e5bd746e3,House-Glover,Insurance,5161,1363448504.68,False,False,0,False,USA
-cfab2bae184a4853,Henderson-Bernard,Government,937,255717031.21,False,False,94,False,Germany
-e26e34a2dd744364,"Stanley, Tucker and Lee",Government,175,18349696.51,False,False,49,False,Germany
-e0c77b5aa4574012,Novak PLC,Education,871,79488490.22,False,False,79,False,Australia
-969cebedb14e46cf,"Daniels, Adkins and Brown",Healthcare,3312,714563798.66,True,False,17,False,USA
-674a5f9ffe044852,"Woods, Calhoun and Schmidt",Education,395,52076075.86,False,False,97,False,USA
-20481ff337cb4ee7,Yu Inc,Healthcare,37628,4254518299.48,True,False,95,False,France
-73de4dc083e249e0,Jones Inc,Legal,315,66948847.34,False,True,3,False,USA
-3190811cf697464c,"Hensley, Powell and David",Technology,40,3523823.46,False,False,14,False,USA
-86b02b0d24ac4dc9,"Sanchez, Wheeler and Harvey",Technology,7100,1716244124.58,True,False,95,False,India
-cb394c3b3fa34bc8,Sandoval-Cunningham,Financial Services,130,10013209.36,False,False,73,False,France
-eefceb8f0c264308,Donovan-Harris,Healthcare,983,224864863.77,True,False,80,False,Canada
-2fffc69044744e75,"Edwards, Baker and Anderson",Insurance,262,65252882.69,False,False,44,False,Germany
-2e7d9cc4f8ff460f,"Evans, Stewart and Walton",Financial Services,33,6992231.85,False,False,62,False,France
-6a802cd973b94b9d,Smith PLC,Government,8767,1988593719.84,False,False,66,False,USA
-be35cd55930a424a,"Ferrell, Jones and Lewis",Education,45270,11030504614.58,False,False,93,False,USA
-f8ee0f5a8d9a459a,Anderson-Bailey,Education,73,8740440.55,False,False,59,False,Germany
-0aebdf7f141a4836,Suarez LLC,Energy,215,37318974.57,False,False,27,False,USA
-68d859bece2245ac,Moore-Bass,Telecommunications,342,64620132.89,False,False,10,False,USA
-2a0bd9461672442f,"Turner, Riggs and Roman",Education,4106,451992520.43,False,False,62,False,USA
-ac3ecd6284d04435,"Smith, Montoya and Evans",Manufacturing,314,47445488.6,False,False,74,False,UK
-291da1b67d17420c,"Garcia, Humphrey and Baker",Telecommunications,418,125047987.98,False,False,89,False,USA
-f5ff5461298247e2,Newton and Sons,Energy,81,18656007.71,False,True,68,False,Canada
-9bc16b4817824d1a,Campbell-Clark,Retail,106,24873023.32,False,False,97,False,USA
-d5c6faa8f56a4cd5,Harris-Walters,Energy,13,1612801.01,False,False,1,False,USA
-c0fa3000e4fc4494,Wagner-King,Media,4,753358.97,False,False,81,False,USA
-08499d2018674305,Davis Group,Education,10804,2090747457.21,False,False,43,False,USA
-ee775723bd824e24,Williams-Cook,Healthcare,41309,3243656424.05,True,False,9,False,Canada
-74f4467873ba41b3,Walsh LLC,Retail,89,22497911.2,False,True,31,False,India
-fab38126606a4f58,Figueroa PLC,Manufacturing,3442,852532484.08,False,False,48,False,USA
-4d460e953fee476b,"Patterson, Smith and Jones",Retail,48570,14449954580.22,False,False,7,False,Canada
-9c1782bd9db14c2f,"Mckee, Gardner and Davenport",Retail,23618,4874253497.04,False,False,20,False,UK
-97a37b43f21a4161,"Tran, Jordan and Williams",Media,51,7758599.05,False,False,37,True,USA
-9a7dcd8c991348a3,Nolan-Flynn,Manufacturing,433,29355209.04,False,False,100,False,UK
-cd24224771ea4f02,Nolan and Sons,Telecommunications,22965,3589079089.15,False,False,19,False,India
-9556bb3588b24be6,"Wright, Garcia and Deleon",Retail,4,365922.79,False,False,72,False,USA
-ffd0dae2c74041be,Dickson-Brady,Government,853,107497446.38,False,False,64,False,USA
-c08666b99aad4492,Hancock and Sons,Media,1164,317022060.78,False,False,32,True,USA
-b153106a795e42bd,Johnson-Doyle,Financial Services,9713,1911331258.92,True,False,86,False,UK
-699cc26c636445dc,Patton-Jenkins,Legal,21482,3600924671.27,False,False,35,False,UK
-cbd785d9a8444113,"Shields, Cochran and Adams",Education,9029,2638849931.61,False,False,42,False,USA
-2c43202748dd4a2f,"Rodriguez, Brennan and Garrison",Education,135,20643021.78,False,False,51,False,UK
-3f85c46f54da4e47,Gonzalez Group,Energy,546,70231591.95,False,True,98,False,UK
-3bc38b2bb37e4a9d,Torres-Pope,Education,43,11495700.46,False,False,24,False,Germany
-d98f71a181cf4949,Walker Ltd,Financial Services,821,131778906.16,True,False,70,False,USA
-300180be78af4b9b,Ross LLC,Legal,8971,720878348.46,False,False,30,False,USA
-0fac3c45e3354589,Rasmussen LLC,Manufacturing,36,5471916.19,False,False,14,False,USA
-0ac1233ee7a44f3f,May-Ross,Media,20091,3507765566.27,False,False,90,False,India
-c180adecefb24cb8,"Rivera, Johnson and Wiley",Technology,625,102622886.36,True,False,76,False,Australia
-bdffb97db03e4ec7,White-Estes,Government,14576,1735445535.88,False,False,100,False,India
-c9585f6aebde42cc,Johnson-Carlson,Insurance,353,91557250.17,False,False,62,False,USA
-585f4650624042fd,Chandler-Edwards,Telecommunications,677,90115462.5,False,False,41,False,France
-ee8327abbfc945c6,"Joyce, Wilson and Lam",Government,197,28711314.31,False,True,95,False,Australia
-319b26d53a994995,Scott Ltd,Legal,698,207378243.34,False,False,63,False,USA
-64a077fa95af464e,Smith-Frost,Education,2360,631123184.88,False,True,58,True,USA
-b50bf2b278754d74,"Mcdaniel, Bentley and Mclaughlin",Retail,20117,1382179967.48,False,False,88,False,USA
-f8e08cdc288c4452,Diaz Inc,Energy,474,68731113.61,False,False,97,False,UK
-47f5666f432f4226,"Mccall, Hanson and Alvarado",Legal,1281,139235170.35,False,False,29,False,USA
-37f1e4d20c884876,Cortez LLC,Healthcare,49,10213410.9,False,False,88,False,USA
-73d25b49db3c4bb2,"Parker, Ortiz and Powell",Energy,229,28245305.17,False,False,31,False,UK
-f7bb6cf3605a4e3e,Spencer-Lee,Healthcare,21801,2016503383.33,True,False,48,False,USA
-54c5e92a47134df5,"Bentley, Byrd and Orr",Legal,1587,171470765.27,False,False,32,False,Australia
-3764b5cc04154a08,"Carroll, Sullivan and Bass",Telecommunications,962,117275415.61,False,False,56,False,France
-f218f82283e94d71,Mitchell-Jordan,Education,418,93037762.05,False,False,25,False,Australia
-7b35a9187fe2425c,"Lawson, Morris and Ramos",Energy,16,2325457.19,False,False,89,False,France
-dbbe143ca83a475d,"Lewis, Kennedy and Santana",Insurance,8243,977785443.45,False,False,99,False,USA
-fc8f645b85504a8c,"Jackson, Miller and Robertson",Retail,4053,705958923.07,False,False,29,False,USA
-e70835ee7fd94304,"Harvey, Davis and Crane",Legal,6558,1345851061.95,False,False,98,False,India
-351f4e0509954ffa,Chambers and Sons,Legal,5796,1598831967.2,False,True,100,False,UK
-d3856d7504d241bf,Hernandez Inc,Retail,6077,440785131.1,False,False,53,False,USA
-63092275377f427c,Riggs PLC,Telecommunications,4590,1344284294.44,False,False,34,False,USA
-e698825bb1704874,Gibson Ltd,Retail,41579,12134665625.73,False,False,43,False,USA
-fe02e881caac4842,"Lee, Horton and Snyder",Manufacturing,10,2385378.73,False,False,92,False,USA
-be66319fa4404af2,Hernandez Ltd,Government,46525,6580671043.4,False,True,68,False,USA
-4d9212f629544ab8,Stafford Inc,Legal,7148,1402008883.78,False,False,13,False,USA
-4630aedd26664b7c,Robinson-Brock,Energy,4622,1320931936.71,False,False,28,False,Germany
-99b51203a6134f3f,"Holmes, Williams and Wright",Legal,966,217610135.46,False,False,17,False,USA
-bfdbdee1f0874f88,Bryant Group,Telecommunications,560,41606879.81,False,True,58,False,France
-294a30b099d142c1,"Schmidt, Hansen and Stewart",Media,9426,1458972194.42,False,False,53,False,India
-56b8c363130b4061,Salazar-Ball,Retail,2672,760887447.9,False,True,47,False,USA
-dbb99a8c4d544709,"Simmons, Meadows and Griffin",Legal,143,10701927.83,False,False,82,False,USA
-565c43db21064526,Manning Group,Education,82,23554721.16,False,True,27,False,UK
-385491ad1f044bdb,Green-Wright,Manufacturing,4,986794.59,False,False,100,False,USA
-2670ce83d3ef4f45,"Ramirez, Strickland and Washington",Manufacturing,46321,4714984137.96,False,False,29,False,USA
-e4270b83113649b9,Hill Inc,Technology,1012,120750536.03,True,False,69,False,USA
-9220006c997c4ef7,"Mitchell, Nelson and Flores",Energy,5212,432339608.12,False,False,30,False,USA
-3bd17bd1466f4d06,"Miller, Hernandez and Reyes",Government,227,18543547.36,False,False,95,False,USA
-176107579a4144fc,Mccarthy Inc,Education,463,91866841.57,False,False,78,False,India
-c5c4db3214824c1a,Russell-Daniels,Legal,44174,5539754538.62,False,False,7,False,Australia
-82093ea79b354ada,Brown-Wall,Media,852,65595869.72,False,False,9,False,USA
-6f70441fa47a4ff7,Stein-Silva,Insurance,67,5463709.1,False,False,70,False,USA
-0983fad7081e4853,"Smith, Gilmore and Johnston",Telecommunications,3174,392701361.41,False,False,12,False,USA
-fb7db87146894868,Smith-Bell,Manufacturing,9517,2190908371.71,False,False,29,False,India
-ca9b40a5d3884526,Castaneda-Ashley,Energy,713,165703429.49,False,False,85,False,France
-7fa8524bf9d041eb,Medina-Navarro,Healthcare,8886,593436644.03,True,True,12,False,USA
-ff51cfaff9ea47f1,"Hurst, Freeman and Nelson",Telecommunications,193,12544082.19,False,False,85,False,USA
-6c493a83027f4c31,Johnson-Rogers,Media,8465,2260350010.04,False,True,36,False,USA
-622e27df91b84fb8,"Yates, Ramsey and Pittman",Legal,3079,317705695.67,False,False,13,False,UK
-3245670d835a408b,Hooper PLC,Manufacturing,49,5862460.6,False,False,71,False,India
-f40faa29dd754ec4,Meadows PLC,Financial Services,3765,793190587.95,True,False,84,False,USA
-16f64ec320bb420b,"Alvarado, Miller and Patterson",Retail,120,27080963.19,False,False,44,True,Australia
-8fd1d51c0cdb4918,White-Green,Technology,3693,554674145.6,True,False,3,False,UK
-db8b72deabea4a0b,Lewis-Murphy,Technology,715,116839185.08,True,False,92,False,France
-9cb3b0419f3b41a0,Ramirez-Bean,Technology,1348,365086316.18,True,False,79,False,USA
-ac1a969433f44808,King-Miller,Insurance,839,130887098.66,False,False,34,False,UK
-6bd4b847804e41fa,Curry Inc,Legal,421,32721148.52,False,False,62,False,USA
-7977d1747af2409d,Walker-Jones,Financial Services,152,45008935.02,False,True,38,False,India
-ed495689b58c451a,"Williams, Johnson and Wright",Healthcare,26746,3272688242.89,True,True,95,False,USA
-ad4f60a1a88246fa,Howell and Sons,Telecommunications,3883,417529977.63,False,False,45,False,Australia
-a1c857e9f735456e,Wells Inc,Healthcare,28,1531190.76,False,False,73,False,USA
-c1371e129678491e,"Gould, Marshall and Scott",Government,8422,1030674265.36,False,True,41,False,France
-5311269b2af04ae3,Jackson-Lawson,Energy,926,205944724.51,False,True,13,False,UK
-16048cf1ae21427d,"Higgins, Strickland and Martin",Retail,1323,197049834.99,False,False,28,False,USA
-42b4c010299140c7,Rodriguez-Johnson,Telecommunications,3594,282152935.89,False,False,99,False,Canada
-2c273c82c4d049d4,Johnston-Odonnell,Technology,19680,2146442736.82,True,False,22,False,India
-542689c6d93f4be6,Sanders-Espinoza,Legal,5618,529701738.11,False,False,96,False,UK
-7e0468870ad742ae,Vargas Ltd,Insurance,9625,2028449092.55,False,False,80,False,USA
-a2c929714d1f4852,Garcia LLC,Retail,727,151104245.56,False,False,45,False,USA
-dbf61afcfa974085,"Burke, Martinez and Riggs",Retail,520,33395706.61,False,True,11,False,UK
-5631db9f5a8f449b,Reed Group,Media,798,150486116.08,False,False,57,False,UK
-18dfbdb615874d63,"Wood, Hunter and Peterson",Telecommunications,133,26766443.98,False,False,7,False,India
-ba821e7953014960,Short-Garcia,Healthcare,32508,9609247617.55,True,False,22,True,Canada
-94d3962a530149cd,Reid-Poole,Technology,769,138948309.78,True,False,36,False,India
-ba682f95388d49d5,"Hernandez, Thompson and Boyd",Legal,9898,624478473.14,False,False,8,False,UK
-37f5eb0bf03943d9,"Nelson, Morton and Medina",Legal,646,72997319.27,False,False,77,False,USA
-49b2ee91ce264780,Marshall-Petersen,Energy,3719,317443036.85,False,False,83,False,USA
-e15c3de1fd254597,"Adams, Christian and Rivas",Retail,3904,1110690146.78,False,False,82,False,India
-6f7a7b7845d1439a,Ramirez Group,Legal,9313,683231865.91,False,False,46,True,USA
-36c604a3c5954b65,Christensen PLC,Education,138,39594555.23,False,False,17,False,USA
+a7eebaf2f2cf47a6,"Rodriguez, Figueroa and Sanchez",Retail,5913,332622148.91,False,False,17,False,Germany
+dcd25584c7804dd9,Doyle Ltd,Financial Services,1357,268174584.85,True,True,27,False,Germany
+6583a0e750f449a6,"Mcclain, Miller and Henderson",Media,1815,415643899.36,False,False,28,False,USA
+4e04328f54ba487f,Davis and Sons,Technology,10426,2499131402.42,True,False,43,False,USA
+310877c2461f43ac,"Guzman, Hoffman and Baldwin",Government,32060,2422215366.31,False,True,44,False,India
+76468254e9484ec5,"Gardner, Robinson and Lawrence",Government,8764,1613075748.38,False,True,37,False,Germany
+624c76dabc3248da,Blake and Sons,Media,33701,6549386161.82,False,True,84,False,USA
+ce18ae26d1854b33,"Henderson, Ramirez and Lewis",Government,15,3999313.75,False,False,81,False,USA
+357162ab1e144be6,Garcia-James,Media,308,67003488.43,False,False,82,False,Germany
+cc3eb7dc532f4c62,Abbott-Munoz,Education,3987,443365289.64,False,False,81,False,USA
+59667f3bc6f347c2,Blair PLC,Financial Services,229,24563002.12,True,False,51,False,USA
+f7591bc079154eba,Dudley Group,Manufacturing,4590,1053306625.65,False,False,50,False,Germany
+cf77893042d94f67,Arnold Ltd,Media,118,10019094.43,False,False,33,False,USA
+77c8c3c88eb14977,"Mcclure, Ward and Lee",Technology,2636,370355656.41,True,False,11,False,Australia
+2b90dec03ca046d3,Williams and Sons,Government,91,22569805.54,False,False,49,False,France
+0e12caac1af646d3,Galloway-Wyatt,Financial Services,2030,594322276.64,True,False,14,False,UK
+e0b5db20985047b8,James Group,Government,375,29208016.27,False,False,0,False,Australia
+2f2a42f104c84371,"Flowers, Martin and Kelly",Telecommunications,457,109904181.24,False,False,80,False,Germany
+b168eec0bf0d4a5c,"Adams, Zuniga and Wong",Technology,1815,160100818.1,True,False,99,False,Australia
+ea6815dbbcef4835,"Reid, Ferguson and Sanchez",Healthcare,2328,400768522.07,True,False,39,False,USA
+1ec41f6ee0b840c9,Gray-Mayo,Media,4879,340013909.65,False,False,8,False,UK
+2638e83008e64582,"Watts, Robinson and Nguyen",Telecommunications,83,17839829.57,False,False,67,False,USA
+1d33a6596398412b,Perez Inc,Media,189,45136280.54,False,False,39,False,Germany
+0877f35742934926,Morales-Jones,Education,425,116833996.49,False,True,28,False,USA
+2a3518d675cc414f,"Walter, Edwards and Rios",Financial Services,1943,382984785.57,True,True,80,False,USA
+a7e80d78b7444561,Wilkerson-Day,Manufacturing,22,1489715.42,False,False,62,False,USA
+4c305fd121594708,Baker and Sons,Education,3361,565211829.86,False,False,24,False,Germany
+8acdbd7b7e314548,"Hoffman, Baker and Richards",Media,417,63707412.28,False,True,83,False,USA
+c8fa434fa5ba4df1,"Ross, Robinson and Bright",Healthcare,873,117702793.63,True,False,24,False,USA
+972df179896c4aab,"Snyder, Campos and Callahan",Healthcare,122,20210156.09,False,False,70,False,Germany
+a0de2a105fff4d35,Burton Ltd,Healthcare,4425,237575878.75,True,False,30,False,USA
+72493771bb994ba5,Carlson-Cruz,Technology,153,42168439.61,False,False,49,False,India
+9af6ab3d22ec4a9f,"Ferrell, Rice and Maddox",Media,647,100771460.86,False,False,71,False,USA
+d60e83d4aaf84797,Frazier Inc,Financial Services,126,13157578.3,False,False,69,False,USA
+e7ff8b5d4dc54429,"Dyer, Potter and Mack",Telecommunications,38,6429490.91,False,False,65,False,USA
+7cd2c43d9453462d,Rodriguez-Graham,Manufacturing,1279,279849214.01,False,False,72,False,UK
+adac81a37e35411e,Smith-Bowen,Insurance,1336,206821121.72,False,False,40,False,USA
+a2c6a95ed2b549e5,"Baker, Mason and White",Government,7574,830651851.28,False,True,82,False,USA
+9806bcff17864103,Harrell LLC,Insurance,14755,772112391.58,False,False,12,False,USA
+1b5b9ffdd5d7400e,"Romero, Gonzalez and Brooks",Healthcare,268,75928378.33,True,False,47,False,USA
+1e8b775c15444036,Ryan PLC,Legal,3882,487692887.26,False,False,85,False,USA
+c3f457f810e94ce6,George Group,Technology,5849,1665400398.24,True,False,13,False,USA
+eb47db9472c542a3,Rodriguez LLC,Manufacturing,308,70656138.41,False,False,33,False,USA
+2d2768a58ef54c89,Allen-Allen,Government,13330,974084643.65,False,False,5,True,India
+94d526cc9d8d4d89,"Arroyo, Miller and Tucker",Education,7146,645966200.61,False,False,54,False,USA
+0bcadb57d2cd46e7,Spence PLC,Energy,6222,1159765694.86,False,False,18,False,USA
+44d7a8a9fc3d4106,Anderson Group,Manufacturing,221,60715586.17,False,False,85,False,India
+8d0c0b4154954ecf,"Martin, Rose and Obrien",Media,36633,10750292912.57,False,False,30,False,France
+3c9e2ac8fbf64621,Hickman Ltd,Financial Services,21604,5840728921.39,True,False,42,False,USA
+d14f6b1b979047fe,"Harris, Collins and Carney",Media,7033,820761138.89,False,True,4,False,USA
+62bcba88525a4e53,"Brooks, Lam and Hayes",Manufacturing,40167,5519532483.68,False,False,84,False,USA
+95d0c4c8b63a4dee,Walker LLC,Retail,14550,4244559115.98,False,False,65,False,France
+004efbb65a2d4971,Chapman and Sons,Healthcare,2357,671295484.94,True,False,33,False,France
+feab46cf6feb4347,"Robinson, Jones and Welch",Government,220,16962140.1,False,False,100,False,Germany
+4942a6ac0790452d,Jones Inc,Insurance,1474,215644517.19,False,False,5,False,USA
+59d001f0845541a3,Jones-Young,Media,45288,10040996617.37,False,False,25,False,USA
+3e6292cf65e74982,"Washington, Ryan and Cummings",Legal,7705,1585603108.41,False,False,92,False,UK
+95c10f8bd7aa454a,"Johnston, Sanchez and Kennedy",Media,8346,1097880630.98,False,False,16,False,Germany
+165dc9edfc3d4cb1,Lee-Davis,Technology,847,200767493.11,True,False,38,False,India
+0cf9a9fd3ef143b4,Gomez-Jenkins,Insurance,347,35583347.91,False,False,41,False,USA
+8e800947c7174be9,"Brown, Valdez and Lucas",Media,181,30461674.91,False,False,10,False,Germany
+096a330ee7014f7b,Powell LLC,Manufacturing,2373,174051956.44,False,False,28,False,USA
+92f0e0baf46b4ca1,Wright and Sons,Insurance,16,4735744.09,False,False,9,False,Australia
+9d417ebcdc724444,"West, Henderson and Ramirez",Government,1797,412566902.54,False,False,31,False,Canada
+67316c7f694142fc,Baxter Inc,Manufacturing,16986,4154862257.34,False,False,89,False,USA
+2e5e7aeb1dd44dfd,Morton-Chase,Education,82,13457467.42,False,False,71,False,France
+6e4e0179219a47d1,Williams PLC,Telecommunications,814,206553824.24,False,False,70,False,USA
+328e85b5274747bd,Novak and Sons,Manufacturing,41109,6680929412.67,False,False,35,False,UK
+cf29f2d1a26a4055,Russell Group,Healthcare,6960,825799557.64,True,False,30,False,USA
+2b69e8afa438419b,Hancock Inc,Manufacturing,1331,112593968.97,False,False,19,False,USA
+4f38099407b5424a,Gray Group,Government,670,124387366.03,False,True,53,False,India
+95b3f99bb5914364,House-Glover,Insurance,5161,1363448504.68,False,False,0,False,USA
+f92b6d8968cc4f28,Henderson-Bernard,Government,937,255717031.21,False,False,94,False,Germany
+b0601ce30d43403d,"Stanley, Tucker and Lee",Government,175,18349696.51,False,False,49,False,Germany
+fa16cd36b80f43e1,Novak PLC,Education,871,79488490.22,False,False,79,False,Australia
+1b7db62ec0c34772,"Daniels, Adkins and Brown",Healthcare,3312,714563798.66,True,False,17,False,USA
+e2f68b6ed7de42d0,"Woods, Calhoun and Schmidt",Education,395,52076075.86,False,False,97,False,USA
+6d213420af2649f5,Yu Inc,Healthcare,37628,4254518299.48,True,False,95,False,France
+6f2e417b37344727,Jones Inc,Legal,315,66948847.34,False,True,3,False,USA
+837f1cf4406340fc,"Hensley, Powell and David",Technology,40,3523823.46,False,False,14,False,USA
+e91d8e08aef44e24,"Sanchez, Wheeler and Harvey",Technology,7100,1716244124.58,True,False,95,False,India
+38ef6aeacfb84fd9,Sandoval-Cunningham,Financial Services,130,10013209.36,False,False,73,False,France
+124777c3a0be4896,Donovan-Harris,Healthcare,983,224864863.77,True,False,80,False,Canada
+e1e1ba40d7bf4936,"Edwards, Baker and Anderson",Insurance,262,65252882.69,False,False,44,False,Germany
+73ba1d326ec04b46,"Evans, Stewart and Walton",Financial Services,33,6992231.85,False,False,62,False,France
+0defc70b1f6f47c4,Smith PLC,Government,8767,1988593719.84,False,False,66,False,USA
+5c33daf00a5747ba,"Ferrell, Jones and Lewis",Education,45270,11030504614.58,False,False,93,False,USA
+c40aacc0387145ba,Anderson-Bailey,Education,73,8740440.55,False,False,59,False,Germany
+f2ff6d526ecc4697,Suarez LLC,Energy,215,37318974.57,False,False,27,False,USA
+e532eb8deac647ae,Moore-Bass,Telecommunications,342,64620132.89,False,False,10,False,USA
+b0f9b74b088b4295,"Turner, Riggs and Roman",Education,4106,451992520.43,False,False,62,False,USA
+5ca7552f79ab4f5e,"Smith, Montoya and Evans",Manufacturing,314,47445488.6,False,False,74,False,UK
+b54110af4e0d4c19,"Garcia, Humphrey and Baker",Telecommunications,418,125047987.98,False,False,89,False,USA
+486a7f7aecd84d2e,Newton and Sons,Energy,81,18656007.71,False,True,68,False,Canada
+d6a99138ae44470b,Campbell-Clark,Retail,106,24873023.32,False,False,97,False,USA
+1e4d0fc3310d454b,Harris-Walters,Energy,13,1612801.01,False,False,1,False,USA
+c2a1eeca07f349f5,Wagner-King,Media,4,753358.97,False,False,81,False,USA
+382719f93f304b39,Davis Group,Education,10804,2090747457.21,False,False,43,False,USA
+140828181008405c,Williams-Cook,Healthcare,41309,3243656424.05,True,False,9,False,Canada
+129b154e122548cb,Walsh LLC,Retail,89,22497911.2,False,True,31,False,India
+05964633905649db,Figueroa PLC,Manufacturing,3442,852532484.08,False,False,48,False,USA
+f6abb4c840c948bd,"Patterson, Smith and Jones",Retail,48570,14449954580.22,False,False,7,False,Canada
+aa54fe9216b94308,"Mckee, Gardner and Davenport",Retail,23618,4874253497.04,False,False,20,False,UK
+aa5f7a770aeb4ea1,"Tran, Jordan and Williams",Media,51,7758599.05,False,False,37,True,USA
+2274086d752b4ab9,Nolan-Flynn,Manufacturing,433,29355209.04,False,False,100,False,UK
+514cbd01afce49e6,Nolan and Sons,Telecommunications,22965,3589079089.15,False,False,19,False,India
+33e9ba42bdcf4959,"Wright, Garcia and Deleon",Retail,4,365922.79,False,False,72,False,USA
+55d7940b4d7a407e,Dickson-Brady,Government,853,107497446.38,False,False,64,False,USA
+eca6b757db81486f,Hancock and Sons,Media,1164,317022060.78,False,False,32,True,USA
+cfd4742f057a457a,Johnson-Doyle,Financial Services,9713,1911331258.92,True,False,86,False,UK
+2a7da0d9e597417e,Patton-Jenkins,Legal,21482,3600924671.27,False,False,35,False,UK
+e068c6c094e843b5,"Shields, Cochran and Adams",Education,9029,2638849931.61,False,False,42,False,USA
+217f4df12e6b44eb,"Rodriguez, Brennan and Garrison",Education,135,20643021.78,False,False,51,False,UK
+059435d5a9a64e60,Gonzalez Group,Energy,546,70231591.95,False,True,98,False,UK
+7a6510efd7a84196,Torres-Pope,Education,43,11495700.46,False,False,24,False,Germany
+304195bb506c49ab,Walker Ltd,Financial Services,821,131778906.16,True,False,70,False,USA
+996a7c319b984214,Ross LLC,Legal,8971,720878348.46,False,False,30,False,USA
+4928866e3a8b49b8,Rasmussen LLC,Manufacturing,36,5471916.19,False,False,14,False,USA
+f5bef6adcef4425a,May-Ross,Media,20091,3507765566.27,False,False,90,False,India
+128c1ce56146432a,"Rivera, Johnson and Wiley",Technology,625,102622886.36,True,False,76,False,Australia
+f4c5348bc44c466c,White-Estes,Government,14576,1735445535.88,False,False,100,False,India
+d8e325b650e84c07,Johnson-Carlson,Insurance,353,91557250.17,False,False,62,False,USA
+16542f93045f49c4,Chandler-Edwards,Telecommunications,677,90115462.5,False,False,41,False,France
+fd268161c23b42f0,"Joyce, Wilson and Lam",Government,197,28711314.31,False,True,95,False,Australia
+c348fa4c16884f49,Scott Ltd,Legal,698,207378243.34,False,False,63,False,USA
+93c2d6c4b840455b,Smith-Frost,Education,2360,631123184.88,False,True,58,True,USA
+607ba4d42c72438f,"Mcdaniel, Bentley and Mclaughlin",Retail,20117,1382179967.48,False,False,88,False,USA
+df6c63afbf9d4157,Diaz Inc,Energy,474,68731113.61,False,False,97,False,UK
+8c4b560093a84fdc,"Mccall, Hanson and Alvarado",Legal,1281,139235170.35,False,False,29,False,USA
+2c72758ae4e14791,Cortez LLC,Healthcare,49,10213410.9,False,False,88,False,USA
+030ca3bf068d4b35,"Parker, Ortiz and Powell",Energy,229,28245305.17,False,False,31,False,UK
+564f746359164f45,Spencer-Lee,Healthcare,21801,2016503383.33,True,False,48,False,USA
+5121cef210e14080,"Bentley, Byrd and Orr",Legal,1587,171470765.27,False,False,32,False,Australia
+698bd246707b462d,"Carroll, Sullivan and Bass",Telecommunications,962,117275415.61,False,False,56,False,France
+628f8fb77e744ad8,Mitchell-Jordan,Education,418,93037762.05,False,False,25,False,Australia
+2ca7757f4b45418f,"Lawson, Morris and Ramos",Energy,16,2325457.19,False,False,89,False,France
+2dd0b9169c894f1b,"Lewis, Kennedy and Santana",Insurance,8243,977785443.45,False,False,99,False,USA
+db078e2235f64190,"Jackson, Miller and Robertson",Retail,4053,705958923.07,False,False,29,False,USA
+bbb1fa375cac4fb8,"Harvey, Davis and Crane",Legal,6558,1345851061.95,False,False,98,False,India
+dd10743545984d5b,Chambers and Sons,Legal,5796,1598831967.2,False,True,100,False,UK
+6061601e92cc41ac,Hernandez Inc,Retail,6077,440785131.1,False,False,53,False,USA
+4de94d1b77084748,Riggs PLC,Telecommunications,4590,1344284294.44,False,False,34,False,USA
+e74d29d2f7eb499a,Gibson Ltd,Retail,41579,12134665625.73,False,False,43,False,USA
+a4b3f70c35ee4fec,"Lee, Horton and Snyder",Manufacturing,10,2385378.73,False,False,92,False,USA
+d767f6d9624f4012,Hernandez Ltd,Government,46525,6580671043.4,False,True,68,False,USA
+e5158890c5544867,Stafford Inc,Legal,7148,1402008883.78,False,False,13,False,USA
+47edd43a56cd40d7,Robinson-Brock,Energy,4622,1320931936.71,False,False,28,False,Germany
+3634def622744939,"Holmes, Williams and Wright",Legal,966,217610135.46,False,False,17,False,USA
+7d2b72afa060461d,Bryant Group,Telecommunications,560,41606879.81,False,True,58,False,France
+23c35f2974ac4158,"Schmidt, Hansen and Stewart",Media,9426,1458972194.42,False,False,53,False,India
+b74231fc4b44420f,Salazar-Ball,Retail,2672,760887447.9,False,True,47,False,USA
+23783564a94e405a,"Simmons, Meadows and Griffin",Legal,143,10701927.83,False,False,82,False,USA
+ad575c2b40b54cb7,Manning Group,Education,82,23554721.16,False,True,27,False,UK
+c7fe60d17ed940ef,Green-Wright,Manufacturing,4,986794.59,False,False,100,False,USA
+9537bfa90c294dd4,"Ramirez, Strickland and Washington",Manufacturing,46321,4714984137.96,False,False,29,False,USA
+f15674f656e04428,Hill Inc,Technology,1012,120750536.03,True,False,69,False,USA
+5222885603444a2b,"Mitchell, Nelson and Flores",Energy,5212,432339608.12,False,False,30,False,USA
+41e421f65ac14b7e,"Miller, Hernandez and Reyes",Government,227,18543547.36,False,False,95,False,USA
+3ab83df5354e4752,Mccarthy Inc,Education,463,91866841.57,False,False,78,False,India
+fb63b953d32146fc,Russell-Daniels,Legal,44174,5539754538.62,False,False,7,False,Australia
+bf44642603944f7e,Brown-Wall,Media,852,65595869.72,False,False,9,False,USA
+03a6f3a5b4364ec8,Stein-Silva,Insurance,67,5463709.1,False,False,70,False,USA
+11ceb449cc7d4988,"Smith, Gilmore and Johnston",Telecommunications,3174,392701361.41,False,False,12,False,USA
+f76f177aee044584,Smith-Bell,Manufacturing,9517,2190908371.71,False,False,29,False,India
+0ebf06d5092e4a43,Castaneda-Ashley,Energy,713,165703429.49,False,False,85,False,France
+2074d64bf0be465e,Medina-Navarro,Healthcare,8886,593436644.03,True,True,12,False,USA
+c1c74527c87c4b93,"Hurst, Freeman and Nelson",Telecommunications,193,12544082.19,False,False,85,False,USA
+3561bbcf3a754d20,Johnson-Rogers,Media,8465,2260350010.04,False,True,36,False,USA
+61761a4a5f2542fc,"Yates, Ramsey and Pittman",Legal,3079,317705695.67,False,False,13,False,UK
+b584263ac2f14f6c,Hooper PLC,Manufacturing,49,5862460.6,False,False,71,False,India
+4e93dfdd0d8d4e71,Meadows PLC,Financial Services,3765,793190587.95,True,False,84,False,USA
+bcbc86ea2b414bc7,"Alvarado, Miller and Patterson",Retail,120,27080963.19,False,False,44,True,Australia
+7a1313cef6c94a1e,White-Green,Technology,3693,554674145.6,True,False,3,False,UK
+70f344df1e314b65,Lewis-Murphy,Technology,715,116839185.08,True,False,92,False,France
+92dcf995cbfd43f9,Ramirez-Bean,Technology,1348,365086316.18,True,False,79,False,USA
+adf0c0baa90642fb,King-Miller,Insurance,839,130887098.66,False,False,34,False,UK
+ffd3cb287c604c9d,Curry Inc,Legal,421,32721148.52,False,False,62,False,USA
+37f4317924b74710,Walker-Jones,Financial Services,152,45008935.02,False,True,38,False,India
+46af312ea5b447a6,"Williams, Johnson and Wright",Healthcare,26746,3272688242.89,True,True,95,False,USA
+608f25deccd541b5,Howell and Sons,Telecommunications,3883,417529977.63,False,False,45,False,Australia
+a83a575be6504c8a,Wells Inc,Healthcare,28,1531190.76,False,False,73,False,USA
+30b5a7a630234b03,"Gould, Marshall and Scott",Government,8422,1030674265.36,False,True,41,False,France
+9d8e915d08b04fcd,Jackson-Lawson,Energy,926,205944724.51,False,True,13,False,UK
+14e52283fbbf4c2a,"Higgins, Strickland and Martin",Retail,1323,197049834.99,False,False,28,False,USA
+1db129c9cdc549eb,Rodriguez-Johnson,Telecommunications,3594,282152935.89,False,False,99,False,Canada
+a7decdfd52624fd4,Johnston-Odonnell,Technology,19680,2146442736.82,True,False,22,False,India
+1a9995abad154d16,Sanders-Espinoza,Legal,5618,529701738.11,False,False,96,False,UK
+7bb61528e44b48b4,Vargas Ltd,Insurance,9625,2028449092.55,False,False,80,False,USA
+e3535f84d4af4f91,Garcia LLC,Retail,727,151104245.56,False,False,45,False,USA
+ceb966cdc6384b44,"Burke, Martinez and Riggs",Retail,520,33395706.61,False,True,11,False,UK
+88567846d40a46de,Reed Group,Media,798,150486116.08,False,False,57,False,UK
+c8222d323f3f4c6e,"Wood, Hunter and Peterson",Telecommunications,133,26766443.98,False,False,7,False,India
+e5d15d07d9344bf6,Short-Garcia,Healthcare,32508,9609247617.55,True,False,22,True,Canada
+298fcfe147bb4dae,Reid-Poole,Technology,769,138948309.78,True,False,36,False,India
+a027bf6264664a50,"Hernandez, Thompson and Boyd",Legal,9898,624478473.14,False,False,8,False,UK
+83a12664aa8148b3,"Nelson, Morton and Medina",Legal,646,72997319.27,False,False,77,False,USA
+6926da70bca94eaa,Marshall-Petersen,Energy,3719,317443036.85,False,False,83,False,USA
+85aeb033d5914371,"Adams, Christian and Rivas",Retail,3904,1110690146.78,False,False,82,False,India
+97a001e9d3cc440f,Ramirez Group,Legal,9313,683231865.91,False,False,46,True,USA
+117eedb9bec041e3,Christensen PLC,Education,138,39594555.23,False,False,17,False,USA

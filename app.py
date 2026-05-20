@@ -61,6 +61,7 @@ FLAG_DESCRIPTIONS = {
     "AUTOMATION_INFLATED":   "70%+ of engagement is automated email sends — raw count misleading",
     "BROKEN_CONV_LINK":      "Lead is marked converted but contact link is missing (DQ-1)",
     "STALE_LEGACY_SCORE":    "High Marketo score but no engagement in 6+ months",
+    "RECYCLED_RISK":         "Re-engaged recently after long dormancy — churn-and-return pattern, approach with caution",
     "NO_ENGAGEMENT":         "No recorded campaign engagement found",
     "INCOMPLETE_PROFILE":    "2+ key fields missing (title, persona, level, account)",
 }
@@ -81,7 +82,7 @@ page = st.sidebar.radio(
 st.sidebar.divider()
 st.sidebar.markdown(f"**Dataset:** {len(df):,} records")
 st.sidebar.markdown(f"**Actionable:** {df['is_actionable'].sum():,}")
-st.sidebar.markdown(f"**Excluded:** {(~df['is_actionable']).sum():,}")
+st.sidebar.markdown(f"**Blocked:** {(~df['is_actionable']).sum():,}")
 
 # PAGE 1 — OVERVIEW
 
@@ -160,9 +161,8 @@ if page == "🏠 Overview":
 
     with col_b:
         st.subheader("Engagement Recency vs Score")
-        sample = df[df["is_actionable"] & (df["days_since_last_response"] < 400)].sample(
-            min(300, df["is_actionable"].sum()), random_state=42
-        )
+        recency_pool = df[df["is_actionable"] & (df["days_since_last_response"] < 400)]
+        sample = recency_pool.sample(min(300, len(recency_pool)), random_state=42)
         fig4 = px.scatter(
             sample, x="days_since_last_response", y="readiness_score",
             color="priority_tier",
@@ -189,7 +189,7 @@ if page == "🏠 Overview":
 
 # PAGE 2 — RANKED LIST
 
-page == "📋 Ranked List":
+elif page == "📋 Ranked List":
     st.title("📋 Ranked List")
     st.markdown("All records ranked by readiness score. Use filters to narrow down.")
 
@@ -477,7 +477,7 @@ elif page == "⚙️ Methodology":
         ],
         "Percentile Ranking (current)": [
             "Outliers don't affect others' relative position",
-            "Clear — '72' means better than 72% of records",
+            "Clear — component values show relative standing before weighted combination",
             "Both compared against same population fairly",
             "Naturally spread across 0-100 range",
             "Intuitive — rank in population is easy to grasp",
@@ -491,14 +491,14 @@ elif page == "⚙️ Methodology":
         "each dimension's relative importance, not raw values."
     )
     weights_df = pd.DataFrame({
-        "Component":        ["Engagement Recency", "Engagement Quality", "Profile Fit", "Account Fit"],
-        "Weight":           ["35%", "25%", "20%", "20%"],
-        "Percentile Field": ["pct_recency", "pct_quality", "pct_profile", "pct_account"],
+        "Component":        ["Engagement", "Account Fit", "Persona Fit", "Intent"],
+        "Weight":           ["50%", "20%", "15%", "15%"],
+        "Percentile Field": ["engagement_component", "account_component", "persona_component", "intent_component"],
         "Why": [
-            "Recency is the strongest predictor — someone who engaged last week is far more ready than someone who engaged last year",
-            "Not all engagement is equal — attending a webinar signals far more intent than receiving an automated email",
-            "Seniority and persona determine if this person can actually buy or influence a purchase",
-            "Account-level signals (ICP match, intent data, named account) amplify individual readiness",
+            "Primary readiness signal: recency, 30d/90d responses, webinar/event attendance, discounted by automation share",
+            "ICP match, named account, target industry, employee count, and revenue amplify individual readiness",
+            "Seniority and persona estimate whether this person can buy or influence a purchase",
+            "Account intent percentile captures whether the account is unusually active right now",
         ]
     })
     st.dataframe(weights_df, use_container_width=True, hide_index=True)
@@ -506,10 +506,16 @@ elif page == "⚙️ Methodology":
     st.markdown("""
     **Formula:**
     ```
-    readiness_score = (pct_recency × 0.35) + (pct_quality × 0.25)
-                    + (pct_profile × 0.20) + (pct_account × 0.20)
+    readiness_score = 100 × (
+        engagement_component × 0.50 +
+        account_component    × 0.20 +
+        persona_component    × 0.15 +
+        intent_component     × 0.15
+    )
     ```
-    Where each `pct_*` is the record's percentile rank (0–100) within the full population.
+    Each component is normalized to [0, 1]. After this weighted score is computed,
+    records with stale engagement are adjusted downward so strong-fit but inactive
+    records do not land in the top calling tier.
     """)
 
     st.subheader("⏱ Engagement Recency — Time Decay Curve")
@@ -589,18 +595,32 @@ elif page == "⚙️ Methodology":
     st.subheader("🚩 DQ Flags — Overlay System")
     st.markdown(
         "Flags are **orthogonal to the score** — they don't change the number, "
-        "they give BDRs additional context. Hard-block flags (Competitor, Non-Prospect, "
-        "DNC) move the record to Excluded regardless of score."
+        "they give BDRs additional context. Hard-block flags move the record to "
+        "Blocked regardless of score. Hard blocks: **Competitor, Non-Prospect, "
+        "DNC, No Longer With Company, Email Bounced** (unless recent event attendance)."
     )
     flag_df = pd.DataFrame({
         "Flag": list(FLAG_DESCRIPTIONS.keys()),
         "Meaning": list(FLAG_DESCRIPTIONS.values()),
         "Hard Block": [
-            "No","No","No","Yes","Yes","Yes",
-            "No","No","No","No","No","No","No"
+            "No",   # OPT_OUT — conditional
+            "Yes*", # EMAIL_BOUNCED
+            "Yes",  # NO_LONGER_WITH_COMPANY
+            "Yes",  # DO_NOT_CONTACT
+            "Yes",  # NON_PROSPECT
+            "Yes",  # COMPETITOR
+            "No",   # FREE_EMAIL
+            "No",   # SHARED_MAILBOX
+            "No",   # AUTOMATION_INFLATED
+            "No",   # BROKEN_CONV_LINK
+            "No",   # STALE_LEGACY_SCORE
+            "No",   # RECYCLED_RISK
+            "No",   # NO_ENGAGEMENT
+            "No",   # INCOMPLETE_PROFILE
         ]
     })
     st.dataframe(flag_df, use_container_width=True, hide_index=True)
+    st.caption("* EMAIL_BOUNCED is a hard block unless the record attended a physical event in the last 90 days.")
 
     st.subheader("🔄 Pipeline Architecture")
     st.markdown("""
@@ -618,15 +638,14 @@ elif page == "⚙️ Methodology":
         • Separate real engagements from automated sends
         • Calculate recency, burst score, automation share
 
-    Layer 3 — Component Scoring (raw 0-100 per dimension)
-        • Score each of the 4 dimensions independently
-        • Apply automation inflation penalty to quality score
-        • Apply time-decay curve to recency score
+    Layer 3 — Component Scoring
+        • Percentile-rank engagement features within entity type
+        • Combine engagement recency, response counts, and webinar/event attendance
+        • Apply automation-share discount to the engagement component
 
-    Layer 4 — Percentile Ranking + Final Score + Flags
-        • Convert each component to percentile rank within full population
-        • Weighted combination of percentile ranks → readiness_score (0-100)
-        • A score of N means "better than N% of all records"
+    Layer 4 — Final Score + Flags
+        • Weighted combination of normalized components → readiness_score (0-100)
+        • A score of N means the record achieved N/100 on the weighted readiness index
         • Compute DQ overlay flags (orthogonal to score)
         • Assign priority tier based on final percentile-weighted score
         • Generate human-readable explanation
@@ -713,7 +732,7 @@ never overwritten — it's the most trustworthy timestamp in the system.
 
 **Why chosen:** Percentile ranking converts each component to a population-relative rank
 before combining. This means:
-- A score of 75 = "better than 75% of all 1,004 records" — unambiguous meaning
+- A score of 75 means the record achieved 75/100 on the weighted readiness index
 - Outliers (e.g. a record with 80 campaign memberships) don't compress everyone else's scores
 - Leads and contacts are compared on equal footing against the same population
 - No labeled training data required (unlike logistic regression)
@@ -745,23 +764,28 @@ and make their own judgment call (e.g., find an alternate contact method).
 
 ---
 
-### Decision 5: Different Marketo score normalization by entity type
-**Alternatives considered:** Ignore Marketo score entirely, use a single scale
+### Decision 5: Marketo score used only as a staleness signal
+**Alternatives considered:** Use Marketo score as a direct input to readiness score
 
-**Why rejected:** Marketo score carries signal about legacy engagement history.
-Ignoring it loses real information. Normalizing to a common 0-100 scale
-(leads: ÷300, contacts: ÷200) makes them fairly comparable without losing the signal.
+**Why rejected:** Marketo score has two problems — different scales (leads: 0-300,
+contacts: 0-200) and it does not reliably represent current readiness. A record
+with a high legacy score but no recent engagement can look ready to the old system
+while being stale for BDR outreach.
+
+The model normalizes Marketo score only to support the `STALE_LEGACY_SCORE` flag.
+It does **not** feed Marketo score directly into readiness, avoiding circular
+dependence on the legacy scoring system.
 
 ---
 
-### Decision 6: Recency weighted at 35% (highest single component)
+### Decision 6: Engagement weighted at 50% (highest component)
 **Alternatives considered:** Equal weights (25% each), profile-heavy weighting
 
 **Why:** The VP of Demand Gen's ask was explicit — *"I care whether they're worth
-a phone call right now."* Recency is the clearest signal of "right now."
-A CISO who engaged last week beats a CISO who engaged last year, every time.
-With percentile ranking, this weight means: "where you rank on recency contributes
-35% of your final population rank."
+a phone call right now."* Engagement is the broadest current-readiness signal: it
+captures recency, response volume, webinar/event attendance, and automation share.
+A CISO who engaged last week should beat a CISO who engaged last year, even when
+both have strong profiles.
 
 ---
 
@@ -812,15 +836,15 @@ historical conversion data. The assignment explicitly rewards explainability.
                 "manifestation": "Leads use `mkto_lead_score` (0-300). "
                     "Contacts use `mkto_contact_score` (0-200). "
                     "Cannot be directly compared.",
-                "model_handling": "Normalized to 0-100 scale by entity type before use. "
-                    "Stored as `mkto_score_normalized`."
+                "model_handling": "Normalized to 0-100 scale by entity type, but not used directly in readiness. "
+                    "It supports `STALE_LEGACY_SCORE` detection only."
             },
             "DQ-6: Non-Prospect Contamination": {
                 "prevalence": "~12% of leads, ~10% of contacts",
                 "manifestation": "Competitors, employees, and vendors in the prospect database. "
                     "Often have high engagement scores — they attend everything.",
                 "model_handling": "Hard excluded via `NON_PROSPECT` and `COMPETITOR` flags. "
-                    "Moved to Excluded tier regardless of score."
+                    "Moved to Blocked tier regardless of score."
             },
             "DQ-7: Data Completeness Gaps": {
                 "prevalence": "35% missing title, 40% missing job level, 15% no account",
@@ -835,8 +859,8 @@ historical conversion data. The assignment explicitly rewards explainability.
                 "manifestation": "Drip email sequences create 20+ CampaignMember records "
                     "per person with no human action. Raw counts are misleading.",
                 "model_handling": "Separated via `is_responded` flag. "
-                    "50% quality score penalty applied when `auto_share > 0.70`. "
-                    "`AUTOMATION_INFLATED` flag added."
+                    "Engagement is continuously discounted by automation share; "
+                    "`AUTOMATION_INFLATED` flag added when `auto_share > 0.70`."
             },
             "DQ-9: Opted-Out and Bounced Records": {
                 "prevalence": "~35% of database has at least one outreach block",
@@ -907,7 +931,7 @@ flags lets BDRs make informed judgment calls.
 
 ### 5. The knowledge base IS the deliverable
 The scoring model is 200 lines of Python. The thinking behind it — why recency
-is weighted highest, why Marketo score is normalized not ignored, why flags are
+is weighted highest, why Marketo score is only used as a staleness signal, why flags are
 orthogonal to score — is what actually demonstrates analytical maturity.
 
 ### 6. What I'd do differently with more time

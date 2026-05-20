@@ -942,7 +942,8 @@ orthogonal to score — is what actually demonstrates analytical maturity.
 - **Temporal pattern detection:** Distinguish burst activity (3 events in 1 week)
   from sustained activity (1 event per month for 3 months). Both are positive
   but different types of signal.
-- **Calibration:** Without labeled conversion data, the score thresholds (65/40)
-  are heuristic. A/B testing the tier cutoffs against actual BDR conversion rates
-  would let us calibrate properly over time.
+- **Calibration:** Without labeled conversion data, tier boundaries are set by
+  population quantiles (top 10% / next 20% / next 40% / bottom 30%) rather than
+  outcome-calibrated thresholds. A/B testing tier cutoffs against actual BDR
+  conversion rates would let us calibrate properly over time.
         """)

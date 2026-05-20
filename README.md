@@ -86,6 +86,10 @@ readiness_score = 100 × (
     intent_component     × 0.15
 )
 ```
+After the weighted score is computed, stale records are adjusted downward:
+
+- Last engagement >365 days: score × 0.55
+- Last engagement 181–365 days: score × 0.72
 
 ### Key Design Choices
 
@@ -127,12 +131,12 @@ actionable records — not arbitrary fixed thresholds.
 | DQ-2: Email duplication | Email type classification |
 | DQ-3: MQL date overwrites | Ignored — uses campaign response dates |
 | DQ-4: ETL-dominated timestamps | Ignored — uses campaign response dates |
-| DQ-5: Score field asymmetry | Normalized separately by entity type |
+| DQ-5: Score field asymmetry | Normalized separately by entity type; used only for stale legacy score detection, not direct readiness scoring |
 | DQ-6: Non-prospect contamination | Hard blocked via flags |
 | DQ-7: Data completeness gaps | Score reduced + `INCOMPLETE_PROFILE` flag |
 | DQ-8: Automation-inflated engagement | Direct multiplier penalty on engagement |
 | DQ-9: Opted-out / bounced records | Flagged; excluded unless recent event attendance |
-| DQ-10: DQ field resets | `STALE_LEGACY_SCORE` flag as substitute signal |
+| DQ-10: DQ field resets | `STALE_LEGACY_SCORE` and `RECYCLED_RISK` flags surface stale/recycled records despite cleared DQ fields |
 | DQ-11: Free email domain leakage | Extended domain blocklist |
 | DQ-12: Stale curated views | Bypassed — pipeline reads raw tables directly |
 
